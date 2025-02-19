@@ -1,0 +1,44 @@
+/******************************\ BEGIN Noticia Text ******************************/
+
+
+/*********** Noticia Text regular*********/
+
+@font-face {
+    font-family: 'Noticia Text' !important;
+    font-style: normal;
+    font-weight: 400;
+    src: local('noticiatext regular'), local('noticiatext regular'), url(/assets/hstatic.net/0/0/global/design/member/fonts-master/ofl/noticiatext/noticiatext-regular.ttf) format('truetype')
+}
+
+
+/*********** Noticia Text italic*********/
+
+@font-face {
+    font-family: 'Noticia Text' !important;
+    font-style: italic;
+    font-weight: 400;
+    src: local('noticiatext italic'), local('noticiatext italic'), url(/assets/hstatic.net/0/0/global/design/member/fonts-master/ofl/noticiatext/noticiatext-italic.ttf) format('truetype')
+}
+
+
+/*********** Noticia Text bold*********/
+
+@font-face {
+    font-family: 'Noticia Text'!important;
+    font-style: normal;
+    font-weight: 700;
+    src: local('noticiatext bold'), local('noticiatext bold'), url(/assets/hstatic.net/0/0/global/design/member/fonts-master/ofl/noticiatext/noticiatext-bold.ttf) format('truetype')
+}
+
+
+/*********** Noticia Text bold italic*********/
+
+@font-face {
+    font-family: 'Noticia Text' !important;
+    font-style: italic;
+    font-weight: 700;
+    src: local('noticiatext italic'), local('noticiatext italic'), url(/assets/hstatic.net/0/0/global/design/member/fonts-master/ofl/noticiatext/noticiatext-bolditalic.ttf) format('truetype')
+}
+
+
+/******************************\ END Noticia Text /******************************/

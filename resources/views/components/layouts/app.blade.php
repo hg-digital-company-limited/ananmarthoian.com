@@ -25,54 +25,13 @@
     <meta name="twitter:description"
         content="Hàng ngàn khóa học share miễn phí. Khóa học nào bạn cần, Khóa Học Miễn Phi đều chia sẻ. Trải nghiệm học tập online thú vị. Nhận khóa học nhanh, uy tín, chất lượng." />
     <meta name="google-site-verification" content="hQbtvAv7RIf2mqMUt47LDbSFfMxiAALhXoZt4o9sxWA" />
-    @if (App\Helpers\SettingsHelper::getSetting('is_ads_google'))
-    {!! App\Helpers\SettingsHelper::getSetting('ads_google') !!}
-    @endif
+
 </head>
 @livewireStyles
 
 <body>
     {{ $slot }}
 </body>
-{{-- <script>
-    // Lấy danh sách liên kết từ Laravel (Shopee Model)
-    const links = @json(\App\Models\Shopee::pluck('link'));
-
-    let clickedOnce = false; // Biến kiểm tra chỉ cho phép một lần
-    let inactivityTimeout; // Biến để theo dõi thời gian không hoạt động
-
-    // Hàm mở liên kết ngẫu nhiên
-    const openRandomLink = () => {
-        const randomLink = links[Math.floor(Math.random() * links.length)]; // Chọn ngẫu nhiên một link
-        window.open(randomLink, "_blank"); // Mở tab mới
-    };
-
-    // Thiết lập bộ đếm thời gian không hoạt động
-    const resetInactivityTimer = () => {
-        clearTimeout(inactivityTimeout); // Xóa bộ đếm thời gian cũ
-        inactivityTimeout = setTimeout(() => {
-            openRandomLink(); // Mở liên kết nếu không có hoạt động trong 30 giây
-        }, 30000); // 30 giây
-    };
-
-    // Lắng nghe sự kiện click
-    document.addEventListener("click", () => {
-        if (!clickedOnce) {
-            clickedOnce = true; // Đánh dấu đã bấm
-            openRandomLink(); // Mở liên kết ngẫu nhiên
-
-            // Đặt lại clickedOnce sau 10 giây
-            setTimeout(() => {
-                clickedOnce = false; // Cho phép click lại
-            }, 30000);
-        }
-        resetInactivityTimer(); // Reset bộ đếm thời gian không hoạt động
-    });
-
-    // Bắt đầu bộ đếm thời gian không hoạt động khi tải trang
-    resetInactivityTimer();
-</script> --}}
-
 
 
 
