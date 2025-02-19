@@ -1,41 +1,37 @@
 <div>
+
     <div>
 
         <head>
             <meta name="google-site-verification" content="YXrbv3cdRToosPY6YSAlyKIihqoAN1Sbvl1JSMTI7CE" />
-            <link rel="shortcut icon" href="/assets/theme.hstatic.net/200000077081/1001259549/14/favicon.png?v=168"
-                type="image/png" />
+            <link rel="shortcut icon" href="/assets/theme.hstatic.net/200000077081/1001259549/14/favicon.png?v=168" type="image/png" />
             <meta charset="utf-8" />
             <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
             <title>
-                Tạo tài khoản &ndash; MOONMILK - PREMIUM IMPORTED FOOD MARKET
+                Tài khoản &ndash; MOONMILK - PREMIUM IMPORTED FOOD MARKET
             </title>
 
             <meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0' name='viewport' />
-            <link rel="canonical" href="//account/register" />
+            <link rel="canonical" href="//account" />
 
 
 
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="Tạo t&#224;i khoản" />
+            <meta property="og:title" content="T&#224;i khoản" />
 
-            <meta property="og:image"
-                content="/assets/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
+            <meta property="og:image" content="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
             <meta property="og:image" content="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
 
 
 
 
-            <meta property="og:url" content="//account/register" />
+            <meta property="og:url" content="//account" />
             <meta property="og:site_name" content="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
-
             <link rel="stylesheet" href="/assets/style.css">
-            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/jquery-1.12.4.min.js?v=168'
-                type='text/javascript'></script>
+            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/jquery-1.12.4.min.js?v=168' type='text/javascript'></script>
             <script src='/assets/hstatic.net/0/0/global/option_selection.js' type='text/javascript'></script>
             <script src='/assets/hstatic.net/0/0/global/api.jquery.js' type='text/javascript'></script>
-            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/minify-js.min.js?v=168'
-                type='text/javascript'></script>
+            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/minify-js.min.js?v=168' type='text/javascript'></script>
 
 
             <script src='/assets/hstatic.net/0/0/global/haravan_common.js' type='text/javascript'></script>
@@ -45,32 +41,26 @@
             <script>
                 var formatMoney = '₫';
             </script>
-            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/script.js?v=168'
-                type='text/javascript'></script>
+            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/script.js?v=168' type='text/javascript'></script>
             <!-- css -->
-            <link href='/assets/hstatic.net/0/global/design/css/font-awesome.min.css' rel='stylesheet' type='text/css'
-                media='all' />
+            <link href='/assets/hstatic.net/0/global/design/css/font-awesome.min.css' rel='stylesheet' type='text/css' media='all' />
             <!-- font -->
 
 
-            <link rel="stylesheet" type="text/css"
-                href="/assets/hstatic.net/0/0/global/design/member/fonts-master/noticiatext.css">
+            <link rel="stylesheet" type="text/css" href="/assets/hstatic.net/0/0/global/design/member/fonts-master/noticiatext.css">
 
 
 
 
-            <link rel="stylesheet" type="text/css"
-                href="/assets/hstatic.net/0/0/global/design/member/fonts-master/patrickhandsc.css">
+            <link rel="stylesheet" type="text/css" href="/assets/hstatic.net/0/0/global/design/member/fonts-master/patrickhandsc.css">
 
 
             <!---------------- lllJavascript ----------------->
             <script src="/assets/hstatic.net/0/0/global/design/plugins/fancybox/jquery.fancybox.js"></script>
             <!---------------- CSS ----------------->
-            <link href='/assets/hstatic.net/0/0/global/design/plugins/fancybox/jquery.fancybox.css' rel='stylesheet'
-                type='text/css' media='all' />
+            <link href='/assets/hstatic.net/0/0/global/design/plugins/fancybox/jquery.fancybox.css' rel='stylesheet' type='text/css' media='all' />
 
-            <link href='/assets/theme.hstatic.net/200000077081/1001259549/14/style.css?v=168' rel='stylesheet'
-                type='text/css' media='all' />
+            <link href='/assets/theme.hstatic.net/200000077081/1001259549/14/style.css?v=168' rel='stylesheet' type='text/css' media='all' />
             <script type='text/javascript'>
                 //<![CDATA[
                 if ((typeof Haravan) === 'undefined') {
@@ -111,7 +101,10 @@
                 window.HaravanAnalytics.meta.currency = 'VND';
                 var meta = {
                     "page": {
-                        "pageType": "register"
+                        "pageType": "account",
+                        "resourceType": "account",
+                        "resourceId": 1141158850,
+                        "customerId": 1141158850
                     }
                 };
                 for (var attr in meta) {
@@ -123,9 +116,9 @@
                 //<![CDATA[
                 window.HaravanAnalytics.ga = "UA-162459076-1";
                 window.HaravanAnalytics.enhancedEcommerce = true;
-                (function (i, s, o, g, r, a, m) {
+                (function(i, s, o, g, r, a, m) {
                     i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function () {
+                    i[r] = i[r] || function() {
                         (i[r].q = i[r].q || []).push(arguments)
                     }, i[r].l = 1 * new Date();
                     a = s.createElement(o),
@@ -160,9 +153,9 @@
             <script>
                 window.HaravanAnalytics.fb = "690855291641865";
                 //<![CDATA[
-                ! function (f, b, e, v, n, t, s) {
+                ! function(f, b, e, v, n, t, s) {
                     if (f.fbq) return;
-                    n = f.fbq = function () {
+                    n = f.fbq = function() {
                         n.callMethod ?
                             n.callMethod.apply(n, arguments) : n.queue.push(arguments)
                     };
@@ -215,24 +208,21 @@
                                 transform="translate(-164.65 0)" />
                         </g>
                     </svg></symbol>
-                <symbol id="icon-right-owlCarousel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.73 792.03">
+            <symbol id="icon-right-owlCarousel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.73 792.03">
                         <g>
                             <path
                                 d="M617.86,370.9L221.51,9.7a33.43,33.43,0,0,0-47.1,0,33,33,0,0,0,0,46.87L546.85,396,174.44,735.45a33,33,0,0,0,0,46.87,33.43,33.43,0,0,0,47.1,0L617.89,421.14A32.63,32.63,0,0,0,627.33,396,32.91,32.91,0,0,0,617.86,370.9Z"
                                 transform="translate(-164.65 0)" />
                         </g>
                     </svg></symbol>
-                <symbol id="ico-scrollUp-bottom"><svg xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 358.012 358.012">
+            <symbol id="ico-scrollUp-bottom"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 358.012 358.012">
                         <g>
                             <path
                                 d="M179.006,358.012c98.865,0,179.006-80.141,179.006-179.006S277.871,0,179.006,0S0,80.141,0,179.006   S80.141,358.012,179.006,358.012z M84.795,234.54l-8.437-8.437L179,123.455l102.66,102.66l-8.437,8.437L179,140.335L84.795,234.54z" />
                         </g>
                     </svg></symbol>
-                <symbol id="ico-bag-cart">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 426.195 426.195" style="enable-background:new 0 0 426.195 426.195;"
-                        xml:space="preserve">
+            <symbol id="ico-bag-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.195 426.195" style="enable-background:new 0 0 426.195 426.195;" xml:space="preserve">
                         <g>
                             <g>
                                 <path d="M213.098,30c23.158,0,41.998,18.84,41.998,41.997h30C285.096,32.298,252.798,0,213.098,0
@@ -277,12 +267,10 @@
                         </g>
                     </svg>
 
-                </symbol>
-                <symbol id="icon-letter-home">
+            </symbol>
+            <symbol id="icon-letter-home">
 
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 502.073 502.073"
-                        style="enable-background:new 0 0 502.073 502.073;" xml:space="preserve">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 502.073 502.073" style="enable-background:new 0 0 502.073 502.073;" xml:space="preserve">
                         <path style="fill:#FFD15C;" d="M501.812,481.176c0,6.269-2.09,11.494-6.269,15.673c-4.18,3.135-8.359,5.224-14.629,5.224H21.159
 																		 c-5.224,0-10.449-2.09-14.629-5.224c-4.18-4.18-6.269-9.404-6.269-15.673V175.02h501.551V481.176z" />
                         <path style="fill:#F8B64C;" d="M495.543,496.849c-4.18,3.135-8.359,5.224-14.629,5.224H21.159c-5.224,0-10.449-2.09-14.629-5.224
@@ -342,22 +330,22 @@
                         <g>
                         </g>
                     </svg>
-                </symbol>
+            </symbol>
 
             </svg>
 
             <div class="">
                 <script>
                     window.shop = {
-                        template: "customers[register]",
+                        template: "customers[account]",
                         moneyFormat: "₫"
                     }
                 </script>
 
                 <script>
-                    $(document).ready(function () {
+                    $(document).ready(function() {
                         var template = shop.template;
-                        $(".lang_vi").click(function (event) {
+                        $(".lang_vi").click(function(event) {
                             event.preventDefault();
                             var href = window.location.origin + window.location.pathname;
                             var local = localStorage.getItem('template');
@@ -384,7 +372,7 @@
                             }
                         })
 
-                        $(".lang_en").click(function (event) {
+                        $(".lang_en").click(function(event) {
                             event.preventDefault();
                             var href = window.location.origin + window.location.pathname;
                             var local = localStorage.getItem('template');
@@ -596,8 +584,7 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/thit-nguoi-xong-khoi-smoked-cured-meat">Thịt
-                                        nguội, thịt
-                                        xông khói (Cold Cut/ Smoked Bacon)</a>
+                                        nguội, thịt xông khói (Cold Cut/ Smoked Bacon)</a>
                                 </li>
 
 
@@ -631,8 +618,7 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/nam-va-cac-loai-rong-bien">Nấm & Các loại rong
-                                        biển
-                                        (Mushroom & Seaweed)</a>
+                                        biển (Mushroom & Seaweed)</a>
                                 </li>
 
 
@@ -653,16 +639,14 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/rau-cu-dong-lanh-frozen-veg">Rau củ đông lạnh
-                                        (Frozen
-                                        Vegetable)</a>
+                                        (Frozen Vegetable)</a>
                                 </li>
 
 
 
                                 <li>
                                     <a tabindex="-1" href="/collections/rau-cu-dong-lon-vegetable-in-tin">Rau củ đóng
-                                        lon
-                                        (Canned Vegetable)</a>
+                                        lon (Canned Vegetable)</a>
                                 </li>
 
 
@@ -706,24 +690,21 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/sua-tiet-trung-fresh-milk">Sữa tiệt trùng (Fresh
-                                        Milk
-                                        )</a>
+                                        Milk )</a>
                                 </li>
 
 
 
                                 <li>
                                     <a tabindex="-1" href="/collections/sua-milk">Sữa Hạt - Sữa Trái cây (Nut Milk,
-                                        Fruit
-                                        Milk)</a>
+                                        Fruit Milk)</a>
                                 </li>
 
 
 
                                 <li>
                                     <a tabindex="-1" href="/collections/sua-thanh-trung-pasteurized-milk">Sữa Thanh
-                                        Trùng
-                                        (Pasteurized Milk)</a>
+                                        Trùng (Pasteurized Milk)</a>
                                 </li>
 
 
@@ -845,8 +826,7 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/thuc-pham-dong-lon-canned-food">Thực phẩm đóng
-                                        lon
-                                        (Canned food)</a>
+                                        lon (Canned food)</a>
                                 </li>
 
 
@@ -922,8 +902,7 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/wellness-energy-nutrition-cookie">Wellness,
-                                        Energy,
-                                        Nutrition Cookie</a>
+                                        Energy, Nutrition Cookie</a>
                                 </li>
 
 
@@ -980,8 +959,7 @@
 
                                 <li>
                                     <a tabindex="-1" href="/collections/nuoc-ngot-bottle-soft-drink">Nước Uống Có Ga
-                                        (Carbonated
-                                        water)</a>
+                                        (Carbonated water)</a>
                                 </li>
 
 
@@ -1059,16 +1037,14 @@
                                     <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
                                         <ul class="log-cart hidden-xs">
                                             <li class="choose-store">
-                                                <a class="header-action__link header-action_clicked"
-                                                    href="javascript:void(0);" id="site-locale-handle"
-                                                    aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
+                                                <a class="header-action__link header-action_clicked" href="javascript:void(0);" id="site-locale-handle" aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
                                                     <span class="box-text ">
                                                         <span class="txtnw">Giao hoặc đến lấy tại :</span>
-                                                        <span class="txtbl shiptoHere">
+                                                    <span class="txtbl shiptoHere">
                                                             <span class="txt-overflow">
 
                                                             </span>
-                                                        </span>
+                                                    </span>
                                                     </span>
                                                 </a>
                                                 <span class="box-triangle">
@@ -1096,9 +1072,7 @@
 
 
 
-                                                                        <li data-id="805450"
-                                                                            data-district="Thành phố Hội An"
-                                                                            data-province="Quảng Nam">
+                                                                        <li data-id="805450" data-district="Thành phố Hội An" data-province="Quảng Nam">
                                                                             <label for="add-805450">
                                                                                 <span class="icmap">
                                                                                     <input type="checkbox"
@@ -1120,9 +1094,7 @@
 
 
 
-                                                                        <li data-id="805464"
-                                                                            data-district="Quận Ngũ Hành Sơn"
-                                                                            data-province="Đà Nẵng">
+                                                                        <li data-id="805464" data-district="Quận Ngũ Hành Sơn" data-province="Đà Nẵng">
                                                                             <label for="add-805464">
                                                                                 <span class="icmap">
                                                                                     <input type="checkbox"
@@ -1144,9 +1116,7 @@
 
 
 
-                                                                        <li data-id="805462"
-                                                                            data-district="Thành phố Nha Trang"
-                                                                            data-province="Khánh Hòa">
+                                                                        <li data-id="805462" data-district="Thành phố Nha Trang" data-province="Khánh Hòa">
                                                                             <label for="add-805462">
                                                                                 <span class="icmap">
                                                                                     <input type="checkbox"
@@ -1171,8 +1141,7 @@
                                             </li>
                                             <li class="resig"><a href="/account"><i class="fa fa-user"
                                                         aria-hidden="true"></i><span class="css">Đăng nhập / Đăng
-                                                        ký</span></a>
-                                            </li>
+                                                        ký</span></a></li>
                                             <li class="cart-info hidden-xs">
                                                 <a class="cart-link" href="/cart">
                                                     Giỏ hàng
@@ -1181,7 +1150,7 @@
                                                             aria-hidden="true"></i>
                                                     </span>
                                                     <div class="cart-number">
-                                                        1
+                                                        0
                                                     </div>
                                                 </a>
                                                 <div class="cart-view clearfix" style="display: none;">
@@ -1199,32 +1168,16 @@
                                                     </table>
                                                     <table id="cart-view">
 
-
                                                         <tr>
-                                                            <td class="img">
-                                                                <a href="/products/rosemary-steak-fuji-200g">
-                                                                    <img src="  /assets/product.hstatic.net/200000077081/product/da3d65ca1b6d4953af8f2a5212f5f1b7_c348e0e3886146738240d8e29b5ecc4d_medium.jpg"
-                                                                        alt="ME.B- Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7" />
-                                                                </a>
-                                                            </td>
-                                                            <td>
-                                                                <a class="pro-title-view"
-                                                                    href="/products/rosemary-steak-fuji-200g"
-                                                                    title="ME.B- Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7">ME.B-
-                                                                    Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE)
-                                                                    T7</a>
-                                                                <span class="pro-quantity-view">Số lượng: 1</span>
-                                                                <span class="pro-price-view">Giá: 167,000₫</span>
-                                                            </td>
+                                                            <td>Hiện chưa có sản phẩm</td>
                                                         </tr>
-
 
                                                     </table>
                                                     <span class="line"></span>
                                                     <table class="table-total">
                                                         <tr>
                                                             <td align="left">TỔNG TIỀN:</td>
-                                                            <td align="right" id="total-view-cart">167,000₫</td>
+                                                            <td align="right" id="total-view-cart">0₫</td>
                                                         </tr>
                                                         <tr>
                                                             <td><a href="/cart" class="linktocart">Xem giỏ hàng</a></td>
@@ -1249,12 +1202,10 @@
                                                 <div class="logo">
 
                                                     <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
-                                                            alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                     </a>
                                                     <h1 class="hidden">
-                                                        <a href="/"
-                                                            title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK -
+                                                        <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK -
                                                             PREMIUM IMPORTED FOOD MARKET</a>
                                                     </h1>
 
@@ -1264,10 +1215,8 @@
                                                         <div class="box-search">
                                                             <div class="box-input">
                                                                 <input type="hidden" name="type" value="product" />
-                                                                <div class="input-group-search"
-                                                                    style="width: calc(100% - 44px);">
-                                                                    <input type="text" name="q"
-                                                                        placeholder="Tìm kiếm ..." />
+                                                                <div class="input-group-search" style="width: calc(100% - 44px);">
+                                                                    <input type="text" name="q" placeholder="Tìm kiếm ..." />
                                                                 </div>
                                                                 <button type="submit"><i
                                                                         class="fa fa-search"></i></button>
@@ -1297,25 +1246,20 @@
                                         <div class="pull-right mobile-menu-icon-wrapper">
                                             <div class="logo logo-mobile">
                                                 <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
-                                                        alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                 </a>
                                             </div>
                                             <ul class="mobile-menu-icon clearfix">
 
                                                 <li class="search">
                                                     <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-default dropdown-toggle icon-search"
-                                                            data-toggle="dropdown" aria-expanded="false"></button>
+                                                        <button type="button" class="btn btn-default dropdown-toggle icon-search" data-toggle="dropdown" aria-expanded="false"></button>
                                                         <div class="dropdown-menu" role="menu">
                                                             <div class="search-bar">
                                                                 <div class="">
                                                                     <form class="col-md-12" action="/search">
-                                                                        <input type="hidden" name="type"
-                                                                            value="product" />
-                                                                        <input type="text" name="q"
-                                                                            placeholder="Tìm kiếm..." />
+                                                                        <input type="hidden" name="type" value="product" />
+                                                                        <input type="text" name="q" placeholder="Tìm kiếm..." />
                                                                     </form>
                                                                 </div>
                                                             </div>
@@ -1329,13 +1273,11 @@
                                                                 aria-hidden="true"></i>
 
                                                         </span>
-                                                        <span id="cart-count">1</span>
+                                                        <span id="cart-count">0</span>
                                                     </a>
                                                 </li>
                                                 <li class="choose-store">
-                                                    <a class="header-action__link header-action_clicked"
-                                                        href="javascript:void(0);" id="site-locale-handle"
-                                                        aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
+                                                    <a class="header-action__link header-action_clicked" href="javascript:void(0);" id="site-locale-handle" aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
                                                         <span class="box-text ">
                                                             <i class="fa fa-home" aria-hidden="true"></i>
                                                         </span>
@@ -1365,9 +1307,7 @@
 
 
 
-                                                                            <li data-id="805450"
-                                                                                data-district="Thành phố Hội An"
-                                                                                data-province="Quảng Nam">
+                                                                            <li data-id="805450" data-district="Thành phố Hội An" data-province="Quảng Nam">
                                                                                 <label for="add-805450">
                                                                                     <span class="icmap">
                                                                                         <input type="checkbox"
@@ -1389,9 +1329,7 @@
 
 
 
-                                                                            <li data-id="805464"
-                                                                                data-district="Quận Ngũ Hành Sơn"
-                                                                                data-province="Đà Nẵng">
+                                                                            <li data-id="805464" data-district="Quận Ngũ Hành Sơn" data-province="Đà Nẵng">
                                                                                 <label for="add-805464">
                                                                                     <span class="icmap">
                                                                                         <input type="checkbox"
@@ -1413,9 +1351,7 @@
 
 
 
-                                                                            <li data-id="805462"
-                                                                                data-district="Thành phố Nha Trang"
-                                                                                data-province="Khánh Hòa">
+                                                                            <li data-id="805462" data-district="Thành phố Nha Trang" data-province="Khánh Hòa">
                                                                                 <label for="add-805462">
                                                                                     <span class="icmap">
                                                                                         <input type="checkbox"
@@ -1455,8 +1391,7 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Thông tin chung"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Thông tin chung" class="maxi-menu-link ">
                                                         <span>Thông tin chung</span>
                                                     </a>
 
@@ -1472,8 +1407,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/pages/cach-dat-hang-qua-website-moonmilk"
-                                                                title="Cách đặt hàng qua Web">Cách đặt hàng qua Web</a>
+                                                            <a href="/pages/cach-dat-hang-qua-website-moonmilk" title="Cách đặt hàng qua Web">Cách đặt hàng qua Web</a>
 
 
 
@@ -1481,8 +1415,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/pages/chinh-sach-gia-cua-hang-thuc-pham-moonmilk"
-                                                                title="Chính sách giá">Chính sách giá</a>
+                                                            <a href="/pages/chinh-sach-gia-cua-hang-thuc-pham-moonmilk" title="Chính sách giá">Chính sách giá</a>
 
 
 
@@ -1509,18 +1442,15 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Bánh mì"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Bánh mì" class="maxi-menu-link ">
                                                         <span>Bánh mì</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/banh-mi-tuoi-bread"
-                                                                title="Bánh mì tươi (Fresh Bread )">Bánh mì tươi (Fresh
-                                                                Bread
-                                                                )</a>
+                                                            <a href="/collections/banh-mi-tuoi-bread" title="Bánh mì tươi (Fresh Bread )">Bánh mì tươi (Fresh
+                                                                Bread )</a>
 
 
 
@@ -1539,8 +1469,7 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Thịt, Cá, Trứng"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Thịt, Cá, Trứng" class="maxi-menu-link ">
                                                         <span>Thịt, Cá, Trứng</span>
                                                     </a>
 
@@ -1556,9 +1485,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/thit-heo-pork"
-                                                                title="Thịt heo (Pork)">Thịt
-                                                                heo (Pork)</a>
+                                                            <a href="/collections/thit-heo-pork" title="Thịt heo (Pork)">Thịt heo (Pork)</a>
 
 
 
@@ -1566,8 +1493,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/thit-ga-chicken"
-                                                                title="Thịt gà (Chicken)">Thịt gà (Chicken)</a>
+                                                            <a href="/collections/thit-ga-chicken" title="Thịt gà (Chicken)">Thịt gà (Chicken)</a>
 
 
 
@@ -1575,9 +1501,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ca-fish"
-                                                                title="Cá, Hải sản (Seafood)">Cá, Hải
-                                                                sản (Seafood)</a>
+                                                            <a href="/collections/ca-fish" title="Cá, Hải sản (Seafood)">Cá, Hải sản (Seafood)</a>
 
 
 
@@ -1594,8 +1518,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/xuc-xich-sausages"
-                                                                title="Xúc xích (Sausage)">Xúc xích (Sausage)</a>
+                                                            <a href="/collections/xuc-xich-sausages" title="Xúc xích (Sausage)">Xúc xích (Sausage)</a>
 
 
 
@@ -1603,8 +1526,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/thit-nguoi-xong-khoi-smoked-cured-meat"
-                                                                title="Thịt nguội, thịt xông khói (Cold Cut/ Smoked Bacon)">Thịt
+                                                            <a href="/collections/thit-nguoi-xong-khoi-smoked-cured-meat" title="Thịt nguội, thịt xông khói (Cold Cut/ Smoked Bacon)">Thịt
                                                                 nguội, thịt xông khói (Cold Cut/ Smoked Bacon)</a>
 
 
@@ -1613,8 +1535,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ha-cao-sui-cao-dumpling-dimsum"
-                                                                title="Há cảo, sủi cảo (Dumplings)">Há cảo, sủi cảo
+                                                            <a href="/collections/ha-cao-sui-cao-dumpling-dimsum" title="Há cảo, sủi cảo (Dumplings)">Há cảo, sủi cảo
                                                                 (Dumplings)</a>
 
 
@@ -1634,16 +1555,14 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Rau, củ, quả"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Rau, củ, quả" class="maxi-menu-link ">
                                                         <span>Rau, củ, quả</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/rau-vegtables-herbs"
-                                                                title="Rau (Vegetables & Herbs)">Rau (Vegetables &
+                                                            <a href="/collections/rau-vegtables-herbs" title="Rau (Vegetables & Herbs)">Rau (Vegetables &
                                                                 Herbs)</a>
 
 
@@ -1652,10 +1571,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/nam-va-cac-loai-rong-bien"
-                                                                title="Nấm & Các loại rong biển (Mushroom & Seaweed)">Nấm
-                                                                & Các
-                                                                loại rong biển (Mushroom & Seaweed)</a>
+                                                            <a href="/collections/nam-va-cac-loai-rong-bien" title="Nấm & Các loại rong biển (Mushroom & Seaweed)">Nấm
+                                                                & Các loại rong biển (Mushroom & Seaweed)</a>
 
 
 
@@ -1663,8 +1580,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/cu-qua-tubers-berries"
-                                                                title="Củ & quả (Tubers & Berries)">Củ & quả (Tubers &
+                                                            <a href="/collections/cu-qua-tubers-berries" title="Củ & quả (Tubers & Berries)">Củ & quả (Tubers &
                                                                 Berries)</a>
 
 
@@ -1673,8 +1589,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/trai-cay-noi-dia-local-fruits"
-                                                                title="Trái cây (Fruit)">Trái cây (Fruit)</a>
+                                                            <a href="/collections/trai-cay-noi-dia-local-fruits" title="Trái cây (Fruit)">Trái cây (Fruit)</a>
 
 
 
@@ -1682,10 +1597,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/rau-cu-dong-lanh-frozen-veg"
-                                                                title="Rau củ đông lạnh (Frozen Vegetable)">Rau củ đông
-                                                                lạnh
-                                                                (Frozen Vegetable)</a>
+                                                            <a href="/collections/rau-cu-dong-lanh-frozen-veg" title="Rau củ đông lạnh (Frozen Vegetable)">Rau củ đông
+                                                                lạnh (Frozen Vegetable)</a>
 
 
 
@@ -1693,10 +1606,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/rau-cu-dong-lon-vegetable-in-tin"
-                                                                title="Rau củ đóng lon (Canned Vegetable)">Rau củ đóng
-                                                                lon
-                                                                (Canned Vegetable)</a>
+                                                            <a href="/collections/rau-cu-dong-lon-vegetable-in-tin" title="Rau củ đóng lon (Canned Vegetable)">Rau củ đóng
+                                                                lon (Canned Vegetable)</a>
 
 
 
@@ -1704,8 +1615,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/rau-cu-ngam-pickle"
-                                                                title="Rau củ ngâm (Pickle)">Rau củ ngâm (Pickle)</a>
+                                                            <a href="/collections/rau-cu-ngam-pickle" title="Rau củ ngâm (Pickle)">Rau củ ngâm (Pickle)</a>
 
 
 
@@ -1724,17 +1634,14 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="SP từ sữa"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="SP từ sữa" class="maxi-menu-link ">
                                                         <span>SP từ sữa</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/pho-mai-cheese"
-                                                                title="Phô mai (Cheese)">Phô
-                                                                mai (Cheese)</a>
+                                                            <a href="/collections/pho-mai-cheese" title="Phô mai (Cheese)">Phô mai (Cheese)</a>
 
 
 
@@ -1751,8 +1658,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/cooking-whipping-topping"
-                                                                title="Kem sữa (Cream)">Kem sữa (Cream)</a>
+                                                            <a href="/collections/cooking-whipping-topping" title="Kem sữa (Cream)">Kem sữa (Cream)</a>
 
 
 
@@ -1760,10 +1666,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/sua-tiet-trung-fresh-milk"
-                                                                title="Sữa tiệt trùng (Fresh Milk )">Sữa tiệt trùng
-                                                                (Fresh Milk
-                                                                )</a>
+                                                            <a href="/collections/sua-tiet-trung-fresh-milk" title="Sữa tiệt trùng (Fresh Milk )">Sữa tiệt trùng
+                                                                (Fresh Milk )</a>
 
 
 
@@ -1771,10 +1675,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/sua-milk"
-                                                                title="Sữa Hạt - Sữa Trái cây (Nut Milk, Fruit Milk)">Sữa
-                                                                Hạt -
-                                                                Sữa Trái cây (Nut Milk, Fruit Milk)</a>
+                                                            <a href="/collections/sua-milk" title="Sữa Hạt - Sữa Trái cây (Nut Milk, Fruit Milk)">Sữa
+                                                                Hạt - Sữa Trái cây (Nut Milk, Fruit Milk)</a>
 
 
 
@@ -1782,10 +1684,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/sua-thanh-trung-pasteurized-milk"
-                                                                title="Sữa Thanh Trùng (Pasteurized Milk)">Sữa Thanh
-                                                                Trùng
-                                                                (Pasteurized Milk)</a>
+                                                            <a href="/collections/sua-thanh-trung-pasteurized-milk" title="Sữa Thanh Trùng (Pasteurized Milk)">Sữa Thanh
+                                                                Trùng (Pasteurized Milk)</a>
 
 
 
@@ -1793,8 +1693,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/sua-dac-condensed-milk"
-                                                                title="Sữa đặc (Condensed Milk)">Sữa đặc (Condensed
+                                                            <a href="/collections/sua-dac-condensed-milk" title="Sữa đặc (Condensed Milk)">Sữa đặc (Condensed
                                                                 Milk)</a>
 
 
@@ -1803,9 +1702,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/sua-chua-dy"
-                                                                title="Sữa Chua (Yogurt)">Sữa
-                                                                Chua (Yogurt)</a>
+                                                            <a href="/collections/sua-chua-dy" title="Sữa Chua (Yogurt)">Sữa Chua (Yogurt)</a>
 
 
 
@@ -1813,9 +1710,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/kem-ice-cream"
-                                                                title="Kem (Ice Cream)">Kem
-                                                                (Ice Cream)</a>
+                                                            <a href="/collections/kem-ice-cream" title="Kem (Ice Cream)">Kem (Ice Cream)</a>
 
 
 
@@ -1834,16 +1729,14 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Xốt, Gia vị"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Xốt, Gia vị" class="maxi-menu-link ">
                                                         <span>Xốt, Gia vị</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/gia-vi-spice-dried"
-                                                                title="Gia vị khô (Dried Spices)">Gia vị khô (Dried
+                                                            <a href="/collections/gia-vi-spice-dried" title="Gia vị khô (Dried Spices)">Gia vị khô (Dried
                                                                 Spices)</a>
 
 
@@ -1852,8 +1745,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/xot-gia-vi-seasoning-and-sauce"
-                                                                title="Xốt gia vị (Sauces)">Xốt gia vị (Sauces)</a>
+                                                            <a href="/collections/xot-gia-vi-seasoning-and-sauce" title="Xốt gia vị (Sauces)">Xốt gia vị (Sauces)</a>
 
 
 
@@ -1861,8 +1753,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/cac-loai-la-kho-dried-herbs"
-                                                                title="Lá khô (Dried Herbs)">Lá khô (Dried Herbs)</a>
+                                                            <a href="/collections/cac-loai-la-kho-dried-herbs" title="Lá khô (Dried Herbs)">Lá khô (Dried Herbs)</a>
 
 
 
@@ -1870,9 +1761,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/dau-an-oil"
-                                                                title="Dầu ăn (Cooking Oils)">Dầu
-                                                                ăn (Cooking Oils)</a>
+                                                            <a href="/collections/dau-an-oil" title="Dầu ăn (Cooking Oils)">Dầu ăn (Cooking Oils)</a>
 
 
 
@@ -1880,9 +1769,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/mat-ong-honey"
-                                                                title="Mật ong (Honey)">Mật ong
-                                                                (Honey)</a>
+                                                            <a href="/collections/mat-ong-honey" title="Mật ong (Honey)">Mật ong (Honey)</a>
 
 
 
@@ -1890,9 +1777,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/giam-vinegar"
-                                                                title="Giấm (Vinegars)">Giấm
-                                                                (Vinegars)</a>
+                                                            <a href="/collections/giam-vinegar" title="Giấm (Vinegars)">Giấm (Vinegars)</a>
 
 
 
@@ -1911,8 +1796,7 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Thực phẩm khô"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Thực phẩm khô" class="maxi-menu-link ">
                                                         <span>Thực phẩm khô</span>
                                                     </a>
 
@@ -1928,8 +1812,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/mi-an-lien-instand-noodle"
-                                                                title="Mì ăn liền (Noodles)">Mì ăn liền (Noodles)</a>
+                                                            <a href="/collections/mi-an-lien-instand-noodle" title="Mì ăn liền (Noodles)">Mì ăn liền (Noodles)</a>
 
 
 
@@ -1946,8 +1829,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ngu-coc-grain"
-                                                                title="Ngũ cốc (Cereals & Grains)">Ngũ cốc (Cereals &
+                                                            <a href="/collections/ngu-coc-grain" title="Ngũ cốc (Cereals & Grains)">Ngũ cốc (Cereals &
                                                                 Grains)</a>
 
 
@@ -1956,10 +1838,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/bot-flour"
-                                                                title="Bột (Flour & Baking Ingredients)">Bột (Flour &
-                                                                Baking
-                                                                Ingredients)</a>
+                                                            <a href="/collections/bot-flour" title="Bột (Flour & Baking Ingredients)">Bột (Flour &
+                                                                Baking Ingredients)</a>
 
 
 
@@ -1967,10 +1847,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/thuc-pham-dong-lon-canned-food"
-                                                                title="Thực phẩm đóng lon (Canned food)">Thực phẩm đóng
-                                                                lon
-                                                                (Canned food)</a>
+                                                            <a href="/collections/thuc-pham-dong-lon-canned-food" title="Thực phẩm đóng lon (Canned food)">Thực phẩm đóng
+                                                                lon (Canned food)</a>
 
 
 
@@ -1978,8 +1856,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/dau-hat-nuts"
-                                                                title="Đậu - hạt khô (Dried Nuts)">Đậu - hạt khô (Dried
+                                                            <a href="/collections/dau-hat-nuts" title="Đậu - hạt khô (Dried Nuts)">Đậu - hạt khô (Dried
                                                                 Nuts)</a>
 
 
@@ -1988,8 +1865,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/trai-cay-say-dry-fruit"
-                                                                title="Trái cây sấy (Dry Fruit)">Trái cây sấy (Dry
+                                                            <a href="/collections/trai-cay-say-dry-fruit" title="Trái cây sấy (Dry Fruit)">Trái cây sấy (Dry
                                                                 Fruit)</a>
 
 
@@ -2009,17 +1885,14 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Bánh, kẹo"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Bánh, kẹo" class="maxi-menu-link ">
                                                         <span>Bánh, kẹo</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/do-an-vat-snack"
-                                                                title="Đồ ăn vặt (Snack)">Đồ
-                                                                ăn vặt (Snack)</a>
+                                                            <a href="/collections/do-an-vat-snack" title="Đồ ăn vặt (Snack)">Đồ ăn vặt (Snack)</a>
 
 
 
@@ -2027,9 +1900,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/banh-cake"
-                                                                title="Bánh hộp (Boxed Cakes)">Bánh
-                                                                hộp (Boxed Cakes)</a>
+                                                            <a href="/collections/banh-cake" title="Bánh hộp (Boxed Cakes)">Bánh hộp (Boxed
+                                                                Cakes)</a>
 
 
 
@@ -2037,10 +1909,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/banh-quy-biscuit"
-                                                                title="Bánh quy (Cookies & Biscuits)">Bánh quy (Cookies
-                                                                &
-                                                                Biscuits)</a>
+                                                            <a href="/collections/banh-quy-biscuit" title="Bánh quy (Cookies & Biscuits)">Bánh quy (Cookies
+                                                                & Biscuits)</a>
 
 
 
@@ -2048,9 +1918,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/keo-candy"
-                                                                title="Kẹo (Candy & Sweets)">Kẹo
-                                                                (Candy & Sweets)</a>
+                                                            <a href="/collections/keo-candy" title="Kẹo (Candy & Sweets)">Kẹo (Candy & Sweets)</a>
 
 
 
@@ -2058,8 +1926,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/so-co-la-chocolate"
-                                                                title="Sô cô la (Chocolate)">Sô cô la (Chocolate)</a>
+                                                            <a href="/collections/so-co-la-chocolate" title="Sô cô la (Chocolate)">Sô cô la (Chocolate)</a>
 
 
 
@@ -2067,9 +1934,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ca-phe-cafe"
-                                                                title="Cà phê (Coffee)">Cà phê
-                                                                (Coffee)</a>
+                                                            <a href="/collections/ca-phe-cafe" title="Cà phê (Coffee)">Cà phê (Coffee)</a>
 
 
 
@@ -2086,10 +1951,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/wellness-energy-nutrition-cookie"
-                                                                title="Wellness, Energy, Nutrition Cookie">Wellness,
-                                                                Energy,
-                                                                Nutrition Cookie</a>
+                                                            <a href="/collections/wellness-energy-nutrition-cookie" title="Wellness, Energy, Nutrition Cookie">Wellness,
+                                                                Energy, Nutrition Cookie</a>
 
 
 
@@ -2108,17 +1971,14 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Đồ uống"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Đồ uống" class="maxi-menu-link ">
                                                         <span>Đồ uống</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ruou-vang"
-                                                                title="Rượu Vang (Wine)">Rượu Vang
-                                                                (Wine)</a>
+                                                            <a href="/collections/ruou-vang" title="Rượu Vang (Wine)">Rượu Vang (Wine)</a>
 
 
 
@@ -2126,9 +1986,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ruou-manh"
-                                                                title="Rượu Mạnh (Liquor)">Rượu
-                                                                Mạnh (Liquor)</a>
+                                                            <a href="/collections/ruou-manh" title="Rượu Mạnh (Liquor)">Rượu Mạnh (Liquor)</a>
 
 
 
@@ -2136,8 +1994,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ruou-champange"
-                                                                title="Vang Nổ (Sparkling Wine)">Vang Nổ (Sparkling
+                                                            <a href="/collections/ruou-champange" title="Vang Nổ (Sparkling Wine)">Vang Nổ (Sparkling
                                                                 Wine)</a>
 
 
@@ -2146,8 +2003,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/draft-beer"
-                                                                title="Bia Thủ Công (Carft Beer)">Bia Thủ Công (Carft
+                                                            <a href="/collections/draft-beer" title="Bia Thủ Công (Carft Beer)">Bia Thủ Công (Carft
                                                                 Beer)</a>
 
 
@@ -2156,8 +2012,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/bia-thuong-mai"
-                                                                title="Bia Thương Mại (Commercial Beer)">Bia Thương Mại
+                                                            <a href="/collections/bia-thuong-mai" title="Bia Thương Mại (Commercial Beer)">Bia Thương Mại
                                                                 (Commercial Beer)</a>
 
 
@@ -2166,8 +2021,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/ruou-han-ruou-nhat"
-                                                                title="Rượu Soju (Soju)">Rượu Soju (Soju)</a>
+                                                            <a href="/collections/ruou-han-ruou-nhat" title="Rượu Soju (Soju)">Rượu Soju (Soju)</a>
 
 
 
@@ -2175,10 +2029,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/nuoc-ngot-bottle-soft-drink"
-                                                                title="Nước Uống Có Ga (Carbonated water)">Nước Uống Có
-                                                                Ga
-                                                                (Carbonated water)</a>
+                                                            <a href="/collections/nuoc-ngot-bottle-soft-drink" title="Nước Uống Có Ga (Carbonated water)">Nước Uống Có
+                                                                Ga (Carbonated water)</a>
 
 
 
@@ -2186,8 +2038,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/nuoc-loc-bottle-water"
-                                                                title="Nước Đóng Chai (Water)">Nước Đóng Chai
+                                                            <a href="/collections/nuoc-loc-bottle-water" title="Nước Đóng Chai (Water)">Nước Đóng Chai
                                                                 (Water)</a>
 
 
@@ -2196,10 +2047,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/healthy-drink"
-                                                                title="Thức Uống Bổ Dưỡng (Health Supplements)">Thức
-                                                                Uống Bổ
-                                                                Dưỡng (Health Supplements)</a>
+                                                            <a href="/collections/healthy-drink" title="Thức Uống Bổ Dưỡng (Health Supplements)">Thức
+                                                                Uống Bổ Dưỡng (Health Supplements)</a>
 
 
 
@@ -2207,8 +2056,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/nuoc-trai-cay-juice"
-                                                                title="Nước Trái Cây (Juice)">Nước Trái Cây (Juice)</a>
+                                                            <a href="/collections/nuoc-trai-cay-juice" title="Nước Trái Cây (Juice)">Nước Trái Cây (Juice)</a>
 
 
 
@@ -2216,8 +2064,7 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/cooktail"
-                                                                title="Đồ Uống Có Cồn (Cocktails)">Đồ Uống Có Cồn
+                                                            <a href="/collections/cooktail" title="Đồ Uống Có Cồn (Cocktails)">Đồ Uống Có Cồn
                                                                 (Cocktails)</a>
 
 
@@ -2237,18 +2084,15 @@
 
 
                                                 <li class="hasChild fix-icon-coll">
-                                                    <a href="javascript:void(0)" title="Hàng khác"
-                                                        class="maxi-menu-link ">
+                                                    <a href="javascript:void(0)" title="Hàng khác" class="maxi-menu-link ">
                                                         <span>Hàng khác</span>
                                                     </a>
 
                                                     <ul>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/hang-gia-dung-household-goods"
-                                                                title="Đồ dùng gia đình (Household Goods)">Đồ dùng gia
-                                                                đình
-                                                                (Household Goods)</a>
+                                                            <a href="/collections/hang-gia-dung-household-goods" title="Đồ dùng gia đình (Household Goods)">Đồ dùng gia
+                                                                đình (Household Goods)</a>
 
 
 
@@ -2256,10 +2100,8 @@
                                                         </li>
 
                                                         <li class="lilala">
-                                                            <a href="/collections/thuc-an-vat-nuoi-pet-food"
-                                                                title="Thức ăn vật nuôi (Pet Food)">Thức ăn vật nuôi
-                                                                (Pet
-                                                                Food)</a>
+                                                            <a href="/collections/thuc-an-vat-nuoi-pet-food" title="Thức ăn vật nuôi (Pet Food)">Thức ăn vật nuôi
+                                                                (Pet Food)</a>
 
 
 
@@ -2282,7 +2124,7 @@
                             <!-- End container  -->
                         </nav>
                         <script>
-                            $(window).resize(function () {
+                            $(window).resize(function() {
                                 $('li.dropdown li.active').parents('.dropdown').addClass('active');
                                 if ($('.right-menu').width() + $('#navbar').width() > $('.check_nav.nav-wrapper').width() - 40) {
                                     $('.container-mp.nav-wrapper').addClass('responsive-menu');
@@ -2290,31 +2132,31 @@
                                     $('.container-mp.nav-wrapper').removeClass('responsive-menu');
                                 }
                             })
-                            $(document).on("click", "ul.mobile-menu-icon .dropdown-menu ,.drop-control .dropdown-menu, .drop-control .input-dropdown", function (e) {
+                            $(document).on("click", "ul.mobile-menu-icon .dropdown-menu ,.drop-control .dropdown-menu, .drop-control .input-dropdown", function(e) {
                                 e.stopPropagation();
                             });
                         </script>
                         <script>
-                            jQuery(document).ready(function () {
+                            jQuery(document).ready(function() {
                                 var check_drop = true;
                                 var timeOutMenu;
 
                                 $('.menu-top > li > a').hover(
-                                    function () {
+                                    function() {
                                         clearTimeout(timeOutMenu);
                                         $('.menu-top > li > a:not(.main)').removeClass('active');
                                         $(this).addClass('active');
                                         $('.drop-menu').stop().slideUp(200);
                                         $(this).parent('li').addClass('drop').children('.drop-menu').slideDown(200);
                                     },
-                                    function () {
+                                    function() {
                                         if ($('.menu-top > li > a.main').length == 0 && $(this).parent('li.hasChild').length == 0) {
                                             $(this).removeClass('active');
                                         }
                                         if ($(this).parent('li:not(.hasChild)').length == 1 && $('.menu-top > li > a.main').length == 1) {
                                             $(this).not('.main').removeClass('active');
                                         }
-                                        timeOutMenu = setTimeout(function () {
+                                        timeOutMenu = setTimeout(function() {
                                             if (check_drop) {
                                                 $('.drop-menu').stop().slideUp(200);
                                                 //$(this).removeClass('active');
@@ -2324,10 +2166,10 @@
                                     }
                                 );
                                 $('.drop-menu').hover(
-                                    function () {
+                                    function() {
                                         check_drop = false;
                                     },
-                                    function () {
+                                    function() {
                                         if ($(this).parent('li').children('a:not(.main)')) {
                                             $(this).parent('li').children('a:not(.main)').removeClass('active');
                                         }
@@ -2336,13 +2178,13 @@
                                     }
                                 );
                             })
-                            $(function () {
+                            $(function() {
                                 $('nav#menu-mobile').mmenu();
                             });
-                            $(document).ready(function () {
+                            $(document).ready(function() {
                                 flagg = true;
                                 if (flagg) {
-                                    $('.click-menu-mobile a').click(function () {
+                                    $('.click-menu-mobile a').click(function() {
                                         $('#menu-mobile').removeClass('hidden');
                                         flagg = false;
                                     })
@@ -2354,7 +2196,6 @@
                         <aside>
 
                         </aside>
-                                                                                                                                                                                                                                                                       
 
                         <main class="padding-top-mobile">
 
@@ -2379,83 +2220,74 @@
 
                                                 <li><i class="fa fa-angle-right"></i></li>
                                                 <li><a href="/account" target="_self">Tài khoản</a></li>
-                                                <li><i class="fa fa-angle-right"></i></li>
-                                                <li class="active"><span>Ðăng ký</span></li>
 
                                             </ol>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <section class="layout-account">
+                            <section class="layout-info-account">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <div id="register" class="userbox">
-                                                <h1>
-                                                    Đăng ký
-                                                </h1>
-                                                <form accept-charset='UTF-8' action='/account' id='create_customer'
-                                                    method='post'>
-                                                    <input name='form_type' type='hidden' value='create_customer'>
-                                                    <input name='utf8' type='hidden' value='✓'>
-                                                    <input name='__RequestVerificationToken' type='hidden'
-                                                        value='CfDJ8FyFPV59mBtNhmQGz0fYZt83fpodHbMPgtpVT0hV9fhJOksHyi6sljppGfwaU0S7fKbYym4wQBAz4c-iEZymCx-LAsCrqvO4oM4tQ1zQwORf6xdTTajTyOnmnZUj4BbS0CpKuT8mUNVfFTpGEOgFYhc'>
+                                            <h1>
+                                                Tài khoản của bạn <a class="logout" href="/account/logout"><span
+                                                        class="fa fa-sign-out"></span>Thoát</a>
+                                            </h1>
+                                        </div>
+                                        <div id="customer_orders" class="col-md-8 col-xs-12">
+                                            <div class="userbox">
+
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="order_number">Mã đơn hàng</th>
+                                                            <th class="date">Ngày đặt</th>
+                                                            <th class="payment_status">Trạng thái thanh toán</th>
+                                                            <th class="fulfillment_status">Trạng thái vận chuyển</th>
+                                                            <th class="total">Tổng tiền</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                        <tr class="odd ">
+                                                            <td class=""><a href="/account/orders/de41529c3d944c88bdb7e65d6b349418" title="">#104033</a></td>
+                                                            <td class=""><span>Thg 2 19, 2025</span></td>
+                                                            <td class=""><span class="status_pending">Chưa hoàn
+                                                                    tất</span></td>
+
+                                                            <td class=""><span class="status_not fulfilled">Đóng gói
+                                                                    xong - Sẵn sàng giao hàng</span></td>
 
 
-                                                    <div id="last_name" class="input-group input-account mb15">
-                                                        <label class="input-group-addon"><i
-                                                                class="icon-userico"></i></label>
-                                                        <input required type="text" name="customer[last_name]"
-                                                            placeholder="Họ" id="last_name" class="form-control"
-                                                            size="30" />
-                                                    </div>
-                                                    <div id="first_name" class="input-group input-account mb15">
-                                                        <label class="input-group-addon"><i
-                                                                class="icon-userico"></i></label>
-                                                        <input required type="text" name="customer[first_name]"
-                                                            placeholder="Tên" id="first_name" class="form-control"
-                                                            size="30" />
-                                                    </div>
+                                                            <td class=""><span class="total money">167,000₫</span></td>
+                                                        </tr>
 
-                                                    <div id="email" class="input-group input-account mb15">
-                                                        <label class="input-group-addon"><i
-                                                                class="icon-login icon-envelope"></i></label>
-                                                        <input required type="email" placeholder="Email"
-                                                            name="customer[email]" id="email" class="form-control"
-                                                            size="30" />
-                                                    </div>
+                                                    </tbody>
+                                                </table>
 
-                                                    <div id="password" class="input-group input-account mb15">
-                                                        <label class="input-group-addon"><i
-                                                                class="icon-login icon-shield"></i></label>
-                                                        <input required type="password" placeholder="Mật khẩu"
-                                                            name="customer[password]" id="password" class="form-control"
-                                                            size="30" />
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div id="customer_sidebar" class="col-md-4 col-xs-12">
+                                            <div class="userbox">
 
-                                                    <div class="action_bottom mb15">
-                                                        <input class="btn" type="submit" value="Đăng ký" />
-                                                    </div>
-                                                    <div class="req_pass">
-                                                        <a class="come-back" href="/account/login">Quay về</a>
-                                                    </div>
+                                                <p><span>Họ tên</span>: 2509roblox 2509roblox</p>
 
+                                                <p class="email"><span>Email</span>: 2509roblox@gmail.com</p>
+                                                <div class="address ">
 
-                                                    <input id='867a2abe80124f688c31b95e6f5269cc'
-                                                        name='g-recaptcha-response' type='hidden'>
-                                                    <script
-                                                        src='https://www.google.com/recaptcha/api.js?render=6LchSLkqAAAAABVHBpeFgg8N-WgkYsr5fO6GUF_s'></script>
-                                                    <script>
-                                                        grecaptcha.ready(function () {
-                                                            grecaptcha.execute('6LchSLkqAAAAABVHBpeFgg8N-WgkYsr5fO6GUF_s', {
-                                                                action: 'submit'
-                                                            }).then(function (token) {
-                                                                document.getElementById('867a2abe80124f688c31b95e6f5269cc').value = token;
-                                                            });
-                                                        });
-                                                    </script>
-                                                </form>
+                                                    <p><span>Số nhà</span>: </p>
+
+                                                    <p><span>Đường</span>: </p>
+
+                                                    <p><span>Quốc gia</span>: Vietnam</p>
+                                                    <p><span>Điện thoại</span>: </p>
+
+                                                </div>
+                                                <div class="text-right">
+                                                    <a id="view_address" href="/account/addresses">Xem địa chỉ <i
+                                                            class="fa fa-share"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2479,8 +2311,7 @@
                                             <h4 class="small-title">Kết nối chúng tôi qua </h4>
                                             <div>
 
-                                                <a href="https://www.facebook.com/moonmilknhatrang" target="_blank"
-                                                    class="icon_fa">
+                                                <a href="https://www.facebook.com/moonmilknhatrang" target="_blank" class="icon_fa">
                                                     <i class="fa fa-facebook"></i>
                                                 </a>
 
@@ -2501,8 +2332,7 @@
 
 
                                                 <a href="https://zalo.me/0905053322" target="_blank" class="icon_fa">
-                                                    <img
-                                                        src="/assets/theme.hstatic.net/200000077081/1001259549/14/zalo.png?v=168">
+                                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/zalo.png?v=168">
                                                 </a>
 
 
@@ -2519,64 +2349,47 @@
                                     <div class="footer-center-wrap">
                                         <div class="row">
 
-                                            <div class="col-md-4 col-sm-6 col-xs-12 border-right wow animated fadeInUp"
-                                                data-wow-delay="100ms">
+                                            <div class="col-md-4 col-sm-6 col-xs-12 border-right wow animated fadeInUp" data-wow-delay="100ms">
                                                 <div class="footer-block toggle-mb" id="block_links_footer_2">
-                                                    <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông
-                                                        tin công
-                                                        ty<i
-                                                            class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
+                                                    <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông tin công ty<i class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
                                                     </h4>
                                                     <div class="block_content toggle-mb-content">
-                                                        CÔNG TY TNHH MOONMILK<br /> Địa chỉ: Tổ 13 Đường Đệ, Phường Vĩnh
-                                                        Hoà,
-                                                        Thành phố Nha Trang, Tỉnh Khánh Hòa, Việt Nam.<br /> GPKD số
-                                                        4201570744
-                                                        cấp ngày 09/01/2023 tại Sở kế hoạch và Đầu tư tỉnh Khánh
-                                                        Hòa<br />
+                                                        CÔNG TY TNHH MOONMILK<br /> Địa chỉ: Tổ 13 Đường Đệ, Phường Vĩnh Hoà, Thành phố Nha Trang, Tỉnh Khánh Hòa, Việt Nam.<br /> GPKD số 4201570744 cấp ngày 09/01/2023 tại Sở kế hoạch và Đầu tư tỉnh Khánh
+                                                        Hòa
+                                                        <br />
 
                                                     </div>
                                                 </div>
                                             </div>
 
 
-                                            <div class="col-md-3 col-sm-6 col-xs-12 border-right wow animated fadeInUp"
-                                                data-wow-delay="100ms">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 border-right wow animated fadeInUp" data-wow-delay="100ms">
                                                 <div class="footer-block toggle-mb" id="block_links_footer_1">
-                                                    <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông
-                                                        tin hỗ
-                                                        trợ <i
-                                                            class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
+                                                    <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông tin hỗ trợ <i class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
                                                     </h4>
                                                     <div class="block_content toggle-mb-content">
                                                         <ul class="toggle-footer list-group bullet">
 
                                                             <li class="item">
-                                                                <a href="/pages/chinh-sach-doi-tra"
-                                                                    title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                                                <a href="/pages/chinh-sach-doi-tra" title="Chính sách đổi trả">Chính sách đổi trả</a>
                                                             </li>
 
                                                             <li class="item">
-                                                                <a href="/pages/chinh-sach-bao-mat"
-                                                                    title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                                                <a href="/pages/chinh-sach-bao-mat" title="Chính sách bảo mật">Chính sách bảo mật</a>
                                                             </li>
 
                                                             <li class="item">
-                                                                <a href="/pages/huong-dan-mua-hang"
-                                                                    title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn
-                                                                    mua hàng
-                                                                    và thanh toán</a>
+                                                                <a href="/pages/huong-dan-mua-hang" title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn
+                                                                    mua hàng và thanh toán</a>
                                                             </li>
 
                                                             <li class="item">
-                                                                <a href="/pages/chinh-sach-van-chuyen"
-                                                                    title="Chính sách vận chuyển">Chính sách vận
+                                                                <a href="/pages/chinh-sach-van-chuyen" title="Chính sách vận chuyển">Chính sách vận
                                                                     chuyển</a>
                                                             </li>
 
                                                             <li class="item">
-                                                                <a href="/pages/chinh-sach-kiem-hang"
-                                                                    title="Chính sách kiểm hàng">Chính sách kiểm
+                                                                <a href="/pages/chinh-sach-kiem-hang" title="Chính sách kiểm hàng">Chính sách kiểm
                                                                     hàng</a>
                                                             </li>
 
@@ -2593,8 +2406,7 @@
 
                                                 <div id="newsletter_block" class="footer-block toggle-mb">
                                                     <h4 class="title_block toggle-mb-title" aria-expanded="false">
-                                                        Kết nối với chúng tôi<i
-                                                            class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
+                                                        Kết nối với chúng tôi<i class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
                                                     </h4>
 
                                                     <div class="block_content toggle-mb-content text-left">
@@ -2607,19 +2419,8 @@
 
                                                                 <li>
                                                                     <b>Nha Trang:</b><br /> 15 Trần Hưng Đạo, Lộc Thọ -
-                                                                    <a href="tel:0917523288">0917 523 288</a><br /> 63
-                                                                    Nguyễn
-                                                                    Thiện Thuật, Lộc Thọ - <a href="tel:0903561639">0903
-                                                                        561
-                                                                        639</a><br /> Kiot 18 Mường
-                                                                    Thanh Viễn Triều, Hòn Chồng - <a
-                                                                        href="tel:0905 776 039">0905 776 039</a><br />
-                                                                    KLB, 1A,
-                                                                    Đô thị An Viên, Vĩnh Trường - <a
-                                                                        href="tel:0905 096 616">0905 096 616</a><br />
-                                                                    18-19
-                                                                    Phạm Văn Đồng, Vĩnh
-                                                                    Hải - <a href="tel:0935 937 537">0935 937 537</a>
+                                                                    <a href="tel:0917523288">0917 523 288</a><br /> 63 Nguyễn Thiện Thuật, Lộc Thọ - <a href="tel:0903561639">0903 561 639</a><br /> Kiot 18 Mường Thanh Viễn Triều, Hòn Chồng - <a href="tel:0905 776 039">0905 776 039</a><br
+                                                                    /> KLB, 1A, Đô thị An Viên, Vĩnh Trường - <a href="tel:0905 096 616">0905 096 616</a><br /> 18-19 Phạm Văn Đồng, Vĩnh Hải - <a href="tel:0935 937 537">0935 937 537</a>
                                                                 </li>
 
 
@@ -2628,14 +2429,8 @@
 
 
                                                                 <li>
-                                                                    <b>Đà Nẵng</b><br /> Lô 21-22 Trần Bạch Đằng, Mỹ An
-                                                                    - <a href="tel:0905176066">0905 176 066</a><br />
-                                                                    136 Nguyễn
-                                                                    Văn Thoại, Mỹ An - <a href="tel:0904566006">0904 566
-                                                                        006</a><br /> 116 Hồ Nghinh,
-                                                                    An Hải Bắc, Sơn Trà - <a href="tel:0935966479">0935
-                                                                        966
-                                                                        479</a>
+                                                                    <b>Đà Nẵng</b><br /> Lô 21-22 Trần Bạch Đằng, Mỹ An - <a href="tel:0905176066">0905 176 066</a><br /> 136 Nguyễn Văn Thoại, Mỹ An - <a href="tel:0904566006">0904 566 006</a><br /> 116
+                                                                    Hồ Nghinh, An Hải Bắc, Sơn Trà - <a href="tel:0935966479">0935 966 479</a>
                                                                 </li>
 
 
@@ -2644,10 +2439,8 @@
 
 
                                                                 <li>
-                                                                    <b>Hội An:</b><br /> 241 Cửa Đại, Cẩm Châu - <a
-                                                                        href="tel:0914322577">0914 322 577</a><br /> 712
-                                                                    Hai Bà
-                                                                    Trưng - <a href="tel:0905033035">0905 033 035</a>
+                                                                    <b>Hội An:</b><br /> 241 Cửa Đại, Cẩm Châu - <a href="tel:0914322577">0914 322 577</a><br /> 712 Hai Bà Trưng - <a href="tel:0905033035">0905 033
+                                                                        035</a>
                                                                 </li>
 
 
@@ -2682,12 +2475,7 @@
                                                             <!-- Facebook widget -->
 
                                                             <div class="footer-static-content">
-                                                                <div class="fb-page"
-                                                                    data-href="https://www.facebook.com/MoonmilkVN"
-                                                                    data-height="300" data-small-header="false"
-                                                                    data-adapt-container-width="true"
-                                                                    data-hide-cover="false" data-show-facepile="true"
-                                                                    data-show-posts="false"> </div>
+                                                                <div class="fb-page" data-href="https://www.facebook.com/MoonmilkVN" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"> </div>
                                                             </div>
                                                             <div style="clear:both;">
 
@@ -2695,7 +2483,7 @@
 
                                                             <!-- #Facebook widget -->
                                                             <script>
-                                                                (function (d, s, id) {
+                                                                (function(d, s, id) {
                                                                     var js, fjs = d.getElementsByTagName(s)[0];
                                                                     if (d.getElementById(id)) return;
                                                                     js = d.createElement(s);
@@ -2720,8 +2508,7 @@
                                     <div class="footer-mailchimp-wrap col-md-12 col-sm-12 col-xs-12 ">
                                         <div class="row">
 
-                                            <div class="col-md-12 col-sm-12 col-xs-12 wow animated fadeInUp"
-                                                data-wow-delay="100ms">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 wow animated fadeInUp" data-wow-delay="100ms">
                                                 <div id="newsletter_block" class="footer-block">
                                                     <div class="des-new-title">
                                                         <svg class='ico-letter-home div-user-control control-4'>
@@ -2732,26 +2519,17 @@
                                                         </h4>
                                                     </div>
                                                     <div class="des_newsletter">
-                                                        Cập nhật thông tin khuyến mãi nhanh nhất<br> Hưởng quyền lợi
-                                                        giảm giá
-                                                        riêng biệt
+                                                        Cập nhật thông tin khuyến mãi nhanh nhất<br> Hưởng quyền lợi giảm giá riêng biệt
                                                     </div>
                                                     <div class="block_content">
-                                                        <form id="mc-embedded-subscribe-form" accept-charset="UTF-8"
-                                                            action="/account/contact" class="contact-form"
-                                                            method="post">
+                                                        <form id="mc-embedded-subscribe-form" accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
                                                             <input name="form_type" type="hidden" value="customer">
                                                             <input name="utf8" type="hidden" value="✓">
-                                                            <input type="hidden" id="contact_tags" name="contact[tags]"
-                                                                value="khách hàng tiềm năng,Bản tin">
-                                                            <input type="hidden" id="newsletter-first-name"
-                                                                name="contact[first_name]" value="Người đăng ký">
-                                                            <input type="hidden" id="newsletter-last-name"
-                                                                name="contact[last_name]" value="">
+                                                            <input type="hidden" id="contact_tags" name="contact[tags]" value="khách hàng tiềm năng,Bản tin">
+                                                            <input type="hidden" id="newsletter-first-name" name="contact[first_name]" value="Người đăng ký">
+                                                            <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="">
                                                             <div class="newsletter-form">
-                                                                <input type="email" placeholder="Nhập email của bạn.."
-                                                                    name="contact[email]" id="mail"
-                                                                    class="newsletter-input form-control input-lg">
+                                                                <input type="email" placeholder="Nhập email của bạn.." name="contact[email]" id="mail" class="newsletter-input form-control input-lg">
                                                                 <button class="btn-newsletter" type="submit">
                                                                     <span>Gửi</span>
                                                                 </button>
@@ -2772,12 +2550,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="footer-bottom-wrap clearfix">
-                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow animated fadeInLeft"
-                                                data-wow-delay="150ms">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow animated fadeInLeft" data-wow-delay="150ms">
 
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center wow animated fadeInUp"
-                                                data-wow-delay="150ms">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center wow animated fadeInUp" data-wow-delay="150ms">
                                                 <!-- Histats.com  (div with counter) -->
                                                 <div id="histats_counter"></div>
                                                 <!-- Histats.com  START  (aync)-->
@@ -2786,7 +2562,7 @@
                                                     _Hasync.push(['Histats.start', '1,4388606,4,15,170,40,00010000']);
                                                     _Hasync.push(['Histats.fasi', '1']);
                                                     _Hasync.push(['Histats.track_hits', '']);
-                                                    (function () {
+                                                    (function() {
                                                         var hs = document.createElement('script');
                                                         hs.type = 'text/javascript';
                                                         hs.async = true;
@@ -2799,12 +2575,10 @@
                                                             border="0"></a></noscript>
                                                 <!-- Histats.com  END  -->
                                             </div>
-                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right wow animated fadeInRight"
-                                                data-wow-delay="150ms">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right wow animated fadeInRight" data-wow-delay="150ms">
                                                 <div class="copyright">
                                                     <p>&copy; Bản quyền thuộc về <a href="#" target="_blank">Công ty
-                                                            TNHH
-                                                            Moonmilk.</a></p>
+                                                            TNHH Moonmilk.</a></p>
                                                 </div>
 
                                             </div>
@@ -2877,8 +2651,8 @@
 
                         <script>
                             /* QUICK VIEW JS */
-                            jQuery(document).ready(function () {
-                                var callBack = function (variant, selector) {
+                            jQuery(document).ready(function() {
+                                var callBack = function(variant, selector) {
                                     if (variant) {
                                         item = $('.wrapper-quickview');
                                         if (variant != null && variant.featured_image != null) {
@@ -2903,148 +2677,148 @@
                                 }
                                 var quickview_html_variants = $('.quickview-variants').html();
                                 var quickview_image_zoom = $('.quickview-image').html();
-                                var quickViewProduct = function (purl) {
-                                    if ($(window).width() < 680) {
-                                        window.location = purl;
+                                var quickViewProduct = function(purl) {
+                                        if ($(window).width() < 680) {
+                                            window.location = purl;
+                                            return false;
+                                        }
+                                        item = $('.wrapper-quickview');
+                                        $.ajax({
+                                            url: purl + '.js',
+                                            async: false,
+                                            success: function(product) {
+                                                $.each(product.options, function(i, v) {
+                                                    product.options[i] = v.name;
+                                                })
+                                                item.find('.quickview-title').attr('title', product.title).attr('href', product.url).find('h2').html(product.title);
+                                                item.find('.quickview-variants').html(quickview_html_variants);
+                                                $('.quickview-image').html(quickview_image_zoom);
+                                                $.each(product.variants, function(i, v) {
+                                                    item.find('#quickview-select').append("<option value='" + v.id + "'>" + v.title + ' - ' + v.price + "</option>");
+                                                })
+                                                if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1)
+                                                    $('#quickview-select').hide();
+                                                else
+                                                    $('#quickview-select').show();
+                                                if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1) {
+                                                    callBack(product.variants[0], null);
+                                                } else {
+                                                    new Haravan.OptionSelectors("quickview-select", {
+                                                        product: product,
+                                                        onVariantSelected: callBack
+                                                    });
+                                                    if (product.options.length == 1 && product.options[0].indexOf('Ti�u d?') == -1)
+                                                        item.find('.selector-wrapper:eq(0):not(.opt1-quickview):not(.opt2-quickview):not(.opt3-quickview)').prepend('<label>' + product.options[0] + '</label>');
+                                                    $('.quickview-variants select:not(#quickview-select)').each(function() {
+                                                        $(this).wrap('<span class="custom-dropdown"></span>');
+                                                        $(this).addClass("custom-dropdown-select");
+                                                    });
+                                                    callBack(product.variants[0], null);
+                                                }
+                                                if (product.images.length == 0) {
+                                                    item.find('.quickview-image').find('img').attr('alt', product.title).attr('src', '/assets/hstatic.net/0/0/global/noDefaultImage6_large.gif');
+                                                } else {
+                                                    $('.quickview-slider').remove();
+                                                    $('#quickview-sliderproduct').append("<div class='quickview-slider owl-carousel slide-quickview'>");
+                                                    $.each(product.images, function(i, v) {
+                                                        elem = $('<div class="item">').append('<a href="javascript:void(0);" data-image=""><img /></a>');
+                                                        elem.find('a').attr('data-image', Haravan.resizeImage(v, 'large'));
+                                                        elem.find('img').attr('src', Haravan.resizeImage(v, 'small'));
+                                                        item.find('.quickview-slider').append(elem);
+                                                    });
+                                                    item.find('.quickview-image img').attr('alt', product.title).attr('src', Haravan.resizeImage(product.featured_image, 'large'));
+
+                                                    $('.quickview-slider img').imagesLoaded(function() {
+                                                        setTimeout(function() {
+                                                            $('.quickview-slider').owlCarousel({
+                                                                items: 4,
+                                                                nav: true,
+                                                                dots: false,
+                                                                margin: 5
+                                                            });
+                                                            $('.quickview-slider.owl-carousel').find('.owl-next').html("<svg class='svg-next-icon svg-next-icon-size-16' style='fill:#666'><use xlink:href='#icon-right-owlCarousel'></use></svg>");
+                                                            $('.quickview-slider.owl-carousel').find('.owl-prev').html("<svg class='svg-next-icon svg-next-icon-size-16' style='fill:#666'><use xlink:href='#icon-left-owlCarousel'></use></svg>");
+                                                        }, 1500);
+                                                    });
+                                                }
+                                                // X? l� variant
+                                                if ($('#form-quickview select[data-option=option1] option').length > 0) {
+                                                    $('#form-quickview .opt1-quickview').children('label').html(product.options[0]);
+                                                    var checked = $('#form-quickview select[data-option=option1]').val();
+                                                    $('#form-quickview select[data-option=option1] option').each(function() {
+                                                        var arr_opt = '';
+                                                        var opt_select_1 = $(this).val();
+                                                        $.each(product.variants, function(i, v) {
+                                                            var opt1 = v.option1;
+                                                            if (opt_select_1 == opt1 && v.available) {
+                                                                arr_opt = arr_opt + ' ' + slug(v.option1);
+                                                            }
+                                                        });
+                                                        if (arr_opt == '') {
+                                                            arr_opt = 'hidden';
+                                                        }
+                                                        if ($(this).val() == checked) {
+                                                            $('.data-opt1-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option1'><span>" + $(this).val() + "</span></label></li>");
+                                                        } else {
+                                                            $('.data-opt1-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option1'><span>" + $(this).val() + "</span></label></li>");
+                                                        }
+                                                    });
+                                                } else {
+                                                    $('#form-quickview .opt1-quickview').remove();
+                                                }
+                                                if ($('#form-quickview select[data-option=option2] option').length > 0) {
+                                                    $('#form-quickview .opt2-quickview').children('label').html(product.options[1]);
+                                                    var checked = $('#form-quickview select[data-option=option2]').val();
+                                                    $('#form-quickview select[data-option=option2] option').each(function() {
+                                                        var arr_opt = '';
+                                                        var opt_select_2 = $(this).val();
+                                                        $.each(product.variants, function(i, v) {
+                                                            var opt2 = v.option2;
+                                                            if (opt_select_2 == opt2 && v.available) {
+                                                                arr_opt = arr_opt + ' ' + slug(v.option1);
+                                                            }
+                                                        });
+                                                        if ($(this).val() == checked) {
+                                                            $('.data-opt2-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option2'><span>" + $(this).val() + "</span></label></li>");
+                                                        } else {
+                                                            $('.data-opt2-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option2'><span>" + $(this).val() + "</span></label></li>");
+                                                        }
+                                                    });
+                                                } else {
+                                                    $('#form-quickview .opt2-quickview').remove();
+                                                }
+                                                if ($('#form-quickview select[data-option=option3] option').length > 0) {
+                                                    $('#form-quickview .opt3-quickview').children('label').html(product.options[2]);
+                                                    var checked = $('#form-quickview select[data-option=option3]').val();
+                                                    $('#form-quickview select[data-option=option3] option').each(function() {
+                                                        var arr_opt = '';
+                                                        var opt_select_3 = $(this).val();
+                                                        $.each(product.variants, function(i, v) {
+                                                            var opt3 = v.option3;
+                                                            if (opt_select_3 == opt3 && v.available) {
+                                                                arr_opt = arr_opt + ' ' + slug(v.option1 + '-' + v.option2);
+                                                            }
+                                                        });
+                                                        if ($(this).val() == checked) {
+                                                            $('.data-opt3-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option3'><span>" + $(this).val() + "</span></label></li>");
+                                                        } else {
+                                                            $('.data-opt3-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option3'><span>" + $(this).val() + "</span></label></li>");
+                                                        }
+                                                    });
+                                                } else {
+                                                    $('#form-quickview .opt3-quickview').remove();
+                                                }
+                                            }
+                                        });
                                         return false;
                                     }
-                                    item = $('.wrapper-quickview');
-                                    $.ajax({
-                                        url: purl + '.js',
-                                        async: false,
-                                        success: function (product) {
-                                            $.each(product.options, function (i, v) {
-                                                product.options[i] = v.name;
-                                            })
-                                            item.find('.quickview-title').attr('title', product.title).attr('href', product.url).find('h2').html(product.title);
-                                            item.find('.quickview-variants').html(quickview_html_variants);
-                                            $('.quickview-image').html(quickview_image_zoom);
-                                            $.each(product.variants, function (i, v) {
-                                                item.find('#quickview-select').append("<option value='" + v.id + "'>" + v.title + ' - ' + v.price + "</option>");
-                                            })
-                                            if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1)
-                                                $('#quickview-select').hide();
-                                            else
-                                                $('#quickview-select').show();
-                                            if (product.variants.length == 1 && product.variants[0].title.indexOf('Default') != -1) {
-                                                callBack(product.variants[0], null);
-                                            } else {
-                                                new Haravan.OptionSelectors("quickview-select", {
-                                                    product: product,
-                                                    onVariantSelected: callBack
-                                                });
-                                                if (product.options.length == 1 && product.options[0].indexOf('Ti�u d?') == -1)
-                                                    item.find('.selector-wrapper:eq(0):not(.opt1-quickview):not(.opt2-quickview):not(.opt3-quickview)').prepend('<label>' + product.options[0] + '</label>');
-                                                $('.quickview-variants select:not(#quickview-select)').each(function () {
-                                                    $(this).wrap('<span class="custom-dropdown"></span>');
-                                                    $(this).addClass("custom-dropdown-select");
-                                                });
-                                                callBack(product.variants[0], null);
-                                            }
-                                            if (product.images.length == 0) {
-                                                item.find('.quickview-image').find('img').attr('alt', product.title).attr('src', '//hstatic.net/0/0/global/noDefaultImage6_large.gif');
-                                            } else {
-                                                $('.quickview-slider').remove();
-                                                $('#quickview-sliderproduct').append("<div class='quickview-slider owl-carousel slide-quickview'>");
-                                                $.each(product.images, function (i, v) {
-                                                    elem = $('<div class="item">').append('<a href="javascript:void(0);" data-image=""><img /></a>');
-                                                    elem.find('a').attr('data-image', Haravan.resizeImage(v, 'large'));
-                                                    elem.find('img').attr('src', Haravan.resizeImage(v, 'small'));
-                                                    item.find('.quickview-slider').append(elem);
-                                                });
-                                                item.find('.quickview-image img').attr('alt', product.title).attr('src', Haravan.resizeImage(product.featured_image, 'large'));
-
-                                                $('.quickview-slider img').imagesLoaded(function () {
-                                                    setTimeout(function () {
-                                                        $('.quickview-slider').owlCarousel({
-                                                            items: 4,
-                                                            nav: true,
-                                                            dots: false,
-                                                            margin: 5
-                                                        });
-                                                        $('.quickview-slider.owl-carousel').find('.owl-next').html("<svg class='svg-next-icon svg-next-icon-size-16' style='fill:#666'><use xlink:href='#icon-right-owlCarousel'></use></svg>");
-                                                        $('.quickview-slider.owl-carousel').find('.owl-prev').html("<svg class='svg-next-icon svg-next-icon-size-16' style='fill:#666'><use xlink:href='#icon-left-owlCarousel'></use></svg>");
-                                                    }, 1500);
-                                                });
-                                            }
-                                            // X? l� variant
-                                            if ($('#form-quickview select[data-option=option1] option').length > 0) {
-                                                $('#form-quickview .opt1-quickview').children('label').html(product.options[0]);
-                                                var checked = $('#form-quickview select[data-option=option1]').val();
-                                                $('#form-quickview select[data-option=option1] option').each(function () {
-                                                    var arr_opt = '';
-                                                    var opt_select_1 = $(this).val();
-                                                    $.each(product.variants, function (i, v) {
-                                                        var opt1 = v.option1;
-                                                        if (opt_select_1 == opt1 && v.available) {
-                                                            arr_opt = arr_opt + ' ' + slug(v.option1);
-                                                        }
-                                                    });
-                                                    if (arr_opt == '') {
-                                                        arr_opt = 'hidden';
-                                                    }
-                                                    if ($(this).val() == checked) {
-                                                        $('.data-opt1-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option1'><span>" + $(this).val() + "</span></label></li>");
-                                                    } else {
-                                                        $('.data-opt1-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option1'><span>" + $(this).val() + "</span></label></li>");
-                                                    }
-                                                });
-                                            } else {
-                                                $('#form-quickview .opt1-quickview').remove();
-                                            }
-                                            if ($('#form-quickview select[data-option=option2] option').length > 0) {
-                                                $('#form-quickview .opt2-quickview').children('label').html(product.options[1]);
-                                                var checked = $('#form-quickview select[data-option=option2]').val();
-                                                $('#form-quickview select[data-option=option2] option').each(function () {
-                                                    var arr_opt = '';
-                                                    var opt_select_2 = $(this).val();
-                                                    $.each(product.variants, function (i, v) {
-                                                        var opt2 = v.option2;
-                                                        if (opt_select_2 == opt2 && v.available) {
-                                                            arr_opt = arr_opt + ' ' + slug(v.option1);
-                                                        }
-                                                    });
-                                                    if ($(this).val() == checked) {
-                                                        $('.data-opt2-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option2'><span>" + $(this).val() + "</span></label></li>");
-                                                    } else {
-                                                        $('.data-opt2-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option2'><span>" + $(this).val() + "</span></label></li>");
-                                                    }
-                                                });
-                                            } else {
-                                                $('#form-quickview .opt2-quickview').remove();
-                                            }
-                                            if ($('#form-quickview select[data-option=option3] option').length > 0) {
-                                                $('#form-quickview .opt3-quickview').children('label').html(product.options[2]);
-                                                var checked = $('#form-quickview select[data-option=option3]').val();
-                                                $('#form-quickview select[data-option=option3] option').each(function () {
-                                                    var arr_opt = '';
-                                                    var opt_select_3 = $(this).val();
-                                                    $.each(product.variants, function (i, v) {
-                                                        var opt3 = v.option3;
-                                                        if (opt_select_3 == opt3 && v.available) {
-                                                            arr_opt = arr_opt + ' ' + slug(v.option1 + '-' + v.option2);
-                                                        }
-                                                    });
-                                                    if ($(this).val() == checked) {
-                                                        $('.data-opt3-quickview').append("<li class='" + arr_opt + "'><label><input checked='checked' type='radio' value='" + $(this).val() + "' name='option3'><span>" + $(this).val() + "</span></label></li>");
-                                                    } else {
-                                                        $('.data-opt3-quickview').append("<li class='" + arr_opt + "'><label><input type='radio' value='" + $(this).val() + "' name='option3'><span>" + $(this).val() + "</span></label></li>");
-                                                    }
-                                                });
-                                            } else {
-                                                $('#form-quickview .opt3-quickview').remove();
-                                            }
-                                        }
-                                    });
-                                    return false;
-                                }
-                                //final width --> this is the quick view image slider width
-                                //maxQuickWidth --> this is the max-width of the quick-view panel
+                                    //final width --> this is the quick view image slider width
+                                    //maxQuickWidth --> this is the max-width of the quick-view panel
                                 var sliderFinalWidth = 500,
                                     maxQuickWidth = 900;
 
                                 //open the quick view panel
-                                jQuery(document).on("click", ".quickview", function (event) {
+                                jQuery(document).on("click", ".quickview", function(event) {
                                     var selectedImage = $(this).parents('.product-wrapper').find('.product-image img'),
                                         slectedImageUrl = selectedImage.attr('src');
                                     quickViewProduct($(this).attr('data-handle'));
@@ -3055,15 +2829,15 @@
                                     //update the visible slider image in the quick view panel
                                     //you don't need to implement/use the updateQuickView if retrieving the quick view data with ajax
                                     updateQuickView(slectedImageUrl);
-                                    setTimeout(function () {
+                                    setTimeout(function() {
                                         $('.quickview-slider').addClass('is-visible-slide');
                                     }, 1700);
-                                    setTimeout(function () {
+                                    setTimeout(function() {
                                         jQuery('#form-quickview ul.data-opt1-quickview li:visible label').first().click();
                                     }, 1800);
                                 });
 
-                                jQuery(document).on('click', '#form-quickview ul.data-opt1-quickview li', function () {
+                                jQuery(document).on('click', '#form-quickview ul.data-opt1-quickview li', function() {
                                     var v_opt1 = jQuery(this).find('span').html();
                                     jQuery('#form-quickview select[data-option=option1]').val(v_opt1).change();
                                     if (jQuery('#form-quickview ul.data-opt2-quickview li:visible').length > 0) {
@@ -3072,7 +2846,7 @@
                                         jQuery('#form-quickview ul.data-opt2-quickview li:visible label')[0].click();
                                     }
                                 });
-                                jQuery(document).on('click', '#form-quickview ul.data-opt2-quickview li', function () {
+                                jQuery(document).on('click', '#form-quickview ul.data-opt2-quickview li', function() {
                                     var v_opt1 = slug(jQuery('#form-quickview select[data-option=option1]').val());
                                     var v_opt2 = jQuery(this).find('span').html();
                                     var both_v_opt = v_opt1 + '-' + slug(v_opt2);
@@ -3083,12 +2857,12 @@
                                         jQuery('#form-quickview ul.data-opt3-quickview li:visible label')[0].click();
                                     }
                                 });
-                                jQuery(document).on('click', '#form-quickview ul.data-opt3-quickview li', function () {
+                                jQuery(document).on('click', '#form-quickview ul.data-opt3-quickview li', function() {
                                     var v_opt3 = $(this).find('span').html();
                                     jQuery('#form-quickview select[data-option=option3]').val(v_opt3).change();
                                 });
 
-                                $('.wrapper-quickview').on('click', '.product-thumb a', function () {
+                                $('.wrapper-quickview').on('click', '.product-thumb a', function() {
                                     item = $('.wrapper-quickview');
                                     item.find('.quickview-image img').attr('src', $(this).attr('data-image'));
                                     item.find('.product-thumb a').removeClass('active');
@@ -3096,17 +2870,17 @@
                                     return false;
                                 });
                                 //close the quick view panel
-                                $('body').on('click', function (event) {
+                                $('body').on('click', function(event) {
                                     if ($(event.target).is('.quickview-close') || $(event.target).is('body.overlay-layer')) {
                                         $('#quickview-sliderproduct .quickview-slider').hide();
                                         closeQuickView(sliderFinalWidth, maxQuickWidth);
                                     }
                                 });
-                                $(document).on("click", ".quickview-close a", function () {
+                                $(document).on("click", ".quickview-close a", function() {
                                     $('#quickview-sliderproduct .quickview-slider').hide();
                                     closeQuickView(sliderFinalWidth, maxQuickWidth);
                                 });
-                                $(document).keyup(function (event) {
+                                $(document).keyup(function(event) {
                                     //check if user has pressed 'Esc'
                                     if (event.which == '27') {
                                         $('#quickview-sliderproduct .quickview-slider').hide();
@@ -3115,7 +2889,7 @@
                                 });
 
                                 //center quick-view on window resize
-                                $(window).on('resize', function () {
+                                $(window).on('resize', function() {
                                     if ($('.wrapper-quickview').hasClass('is-visible')) {
                                         window.requestAnimationFrame(resizeQuickView);
                                     }
@@ -3178,12 +2952,12 @@
                                             'top': finalTop + 'px',
                                             'left': finalLeft + 'px',
                                             'width': finalWidth + 'px',
-                                        }, 1000, [400, 20], function () {
+                                        }, 1000, [400, 20], function() {
                                             //animate the quick view: animate its width to the final value
                                             $('.wrapper-quickview').addClass('animate-width').velocity({
                                                 'left': quickViewLeft + 'px',
                                                 'width': quickViewWidth + 'px',
-                                            }, 300, 'ease', function () {
+                                            }, 300, 'ease', function() {
                                                 //show quick view content
                                                 $('.wrapper-quickview').addClass('is-visible-info');
                                             });
@@ -3197,13 +2971,13 @@
                                             'top': finalTop + 'px',
                                             'left': finalLeft + 'px',
                                             'width': finalWidth + 'px',
-                                        }, 300, 'ease', function () {
+                                        }, 300, 'ease', function() {
                                             $('body').removeClass('overlay-layer');
                                             $('.wrapper-quickview').removeClass('animate-width').velocity({
                                                 "top": topSelected,
                                                 "left": leftSelected,
                                                 "width": widthSelected,
-                                            }, 500, 'ease', function () {
+                                            }, 500, 'ease', function() {
                                                 $('.wrapper-quickview').removeClass('is-visible');
                                             });
                                         });
@@ -3248,8 +3022,7 @@
 
             <div class="hotline__fixed">
                 <div class="hotline_fixed" style="bottom:10px">
-                    <a href="javascript:void(0);" title="Click gọi điện liên hệ tư vấn ngay!!!"> <i
-                            style="color: #fff;font-size: 20px;margin-top: 10px;" class="fa fa-phone"></i> </a>
+                    <a href="javascript:void(0);" title="Click gọi điện liên hệ tư vấn ngay!!!"> <i style="color: #fff;font-size: 20px;margin-top: 10px;" class="fa fa-phone"></i> </a>
                 </div>
                 <div class="hotline_fixed-number hidden-xs" style="bottom:10px">
                     <a href="javascript:void(0);" title="Click gọi điện liên hệ tư vấn ngay!!!">
@@ -3330,7 +3103,6 @@
                         -webkit-transform: scale(0, 0);
                         opacity: 0;
                     }
-
                     to {
                         -webkit-transform: scale(1, 1);
                         opacity: 0.5;
@@ -3342,7 +3114,6 @@
                         -moz-transform: scale(0, 0);
                         opacity: 0;
                     }
-
                     to {
                         -moz-transform: scale(1, 1);
                         opacity: 0.5;
@@ -3354,7 +3125,6 @@
                         -o-transform: scale(0, 0);
                         opacity: 0;
                     }
-
                     to {
                         -o-transform: scale(1, 1);
                         opacity: 0.5;
@@ -3369,7 +3139,6 @@
                         -webkit-opacity: .1;
                         -o-opacity: .1
                     }
-
                     30% {
                         -moz-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .5;
@@ -3377,7 +3146,6 @@
                         -webkit-opacity: .5;
                         -o-opacity: .5
                     }
-
                     100% {
                         -moz-transform: rotate(0) scale(1) skew(1deg);
                         opacity: .6;
@@ -3392,12 +3160,10 @@
                         -webkit-transform: rotate(0) scale(.5) skew(1deg);
                         -webkit-opacity: .1
                     }
-
                     30% {
                         -webkit-transform: rotate(0) scale(.7) skew(1deg);
                         -webkit-opacity: .5
                     }
-
                     100% {
                         -webkit-transform: rotate(0) scale(1) skew(1deg);
                         -webkit-opacity: .1
@@ -3409,12 +3175,10 @@
                         -o-transform: rotate(0) kscale(.5) skew(1deg);
                         -o-opacity: .1
                     }
-
                     30% {
                         -o-transform: rotate(0) scale(.7) skew(1deg);
                         -o-opacity: .5
                     }
-
                     100% {
                         -o-transform: rotate(0) scale(1) skew(1deg);
                         -o-opacity: .1
@@ -3426,12 +3190,10 @@
                         -moz-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         -moz-transform: rotate(0) -moz-scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         -moz-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3443,12 +3205,10 @@
                         -webkit-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         -webkit-transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         -webkit-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3460,12 +3220,10 @@
                         -o-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         -o-transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         -o-transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3476,27 +3234,21 @@
                     0% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         -moz-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         -moz-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         -moz-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         -moz-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         -moz-transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         -moz-transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3506,27 +3258,21 @@
                     0% {
                         -webkit-transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         -webkit-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         -webkit-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         -webkit-transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         -webkit-transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3536,27 +3282,21 @@
                     0% {
                         -o-transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         -o-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         -o-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         -o-transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         -o-transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         -o-transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         -o-transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3569,7 +3309,6 @@
                         -ms-transform: translate3d(100%, 0, 0);
                         transform: translate3d(100%, 0, 0)
                     }
-
                     100% {
                         opacity: 1;
                         -webkit-transform: none;
@@ -3585,7 +3324,6 @@
                         -ms-transform: translate3d(100%, 0, 0);
                         transform: translate3d(100%, 0, 0)
                     }
-
                     100% {
                         opacity: 1;
                         -webkit-transform: none;
@@ -3601,7 +3339,6 @@
                         -ms-transform: translate3d(100%, 0, 0);
                         transform: translate3d(100%, 0, 0)
                     }
-
                     100% {
                         opacity: 1;
                         -webkit-transform: none;
@@ -3617,7 +3354,6 @@
                         -ms-transform: translate3d(100%, 0, 0);
                         transform: translate3d(100%, 0, 0)
                     }
-
                     100% {
                         opacity: 1;
                         -webkit-transform: none;
@@ -3630,7 +3366,6 @@
                     0% {
                         opacity: 1
                     }
-
                     100% {
                         opacity: 0;
                         -webkit-transform: translate3d(100%, 0, 0);
@@ -3643,7 +3378,6 @@
                     0% {
                         opacity: 1
                     }
-
                     100% {
                         opacity: 0;
                         -webkit-transform: translate3d(100%, 0, 0);
@@ -3656,7 +3390,6 @@
                     0% {
                         opacity: 1
                     }
-
                     100% {
                         opacity: 0;
                         -webkit-transform: translate3d(100%, 0, 0);
@@ -3669,7 +3402,6 @@
                     0% {
                         opacity: 1
                     }
-
                     100% {
                         opacity: 0;
                         -webkit-transform: translate3d(100%, 0, 0);
@@ -3683,12 +3415,10 @@
                         transform: rotate(0) scale(.5) skew(1deg);
                         opacity: .1
                     }
-
                     30% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .5
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .1
@@ -3700,12 +3430,10 @@
                         transform: rotate(0) scale(.5) skew(1deg);
                         opacity: .1
                     }
-
                     30% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .5
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .1
@@ -3717,12 +3445,10 @@
                         transform: rotate(0) scale(.5) skew(1deg);
                         opacity: .1
                     }
-
                     30% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .5
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .1
@@ -3734,12 +3460,10 @@
                         transform: rotate(0) scale(.5) skew(1deg);
                         opacity: .1
                     }
-
                     30% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .5
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .1
@@ -3751,12 +3475,10 @@
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3768,12 +3490,10 @@
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3785,12 +3505,10 @@
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3802,12 +3520,10 @@
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg);
                         opacity: .2
                     }
-
                     100% {
                         transform: rotate(0) scale(.7) skew(1deg);
                         opacity: .2
@@ -3818,27 +3534,21 @@
                     0% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3848,27 +3558,21 @@
                     0% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3878,27 +3582,21 @@
                     0% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3908,27 +3606,21 @@
                     0% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     10% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     20% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     30% {
                         transform: rotate(-25deg) scale(1) skew(1deg)
                     }
-
                     40% {
                         transform: rotate(25deg) scale(1) skew(1deg)
                     }
-
                     50% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
-
                     100% {
                         transform: rotate(0) scale(1) skew(1deg)
                     }
@@ -3960,8 +3652,8 @@
                 }
             </style>
             <script>
-                $(document).ready(function () {
-                    $(".hotline_fixed,.hotline_fixed-number").click(function () {
+                $(document).ready(function() {
+                    $(".hotline_fixed,.hotline_fixed-number").click(function() {
                         $("html, body").animate({
                             scrollTop: $(document).height()
                         }, "slow");
@@ -3974,9 +3666,9 @@
 
 
             <script>
-                $(document).ready(function () {
+                $(document).ready(function() {
                     if ($(window).width() < 768) {
-                        $('body').on('click', '.mm-listview li > a.site-nav-link', function (e) {
+                        $('body').on('click', '.mm-listview li > a.site-nav-link', function(e) {
                             e.preventDefault();
                             $(this).prev().trigger('click');
                         })
@@ -3984,12 +3676,11 @@
                 })
             </script>
 
-            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/lazysizes.min.js?v=168'
-                type='text/javascript'></script>
+            <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/lazysizes.min.js?v=168' type='text/javascript'></script>
 
 
             <script>
-                $(document).ready(function () {
+                $(document).ready(function() {
                     if ($(window).width() < 768) {
                         $('.top-header.hidden-xs li.choose-store').remove();
                     } else {
@@ -4074,7 +3765,7 @@
 
                         "MOONMILK Nha Trang"
                     ];
-                    store.map(function (itemS) {
+                    store.map(function(itemS) {
                         const checkAStore = listHide.filter((itemH) => (itemS.name === itemH));
                         if (checkAStore.length > 0) {
                             newStoreGet.push(checkAStore[0]);
@@ -4104,7 +3795,7 @@
                         }
                     });
 
-                    $('body').on('click', 'a#site-locale-handle', function () {
+                    $('body').on('click', 'a#site-locale-handle', function() {
                         $('.popupStore .chooseLocation span').text(localStorage.my_location);
                         $('.popupStore .chooseLocation span').attr('data-id', localStorage.location_id);
                         $('.popupStore .chooseLocation span').attr('data-province', localStorage.location_province);
@@ -4119,7 +3810,7 @@
                         $('li.choose-store .header-action_dropdown .chooseLocation span').attr('data-id', localStorage.location_id);
                         $('li.choose-store .header-action__link .shiptoHere').html('<span class="txt-overflow">' + localStorage.my_location + '</span>');
                         if (cartGet != null && cartGet.location_id == null) {
-                            $.post('/location.js?locationId=' + localStorage.location_id).done(function (data) {
+                            $.post('/location.js?locationId=' + localStorage.location_id).done(function(data) {
                                 if (data.error == false) {
                                     window.location.reload();
                                 }
@@ -4130,18 +3821,18 @@
                         $('li.choose-store').addClass('js-action-show');
                     }
                     $('.listprov li label input').eq(0).prop("checked", true);
-                    $('.listprov li label strong').click(function (e) {
+                    $('.listprov li label strong').click(function(e) {
                         e.preventDefault();
                         $('.listprov li label input').prop("checked", false);
                         $(this).parents('label').find('input').prop("checked", true);
                     });
-                    $('.listprov li label input').change(function (e) {
+                    $('.listprov li label input').change(function(e) {
                         e.preventDefault();
                         $('.listprov li label input').prop("checked", false);
                         $(this).prop("checked", true);
                     });
 
-                    $('.btn-style-location').click(function (e) {
+                    $('.btn-style-location').click(function(e) {
                         e.preventDefault();
                         var mylocation = $('.listprov li label input:checked').data('text'),
                             mylocation_id = $('.listprov li label input:checked').data('id'),
@@ -4153,7 +3844,7 @@
                         $('.popupStore .chooseLocation span').attr('data-id', mylocation_id);
                         $('.popupStore .chooseLocation span').attr('data-province', mylocation_province);
                         $('.popupStore .shiptoHere').removeClass('hidden').html('<span class="txt-overflow">' + mylocation + '</span>');
-                        $.post('/location.js?locationId=' + localStorage.location_id).done(function (data) {
+                        $.post('/location.js?locationId=' + localStorage.location_id).done(function(data) {
                             if (data.error == false) {
                                 window.location.reload();
                             }
@@ -4161,7 +3852,7 @@
 
                     });
 
-                    $(document).on('click', '.location-stores .listshop li', function () {
+                    $(document).on('click', '.location-stores .listshop li', function() {
                         var mylocation = $(this).text(),
                             mylocation_id = $(this).data('id'),
                             mylocation_province = $(this).data('province');
@@ -4172,7 +3863,7 @@
                         $('.popupStore .chooseLocation span').attr('data-id', mylocation_id);
                         $('.popupStore .chooseLocation span').attr('data-province', mylocation_province);
                         $('.popupStore .shiptoHere').removeClass('hidden').html('<span class="txt-overflow">' + mylocation + '</span>');
-                        $.post('/location.js?locationId=' + localStorage.location_id).done(function (data) {
+                        $.post('/location.js?locationId=' + localStorage.location_id).done(function(data) {
                             if (data.error == false) {
                                 window.location.reload();
                             }
@@ -4182,13 +3873,13 @@
 
                         var option_province = '<option value="null">- Chọn Tỉnh/Thành -</option>';
                         var option_district = '<option value="null">- Chọn Quận/Huyện -</option>';
-                        $.each(newStore, function (i, v) {
+                        $.each(newStore, function(i, v) {
                             option_province += '<option value="' + i + '">' + i + '</option>';
                         });
                         $('.filter-province').html(option_province);
                         $('.filter-district').html(option_district);
 
-                        $('.filter-province').change(function () {
+                        $('.filter-province').change(function() {
                             var province = $(this).val();
                             var option_province_new = '<option value="null">Chọn Quận/Huyện</option>';
                             if (province != "null" && province != '') {
@@ -4196,7 +3887,7 @@
                                 $('.listprov li[data-province="' + province + '"]').show();
                                 //localStorage.setItem('location_province',province);
                                 if (newStore[province]) {
-                                    $.each(newStore[province], function (i, v) {
+                                    $.each(newStore[province], function(i, v) {
                                         option_province_new += '<option value="' + i + '">' + i + '</option>';
                                     });
                                     $('.filter-district').html(option_province_new);
@@ -4205,7 +3896,7 @@
                                 $('.listprov li').show();
                             }
                         });
-                        $('.filter-district').change(function () {
+                        $('.filter-district').change(function() {
                             var district = $(this).val();
                             var province = $('.filter-province').val();
                             if (district != "null" && district != '') {

@@ -1,24 +1,32 @@
 <?php
 
-use App\Http\Controllers\CourseSuggestController;
 use App\Http\Controllers\SitemapController;
+use App\Livewire\Account;
+use App\Livewire\Addresses;
+use App\Livewire\Cart;
+use App\Livewire\Checkout;
 use App\Livewire\ForgotPassword;
-use App\Livewire\GetCourse;
 use App\Livewire\Home;
 use App\Livewire\Login;
 use App\Livewire\Product;
 use App\Livewire\Register;
 use App\Livewire\Shop;
+use App\Livewire\Thankyou;
 use Illuminate\Support\Facades\Route;
 
  Route::get('/', Home::class);
-Route::get('/get-course', GetCourse::class);
 Route::get('/login', Login::class);
 Route::get('/register', Register::class);
 Route::get('/shop', Shop::class);
 Route::get('/product/{slug}', Product::class);
 Route::get('/forgot-password', ForgotPassword::class);
-Route::post('/api/search-course-suggest', [CourseSuggestController::class, 'search']);
+Route::get('/account', Account::class);
+Route::get('/account/addresses', Addresses::class);
+Route::get('/cart', Cart::class);
+Route::get('/checkout', Checkout::class);
+Route::get('/thankyou', Thankyou::class);
+
+
 Route::get('/sitemap.xml', [
     SitemapController::class,
     'generateSitemap'
