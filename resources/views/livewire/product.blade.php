@@ -1345,7 +1345,7 @@
                                                 <div class="logo">
 
                                                     <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
+                                                        <img src="/logo.png"
                                                             alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                     </a>
                                                     <h1 class="hidden">

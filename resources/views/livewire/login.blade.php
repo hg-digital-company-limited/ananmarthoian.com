@@ -18,8 +18,8 @@
             <meta property="og:type" content="website" />
             <meta property="og:title" content="T&#224;i khoản" />
 
-            <meta property="og:image" content="/assets/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
-            <meta property="og:image" content="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
+            <meta property="og:image" content="/assets/logo.png" />
+            <meta property="og:image" content="/logo.png" />
 
 
 
@@ -1142,7 +1142,7 @@
                                                 <div class="logo">
 
                                                     <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                                        <img src="/logo.png" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                     </a>
                                                     <h1 class="hidden">
                                                         <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM IMPORTED FOOD MARKET</a>
@@ -1184,7 +1184,7 @@
                                         <div class="pull-right mobile-menu-icon-wrapper">
                                             <div class="logo logo-mobile">
                                                 <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                                    <img src="/logo.png" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                 </a>
                                             </div>
                                             <ul class="mobile-menu-icon clearfix">

@@ -103,7 +103,9 @@
                             <div class="logo">
 
                                 <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
+                                    <img src="/logo.png" style="
+                                    max-width: 150px;
+                                "
                                         alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                 </a>
                                 <h1 class="hidden">
@@ -147,7 +149,7 @@
                     <div class="pull-right mobile-menu-icon-wrapper">
                         <div class="logo logo-mobile">
                             <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
+                                <img src="/logo.png"
                                     alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                             </a>
                         </div>

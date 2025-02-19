@@ -23,9 +23,9 @@
                 <meta property="og:title" content="Tin tức" />
 
                 <meta property="og:image"
-                    content="http:/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
+                    content="http:/logo.png" />
                 <meta property="og:image"
-                    content="https:/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168" />
+                    content="https:/logo.png" />
 
 
 
@@ -1224,7 +1224,7 @@
 
                                                         <a href="https://moonmilk.vn"
                                                             title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                            <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
+                                                            <img src="/logo.png"
                                                                 alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                         </a>
                                                         <h1 class="hidden">
@@ -1272,7 +1272,7 @@
                                                 <div class="logo logo-mobile">
                                                     <a href="https://moonmilk.vn"
                                                         title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/logo.png?v=168"
+                                                        <img src="/logo.png"
                                                             alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                     </a>
                                                 </div>
