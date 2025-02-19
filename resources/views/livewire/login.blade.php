@@ -1141,11 +1141,11 @@
                                             <div class="page-header-container">
                                                 <div class="logo">
 
-                                                    <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
+                                                    <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
                                                         <img src="/logo.png" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                     </a>
                                                     <h1 class="hidden">
-                                                        <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM IMPORTED FOOD MARKET</a>
+                                                        <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM IMPORTED FOOD MARKET</a>
                                                     </h1>
 
                                                 </div>
@@ -1183,7 +1183,7 @@
                                         </div>
                                         <div class="pull-right mobile-menu-icon-wrapper">
                                             <div class="logo logo-mobile">
-                                                <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
+                                                <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
                                                     <img src="/logo.png" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                                 </a>
                                             </div>

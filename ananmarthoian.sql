@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 19, 2025 at 01:52 PM
+-- Generation Time: Feb 19, 2025 at 02:25 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -960,7 +960,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('kZsBrPMiaHuCAe59eSZy6IEIfh7Xuw6ujr7oqhRK', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiamxJdFg0RHJFQkZUZEJlUWhzNlY1SXdxbUx6TmFxcjA1dnl1S05LZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1739972556),
-('WOWGpkkAbloQCMG42yc1WqwPABNepCeShLGy6B20', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMDhnZzgyR2ZQRmoxc000VnR6cktnZDNCejhrSnowenFmMTByTmZlMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkZURDRWwzRE5BUS9NWjc4TzdXcFNWLkRNNTFPTXlnMHJXTi42bXlrby8ucnV4d2ZMQ1FtVi4iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1739973145);
+('WOWGpkkAbloQCMG42yc1WqwPABNepCeShLGy6B20', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMDhnZzgyR2ZQRmoxc000VnR6cktnZDNCejhrSnowenFmMTByTmZlMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG9wP2NhdD0yMDgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjM6InVybCI7YTowOnt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MjtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJGVEQ0VsM0ROQVEvTVo3OE83V3BTVi5ETTUxT015ZzByV04uNm15a28vLnJ1eHdmTENRbVYuIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1739975110);
 
 -- --------------------------------------------------------
 

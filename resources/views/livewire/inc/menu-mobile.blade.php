@@ -8,7 +8,7 @@
                 <ul class="child">
                     @foreach($classification->categories as $category)
                         <li>
-                            <a tabindex="-1" href="/collections/{{ $category->slug }}">
+                            <a tabindex="-1" href="/shop?cat={{ $category->id }}">
                                 {{ $category->name }}
                             </a>
                         </li>

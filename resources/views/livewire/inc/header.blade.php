@@ -102,26 +102,25 @@
                         <div class="page-header-container">
                             <div class="logo">
 
-                                <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
+                                <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
                                     <img src="/logo.png" style="
                                     max-width: 150px;
                                 "
                                         alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                 </a>
                                 <h1 class="hidden">
-                                    <a href="https://moonmilk.vn"
+                                    <a href="/"
                                         title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM
                                         IMPORTED FOOD MARKET</a>
                                 </h1>
 
                             </div>
                             <div class="header-search desktop hidden-xs">
-                                <form action="/search">
+                                <form action="/shop" method="get">
                                     <div class="box-search">
                                         <div class="box-input">
-                                            <input type="hidden" name="type" value="product" />
                                             <div class="input-group-search" style="width: calc(100% - 44px);">
-                                                <input type="text" name="q" placeholder="Tìm kiếm ..." />
+                                                <input type="text" name="keyword" placeholder="Tìm kiếm ..." />
                                             </div>
                                             <button type="submit"><i class="fa fa-search"></i></button>
                                         </div>
@@ -148,7 +147,7 @@
                     </div>
                     <div class="pull-right mobile-menu-icon-wrapper">
                         <div class="logo logo-mobile">
-                            <a href="https://moonmilk.vn" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
+                            <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
                                 <img src="/logo.png"
                                     alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                             </a>
@@ -214,7 +213,7 @@
                                     <ul>
                                         @foreach($classification->categories as $category)
                                             <li class="lilala">
-                                                <a href="/collections/{{ $category->slug }}" title="{{ $category->name }}">{{ $category->name }}</a>
+                                                <a href="/shop?cat={{ $category->id }}" title="{{ $category->name }}">{{ $category->name }}</a>
                                             </li>
                                         @endforeach
                                     </ul>
