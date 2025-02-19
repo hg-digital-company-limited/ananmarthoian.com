@@ -13,12 +13,10 @@ class Product extends Model
     protected $fillable = [
         'name',
         'slug',
-        'discount_price',
         'price',
         'image',
         'category_id',
         'sold',
-        'category_name',
     ];
 
     // Khai báo quan hệ với Category

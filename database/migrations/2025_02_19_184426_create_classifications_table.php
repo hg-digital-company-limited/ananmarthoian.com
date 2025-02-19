@@ -1,10 +1,9 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateShopeeTable extends Migration
+class CreateClassificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +12,10 @@ class CreateShopeeTable extends Migration
      */
     public function up()
     {
-        Schema::create('shopee', function (Blueprint $table) {
-            $table->id(); // Khóa chính tự động tăng
-            $table->string('link'); // Trường link
-            $table->timestamps(); // Trường created_at và updated_at
+        Schema::create('classifications', function (Blueprint $table) {
+            $table->id(); // Tạo cột ID tự động
+            $table->string('name'); // Cột tên
+            $table->timestamps(); // Tạo cột created_at và updated_at
         });
     }
 
@@ -27,6 +26,6 @@ class CreateShopeeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shopee');
+        Schema::dropIfExists('classifications');
     }
 }

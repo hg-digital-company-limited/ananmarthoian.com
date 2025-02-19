@@ -17,9 +17,14 @@ class Category extends Model
         'name',
         'slug',
         'image_link',
+        'classification_id',
     ];
     public function products()
     {
-        return $this->hasMany(Product::class)->where('category_name', $this->name);
+        return $this->hasMany(Product::class);
+    }
+    public function classification()
+    {
+        return $this->belongsTo(Classification::class); // Mối quan hệ nhiều - một
     }
 }

@@ -2,35 +2,25 @@
 
 namespace App\Livewire\Inc;
 
-use App\Models\AccessHistory;
+use App\Models\Classification;
+use App\Models\Category;
 use Livewire\Component;
 
 class Header extends Component
 {
+    public $classifications; // Thuộc tính để lưu phân loại
+    public $categories; // Thuộc tính để lưu danh mục
+
     public function mount()
     {
-        $this->recordAccess();
+        // Lấy tất cả phân loại
+        $this->classifications = Classification::with('categories')->get();
     }
-    private function recordAccess()
-    {
-        $today = now()->toDateString(); // Lấy ngày hiện tại
 
-        // Kiểm tra xem bản ghi cho ngày hôm nay đã tồn tại chưa
-        $accessRecord = AccessHistory::where('date', $today)->first();
-
-        if ($accessRecord) {
-            // Nếu đã tồn tại, tăng số lượt truy cập
-            $accessRecord->increment('visit_count');
-        } else {
-            // Nếu chưa tồn tại, tạo mới bản ghi
-            AccessHistory::create([
-                'date' => $today,
-                'visit_count' => 1,
-            ]);
-        }
-    }
     public function render()
     {
-        return view('livewire.inc.header');
+        return view('livewire.inc.header', [
+            'classifications' => $this->classifications, // Truyền phân loại vào view
+        ]);
     }
 }

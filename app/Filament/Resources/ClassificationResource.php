@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ShopeeResource\Pages;
-use App\Filament\Resources\ShopeeResource\RelationManagers;
-use App\Models\Shopee;
+use App\Filament\Resources\ClassificationResource\Pages;
+use App\Filament\Resources\ClassificationResource\RelationManagers;
+use App\Models\Classification;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,18 +13,19 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ShopeeResource extends Resource
+class ClassificationResource extends Resource
 {
-    protected static ?string $model = Shopee::class;
+    protected static ?string $model = Classification::class;
 
-    protected static ?string $navigationLabel = 'Shopee';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationLabel = 'Phân Loại';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('link')
+                Forms\Components\TextInput::make('name')
+                    ->label('Tên Phân Loại')
                     ->required()
                     ->maxLength(255),
             ]);
@@ -34,9 +35,7 @@ class ShopeeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('link')
+                Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
@@ -74,12 +73,13 @@ class ShopeeResource extends Resource
     {
         return static::getModel()::count();
     }
+
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListShopees::route('/'),
-            'create' => Pages\CreateShopee::route('/create'),
-            'edit' => Pages\EditShopee::route('/{record}/edit'),
+            'index' => Pages\ListClassifications::route('/'),
+            'create' => Pages\CreateClassification::route('/create'),
+            'edit' => Pages\EditClassification::route('/{record}/edit'),
         ];
     }
 }
