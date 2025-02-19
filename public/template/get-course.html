@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" crossorigin="anonymous"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://vuakhoahoc.org/asset/css/reset.css">
+    <link rel="stylesheet" href="https://vuakhoahoc.org/asset/css/component2.css">
+    <link rel="stylesheet" href="https://vuakhoahoc.org/asset/css/style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
+    
+    <script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=X3H4ML"></script>
+    <script type="text/javascript">
+    !function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();
+    </script>
+    
+            <script type="text/javascript">
+            klaviyo.identify({});
+        </script>
+        
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="canonical" href="https://vuakhoahoc.org/get-course" />
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04WSBEYY8T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-04WSBEYY8T');
+    </script>
+</head>
+    <body class="darkmode">
+
+        <div class="form-wraper" style="">
+        <form action="https://vuakhoahoc.org/get-course-complete" method="post" id="require-course-form">
+            <input type="hidden" name="_token" value="hGlyyh45XkHAaTuhXGF5vdL9Ib42ESNVIWyyFYHw">            <div class="payment-info">
+                <iconify-icon icon="ooui:previous-ltr" class="back-btn" onclick="history.back()"></iconify-icon>
+                <div class="form-logo" style="display: flex;justify-content: center;margin-bottom: 24px;">
+                    <img src="/asset/img/logo.png" alt="vuakhoahoc">
+                </div>
+                <p class="header-text" style ="text-align: center;">Yêu cầu khóa học mới</p>
+                <div class="payment-info-wraper">
+                        <p style="margin-bottom:20px;">Bạn hãy thử tìm thử tên khóa học ở thanh tìm kiếm trước khi yêu cầu khóa học mới nhé ^^</p>
+                        <div class="label-textbox-comp">
+                            <p class="label-textbox-comp-label">Link khóa học:</p>
+                            <input type="text" class="textbox-comp" style ="height: 55px;text-align: center;" name="link" id="link" placeholder="Link khóa học bạn muốn get">
+                            <p class="label-textbox-comp-error">Thông báo lỗi</p>
+                        </div>
+                        <div class="label-textbox-comp">
+                            <p class="label-textbox-comp-label">Email nhận khóa học:</p>
+                            <input type="text" class="textbox-comp" style ="height: 55px;text-align: center;" name="email" id="email" placeholder="Nhập Email nhận khóa học" value="">
+                            <p class="label-textbox-comp-error">Thông báo lỗi</p>
+                        </div>
+                </div>
+            </div>
+            <input type="submit" class="btn-primary full-width-btn mt-btn" value="Yêu cầu khóa mới" onclick="this.disabled=true;this.value='Đang xử lý...'; this.form.submit();">
+        </form>
+    </div>
+
+    <script src="/asset/js/validation.js"></script>
+    <script>
+        validator({
+            form: "#require-course-form",
+            errorSelector: ".label-textbox-comp-error",
+            rules: [
+                validator.isRequired("#email"),
+                validator.isEmail('#email'),
+                validator.isRequired("#link"),
+            ]
+        })
+    </script>
+
+    <script src="/asset/js/cookie.js"></script>
+    <script src="/asset/js/darkmode.js"></script>
+    <script src="/asset/js/copy-to-clipboard.js"></script>
+    <script>
+        copyToClipboard('.copy-btn');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
