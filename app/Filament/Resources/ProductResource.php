@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class ProductResource extends Resource
 {
@@ -26,12 +27,23 @@ class ProductResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(
+                        fn(string $operation, $state, Forms\Set $set) =>
+                        $operation === 'create' ? $set('slug', Str::slug($state)) : null
+                    )
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
+                ->dehydrated()
+                ->unique(Product::class, ignoreRecord: true)
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('discount_price')
-                    ->numeric(),
+                Forms\Components\Select::make('is_stock')
+                    ->options([
+                        '1' => 'Còn hàng',
+                        '0' => 'Hết hàng',
+                    ])
+                    ->required(),
                 Forms\Components\TextInput::make('price')
                     ->required()
                     ->numeric()
@@ -41,12 +53,9 @@ class ProductResource extends Resource
                 Forms\Components\TextInput::make('sold')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('category_name')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('category_id')
-                    ->required()
-                    ->numeric(),
+                Forms\Components\Select::make('category_id')
+                    ->relationship('category', 'name')
+                ->required()
             ]);
     }
 
@@ -54,24 +63,22 @@ class ProductResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('discount_price')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('price')
                     ->money()
                     ->sortable(),
-                Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('category_id')
+                Tables\Columns\TextColumn::make('category.name')
                     ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('category_name')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('sold')
                     ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('is_stock')
+                    ->badge()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
