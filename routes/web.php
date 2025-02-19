@@ -3,6 +3,8 @@
 use App\Http\Controllers\SitemapController;
 use App\Livewire\Account;
 use App\Livewire\Addresses;
+use App\Livewire\Blog;
+use App\Livewire\BlogDetail;
 use App\Livewire\Cart;
 use App\Livewire\Checkout;
 use App\Livewire\ForgotPassword;
@@ -25,8 +27,8 @@ Route::get('/account/addresses', Addresses::class);
 Route::get('/cart', Cart::class);
 Route::get('/checkout', Checkout::class);
 Route::get('/thankyou', Thankyou::class);
-
-
+Route::get('/blog', Blog::class);
+Route::get('/blog/{slug}', BlogDetail::class);
 Route::get('/sitemap.xml', [
     SitemapController::class,
     'generateSitemap'
