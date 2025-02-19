@@ -349,8 +349,8 @@
                                         <div class="col-lg-12">
                                             <div class="msg-intro">
                                                 <a
-                                                    href="https://moonmilk.vn/blogs/news/thong-bao-lich-hoat-dong-tet-nguyen-dan-2025">SIÊU
-                                                    THỊ THỰC PHẨM MOONMILK</a>
+                                                   >SIÊU
+                                                    THỊ THỰC PHẨM AN AN MART</a>
                                             </div>
                                         </div>
                                     </div>
@@ -367,6 +367,35 @@
                                 <div id="home-banner-slider">
                                     <div class="container">
                                         <div class="list-carousel">
+                                            <div id="slider-01" class=" babyhouse-owl  hide-nav">
+                                                <div class="item slide-1">
+
+                                                    <a
+                                                        href="https://moonmilk.vn/blogs/news/thong-bao-lich-hoat-dong-tet-nguyen-dan-2025">
+                                                        <img src="/assets/a.avif" alt=''>
+
+                                                        <div class="text-desc">
+                                                            <div class="w-content">
+                                                                <div class="content">
+                                                                    <div class="w-cell-content">
+
+                                                                        <div class="meta">
+                                                                            <span class="category"></span>
+                                                                        </div>
+                                                                        <h3 class="heading "></h3>
+                                                                        <p></p>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+
+                                            </div>
                                             <div id="slider-01" class=" babyhouse-owl  hide-nav">
                                                 <div class="item slide-1">
 
@@ -718,13 +747,15 @@
                                             <div class="col-xs-12">
                                                 <div class="home-contact-us">
                                                     <div class="ct-image col-lg-6 col-md-6 col-xs-6 ">
-                                                        <img src="/banner.jpg" style=" width: 400px;"
-                                                            alt="" tittle="">
+                                                        <img src="/banner.jpg" style="
+    width: 400px;
+" alt="" tittle="">
                                                     </div>
                                                     <div class="ct-content col-lg-6 col-md-6 col-xs-12 col-last">
                                                         <span class="heading">An An Mart </span>
                                                         <h2 class="subheading">
-                                                            We are a local mart with the most convenience items: certain household items (dustbin bags, tape).
+                                                            We are a local mart with the most convenience items: certain
+                                                            household items (dustbin bags, tape).
                                                         </h2>
                                                         <h2 class="subheading">191 Lý Thường Kiệt, Hoi An, Vietnam</h2>
                                                         <h2 class="subheading">097 697 95 46</h2>
@@ -754,32 +785,96 @@
                                                         </div>
                                                         <div class="blog-new-home blogh-holder list-articles-resize">
                                                             <div id="blog-new-home" class="blogh-article-list">
-                                                                @foreach($latestBlogs as $blog)
-                                                                    <div class="blog-item item article-resize">
-                                                                        <div class="image-blog image-article-resize">
-                                                                            <img src="{{Storage::url( $blog->banner) }}" alt="{{ $blog->title }}">
+
+
+
+
+
+
+
+                                                                <div class="blog-item item article-resize">
+                                                                    <div class="image-blog image-article-resize">
+
+                                                                        <img src="//file.hstatic.net/200000077081/article/hokubee_banner_web_blog_7cea6f1f7da74ccea36b8926cf848bd5_large.jpg"
+                                                                            alt="Bí quyết " chinh
+                                                                            phục " mọi thực đơn với bò Hokubee:">
+
+
+
+                                                                    </div>
+                                                                    <div class="content-blog clearfix">
+                                                                        <div class="time-blog">
+                                                                            <div class="w-time">
+                                                                                <span class="d-day">28</span>
+                                                                                <span class="hr"></span>
+                                                                                <span class="d-month">06</span>
+                                                                            </div>
                                                                         </div>
-                                                                        <div class="content-blog clearfix">
-                                                                            <div class="time-blog">
-                                                                                <div class="w-time">
-                                                                                    <span class="d-day">{{ $blog->created_at->format('d') }}</span>
-                                                                                    <span class="hr"></span>
-                                                                                    <span class="d-month">{{ $blog->created_at->format('m') }}</span>
-                                                                                </div>
+                                                                        <div class="desc-blog">
+                                                                            <h4 class="postTitle">
+                                                                                <a
+                                                                                    href="/blogs/metique-hokubee-steak/chinh-phuc-thuc-don-voi-bo-hokubee">
+                                                                                    Bí quyết "chinh phục" mọi thực đơn
+                                                                                    với bò
+                                                                                    Hokubee:
+                                                                                </a>
+                                                                            </h4>
+                                                                            <div class="trunc-blog">
+                                                                                <p>Bò Hokubee - "Ngôi sao" thịt bò Úc
+                                                                                    đang dần chinh phục các tín đồ ẩm
+                                                                                    thực bởi hương vị thơm ngon, độ mềm
+                                                                                    mại...</p>
                                                                             </div>
-                                                                            <div class="desc-blog">
-                                                                                <h4 class="postTitle">
-                                                                                    <a href="/blogs/{{ $blog->slug }}" title="{{ $blog->title }}">
-                                                                                        {{ $blog->title }}
-                                                                                    </a>
-                                                                                </h4>
-                                                                                <div class="trunc-blog">
-                                                                                    <p>{{ Str::limit($blog->short_description, 100) }}</p> <!-- Giới hạn độ dài nội dung -->
-                                                                                </div>
-                                                                            </div>
+
                                                                         </div>
                                                                     </div>
-                                                                @endforeach
+                                                                </div>
+
+
+
+
+
+
+
+                                                                <div class="blog-item item article-resize">
+                                                                    <div class="image-blog image-article-resize">
+
+                                                                        <img src="//file.hstatic.net/200000077081/article/hokubee_ribeye_3ee0ac14e72a4859ae1d19339b7a6ff3_large.jpg"
+                                                                            alt="Bò Hokubee - " Ngôi
+                                                                            sao " thịt bò Úc chinh phục thực khách Việt">
+
+
+
+                                                                    </div>
+                                                                    <div class="content-blog clearfix">
+                                                                        <div class="time-blog">
+                                                                            <div class="w-time">
+                                                                                <span class="d-day">27</span>
+                                                                                <span class="hr"></span>
+                                                                                <span class="d-month">06</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="desc-blog">
+                                                                            <h4 class="postTitle">
+                                                                                <a
+                                                                                    href="/blogs/metique-hokubee-steak/bo-hokubee-ngoi-sao-thit-bo-uc">
+                                                                                    Bò Hokubee - "Ngôi sao" thịt bò Úc
+                                                                                    chinh
+                                                                                    phục thực khách Việt
+                                                                                </a>
+                                                                            </h4>
+                                                                            <div class="trunc-blog">
+                                                                                <p>"Ngôi sao" thịt bò Úc - Meltique
+                                                                                    Hokubee Beef SteakTừ lâu, thịt bò đã
+                                                                                    trở thành nguyên liệu quen thuộc
+                                                                                    trong bữa ăn của người...
+                                                                                </p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                     </div>

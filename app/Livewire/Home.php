@@ -4,26 +4,33 @@ namespace App\Livewire;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Blog; // Thêm dòng này
 use Livewire\Component;
 
 class Home extends Component
 {
-    public $categories;
-    public $top10product;
-    public $newproduct;
-    public $randomproduct;
-    public $products;
+    public $newestProducts;
+    public $bestSellingProducts;
+    public $latestBlogs; // Thêm biến này để chứa blog
 
     public function mount()
     {
-        $this->categories = Category::all();
-        $this->top10product = Product::orderBy('sold', 'desc')->take(10)->get();
-        $this->newproduct = Product::orderBy('created_at', 'desc')->take(10)->get();
-        $this->randomproduct = Product::inRandomOrder()->take(10)->get();
-        $this->products = Product::all();
+        // Lấy 6 sản phẩm mới nhất
+        $this->newestProducts = Product::orderBy('created_at', 'desc')->take(10)->get();
+
+        // Lấy 6 sản phẩm bán chạy nhất
+        $this->bestSellingProducts = Product::orderBy('sold', 'desc')->take(10)->get();
+
+        // Lấy 6 bài viết mới nhất
+        $this->latestBlogs = Blog::orderBy('created_at', 'desc')->take(6)->get();
     }
+
     public function render()
     {
-        return view('livewire.home');
+        return view('livewire.home', [
+            'newestProducts' => $this->newestProducts,
+            'bestSellingProducts' => $this->bestSellingProducts,
+            'latestBlogs' => $this->latestBlogs, // Truyền biến blog vào view
+        ]);
     }
 }
