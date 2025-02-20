@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 20, 2025 at 02:17 PM
+-- Generation Time: Feb 20, 2025 at 03:00 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -264,7 +264,66 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (7, '2025_02_02_073230_create_settings_table', 5),
 (8, '2025_02_19_184426_create_classifications_table', 6),
 (9, '2025_02_19_184914_add_classification_id_to_categories_table', 7),
-(10, '2025_02_20_203604_add_full_name_address_phone_to_users_table', 8);
+(10, '2025_02_20_203604_add_full_name_address_phone_to_users_table', 8),
+(11, '2025_02_20_214736_create_orders_table', 9),
+(12, '2025_02_20_215123_add_shipping_method_to_orders_table', 10),
+(13, '2025_02_20_215646_create_order_items_table', 11);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` bigint UNSIGNED NOT NULL,
+  `user_id` bigint UNSIGNED NOT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `full_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `total` decimal(10,2) NOT NULL,
+  `shipping_method` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `address`, `phone`, `full_name`, `status`, `total`, `shipping_method`, `created_at`, `updated_at`) VALUES
+(1, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1129.00', 'cod', '2025-02-20 14:54:04', '2025-02-20 14:54:04'),
+(2, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1129.00', 'cod', '2025-02-20 14:54:07', '2025-02-20 14:54:07'),
+(3, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1129.00', 'cod', '2025-02-20 14:54:08', '2025-02-20 14:54:08'),
+(4, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1129.00', 'cod', '2025-02-20 14:54:09', '2025-02-20 14:54:09'),
+(5, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1129.00', 'cod', '2025-02-20 14:54:34', '2025-02-20 14:54:34'),
+(6, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '0.00', 'cod', '2025-02-20 14:55:53', '2025-02-20 14:55:53'),
+(7, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '619.07', 'pickup', '2025-02-20 14:59:30', '2025-02-20 14:59:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_items`
+--
+
+CREATE TABLE `order_items` (
+  `id` bigint UNSIGNED NOT NULL,
+  `order_id` bigint UNSIGNED NOT NULL,
+  `product_id` bigint UNSIGNED NOT NULL,
+  `quantity` int NOT NULL,
+  `price` decimal(30,2) NOT NULL,
+  `total` decimal(30,2) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `order_items`
+--
+
+INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `price`, `total`, `created_at`, `updated_at`) VALUES
+(1, 7, 3, 1, '619.07', '619.07', '2025-02-20 14:59:30', '2025-02-20 14:59:30');
 
 -- --------------------------------------------------------
 
@@ -951,9 +1010,10 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Gw2nwlEwoh3RJm84PmwgRXerbYS1moYC83643lxl', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiQXJyUkxWbHFoVUt6MkxZcFJ0ekt3TkNzZWN0RXh0NWJJRVBEZG5TNyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hY2NvdW50Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovLzEyNy4wLjAuMTo4MDAwL2FkbWluIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mjt9', 1740061011),
+('8rKdy0LY713WDW03oZEeeGqZYS9p15oczonVwPPF', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQ1RMakhPdExJYklKY1gyVkxUdVg0R2ppMkF2VjJmbmttQVNHZE1PQiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jaGVja291dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1740062257),
 ('mySxEUvJ1NxAL8EASILaR2A5halwbquHFUgaeSna', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRUVBVkprV0k5dWpkdlliY2VSNlB5M0hEQzRrSE50RzYwcWZBRE0zZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1740057994),
-('X6pvQwxZeLROHAudYkqLL0J6SgB2BXL5iU1dSwEg', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoielJWSnNodFZPTElRaXExdHBwOWcwUjZNNVB6UEY1QThPem1MaTlJOCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1740057907);
+('X6pvQwxZeLROHAudYkqLL0J6SgB2BXL5iU1dSwEg', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoielJWSnNodFZPTElRaXExdHBwOWcwUjZNNVB6UEY1QThPem1MaTlJOCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1740057907),
+('ZNTWQVmi8DSuiibH41FwZGXYaAPqyy7Y6rYHaNqM', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiQXJyUkxWbHFoVUt6MkxZcFJ0ekt3TkNzZWN0RXh0NWJJRVBEZG5TNyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjE6e3M6ODoiaW50ZW5kZWQiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7fQ==', 1740063630);
 
 -- --------------------------------------------------------
 
@@ -1077,6 +1137,21 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `orders_user_id_foreign` (`user_id`);
+
+--
+-- Indexes for table `order_items`
+--
+ALTER TABLE `order_items`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `order_items_order_id_foreign` (`order_id`),
+  ADD KEY `order_items_product_id_foreign` (`product_id`);
+
+--
 -- Indexes for table `password_reset_tokens`
 --
 ALTER TABLE `password_reset_tokens`
@@ -1155,7 +1230,19 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `order_items`
+--
+ALTER TABLE `order_items`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -1184,6 +1271,19 @@ ALTER TABLE `users`
 --
 ALTER TABLE `categories`
   ADD CONSTRAINT `categories_classification_id_foreign` FOREIGN KEY (`classification_id`) REFERENCES `classifications` (`id`);
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `order_items`
+--
+ALTER TABLE `order_items`
+  ADD CONSTRAINT `order_items_order_id_foreign` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `order_items_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `products`

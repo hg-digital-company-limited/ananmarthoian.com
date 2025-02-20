@@ -28,7 +28,7 @@ Route::get('/account/addresses', Addresses::class)->name('addresses');
 Route::get('/account/order/{id}', Order::class);
 Route::get('/cart', Cart::class)->name('cart');
 Route::get('/checkout', Checkout::class);
-Route::get('/thankyou', Thankyou::class);
+Route::get('/thankyou/{id}', Thankyou::class);
 Route::get('/blog', Blog::class);
 Route::get('/blog/{slug}', BlogDetail::class);
 Route::get('/sitemap.xml', [
