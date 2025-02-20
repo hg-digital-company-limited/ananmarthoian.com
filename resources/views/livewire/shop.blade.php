@@ -498,8 +498,8 @@
                                                                                         <p class="tongGia">
                                                                                             Total: <span class="tonggiaonap">{{ number_format($product->price, 0, ',', '.') }}₫</span>
                                                                                         </p>
-                                                                                        <a href="" class="btnBuyNow hvr-bob">
-                                                                                            <img src="//theme.hstatic.net/200000077081/1001259549/14/iconBuyNow.png?v=168">
+                                                                                        <a   href="javascript:void(0);" wire:click="addToCart({{ $product->id }}, 1)" class=" hvr-bob">
+                                                                                            <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/iconBuyNow.png?v=168">
                                                                                         </a>
                                                                                     </div>
                                                                                 </div>

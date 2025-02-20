@@ -541,6 +541,9 @@
                                                                         <img class="lazyload"
                                                                             src="{{Storage::url($product->image) }}"
                                                                             alt="{{ $product->name }}" />
+                                                                            @if($product->is_stock == 0)
+                                                                            <img class="lblSold" src="/assets/theme.hstatic.net/200000077081/1001259549/14/lblsold_vi.png?v=168" alt="Hết hàng">
+                                                                        @endif
                                                                     </a>
                                                                     <div class="field-new countdown_{{ $product->id }}"
                                                                         style="display: none">
@@ -635,6 +638,9 @@
                                                                         <img class="lazyload" src="1x1.png"
                                                                             data-src="{{ Storage::url($product->image)  }}"
                                                                             alt="{{ $product->name }}" />
+                                                                            @if($product->is_stock == 0)
+                                                                            <img class="lblSold" src="/assets/theme.hstatic.net/200000077081/1001259549/14/lblsold_vi.png?v=168" alt="Hết hàng">
+                                                                        @endif
                                                                     </a>
                                                                     <div class="field-new countdown_{{ $product->id }}"
                                                                         style="display: none">
