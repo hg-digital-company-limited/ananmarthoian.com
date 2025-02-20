@@ -344,7 +344,7 @@
                                                 <li><a href="/" target="_self">Trang chủ</a></li>
 
                                                 <li><i class="fa fa-angle-right"></i></li>
-                                                <li class="active"><span>Giỏ hàng của bạn - AN AN MARKET</span></li>
+                                                <li class="active"><span>Giỏ hàng của bạn - AN AN MART</span></li>
 
                                             </ol>
                                         </div>

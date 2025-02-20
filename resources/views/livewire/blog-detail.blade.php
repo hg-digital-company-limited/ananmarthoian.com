@@ -10,7 +10,7 @@
                 <meta charset="utf-8" />
                 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
                 <title>
-                    🎉 THÔNG BÁO LỊCH HOẠT ĐỘNG TẾT NGUYÊN ĐÁN 2025 🎉 AN AN MARKET
+                    🎉 THÔNG BÁO LỊCH HOẠT ĐỘNG TẾT NGUYÊN ĐÁN 2025 🎉 AN AN MART
                 </title>
 
                 <meta name="description" content="Thông báo lịch hoạt động" />

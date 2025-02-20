@@ -3,7 +3,7 @@
 
         <head>
             <title>
-                Tài khoản - AN AN MARKET
+                Tài khoản - AN AN MART
             </title>
 
             <link rel="stylesheet" href="/assets/style.css">

@@ -7,8 +7,8 @@
 
                     <div class="col-md-4" id="company_info">
 
-                        <h4 class="small-title">CÔNG TY TNHH Moonmilk</h4>
-                        <p class="mst">Moonmilk.vn - Nha Trang, Đà Nẵng, Hội An</p>
+                        <h4 class="small-title">AN AN MART</h4>
+                        <p class="mst">HOI AN ALCOHOL SHOP - Wine Store - BIA RƯỢU- VANG HỘI AN</p>
                     </div>
 
 
@@ -57,13 +57,12 @@
                         <div class="col-md-4 col-sm-6 col-xs-12 border-right wow animated fadeInUp"
                             data-wow-delay="100ms">
                             <div class="footer-block toggle-mb" id="block_links_footer_2">
-                                <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông tin công ty
+                                <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông tin Doanh Nghiệp
                                     <i class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
                                 </h4>
                                 <div class="block_content toggle-mb-content">
-                                    CÔNG TY TNHH MOONMILK<br /> Địa chỉ: Tổ 13 Đường Đệ, Phường Vĩnh Hoà, Thành phố Nha
-                                    Trang, Tỉnh Khánh Hòa, Việt Nam.<br /> GPKD số 4201570744 cấp ngày 09/01/2023 tại Sở
-                                    kế hoạch và Đầu tư tỉnh Khánh Hòa<br />
+                                    SIÊU THI AN AN MART HỘI AN<br /> Địa chỉ: 191 Lý Thường Kiệt, Phường Minh An, Hội
+                                    An, Quảng Nam, Việt Nam.
 
                                 </div>
                             </div>
@@ -73,37 +72,17 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 border-right wow animated fadeInUp"
                             data-wow-delay="100ms">
                             <div class="footer-block toggle-mb" id="block_links_footer_1">
-                                <h4 class="title_block toggle-mb-title" aria-expanded="false">Thông tin hỗ trợ <i
+                                <h4 class="title_block toggle-mb-title" aria-expanded="false">DANH MỤC SẢN PHẨM <i
                                         class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i></h4>
                                 <div class="block_content toggle-mb-content">
                                     <ul class="toggle-footer list-group bullet">
-
-                                        <li class="item">
-                                            <a href="/pages/chinh-sach-doi-tra" title="Chính sách đổi trả">Chính sách
-                                                đổi trả</a>
-                                        </li>
-
-                                        <li class="item">
-                                            <a href="/pages/chinh-sach-bao-mat" title="Chính sách bảo mật">Chính sách
-                                                bảo mật</a>
-                                        </li>
-
-                                        <li class="item">
-                                            <a href="/pages/huong-dan-mua-hang"
-                                                title="Hướng dẫn mua hàng và thanh toán">Hướng dẫn mua hàng
-                                                và thanh toán</a>
-                                        </li>
-
-                                        <li class="item">
-                                            <a href="/pages/chinh-sach-van-chuyen" title="Chính sách vận chuyển">Chính
-                                                sách vận chuyển</a>
-                                        </li>
-
-                                        <li class="item">
-                                            <a href="/pages/chinh-sach-kiem-hang" title="Chính sách kiểm hàng">Chính
-                                                sách kiểm hàng</a>
-                                        </li>
-
+                                        @foreach ($classifications as $classification)
+                                            <li class="item">
+                                                <a href="/shop?classification={{ $classification->id }}" title="{{ $classification->name }}">
+                                                    {{ $classification->name }} <!-- Hiển thị tên phân loại -->
+                                                </a>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -123,73 +102,10 @@
                                 <div class="block_content toggle-mb-content text-left">
                                     <div class="block_content_contact_ft">
                                         <ul>
-
-
-
-
-
                                             <li>
-                                                <b>Nha Trang:</b><br /> 15 Trần Hưng Đạo, Lộc Thọ - <a
-                                                    href="tel:0917523288">0917 523 288</a><br /> 63 Nguyễn Thiện Thuật,
-                                                Lộc Thọ - <a href="tel:0903561639">0903 561
-                                                    639</a><br /> Kiot 18 Mường Thanh Viễn Triều, Hòn Chồng - <a
-                                                    href="tel:0905 776 039">0905 776 039</a><br /> KLB, 1A, Đô thị An
-                                                Viên, Vĩnh Trường - <a href="tel:0905 096 616">0905 096 616</a><br />
-                                                18-19 Phạm Văn Đồng, Vĩnh Hải - <a href="tel:0935 937 537">0935 937
-                                                    537</a>
+                                                <b>Hội An:</b><br /> 191 Lý Thường Kiệt, Phường Minh An, Hội An, <br>
+                                                Quảng Nam - <a href="tel:0976979546">097 697 95 46</a>
                                             </li>
-
-
-
-
-
-
-                                            <li>
-                                                <b>Đà Nẵng</b><br /> Lô 21-22 Trần Bạch Đằng, Mỹ An - <a
-                                                    href="tel:0905176066">0905 176 066</a><br /> 136 Nguyễn Văn Thoại,
-                                                Mỹ An - <a href="tel:0904566006">0904 566
-                                                    006</a><br /> 116 Hồ Nghinh, An Hải Bắc, Sơn Trà - <a
-                                                    href="tel:0935966479">0935 966
-                                                    479</a>
-                                            </li>
-
-
-
-
-
-
-                                            <li>
-                                                <b>Hội An:</b><br /> 241 Cửa Đại, Cẩm Châu - <a
-                                                    href="tel:0914322577">0914 322 577</a><br /> 712 Hai Bà Trưng - <a
-                                                    href="tel:0905033035">0905 033 035</a>
-                                            </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                         </ul>
                                     </div>
                                     <div class="footer-static-content">
@@ -283,33 +199,28 @@
                             data-wow-delay="150ms">
 
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center wow animated fadeInUp"
-                            data-wow-delay="150ms">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center wow animated fadeInUp">
                             <!-- Histats.com  (div with counter) -->
                             <div id="histats_counter"></div>
                             <!-- Histats.com  START  (aync)-->
-                            <script type="text/javascript">
-                                var _Hasync = _Hasync || [];
-                                _Hasync.push(['Histats.start', '1,4388606,4,15,170,40,00010000']);
+                            <script type="text/javascript">var _Hasync = _Hasync || [];
+                                _Hasync.push(['Histats.start', '1,4930615,4,10,200,40,00011111']);
                                 _Hasync.push(['Histats.fasi', '1']);
                                 _Hasync.push(['Histats.track_hits', '']);
                                 (function () {
-                                    var hs = document.createElement('script');
-                                    hs.type = 'text/javascript';
-                                    hs.async = true;
+                                    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
                                     hs.src = ('//s10.histats.com/js15_as.js');
                                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-                                })();
-                            </script>
-                            <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4388606&101"
+                                })();</script>
+                            <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4930615&101"
                                         alt="" border="0"></a></noscript>
                             <!-- Histats.com  END  -->
+
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-right wow animated fadeInRight"
                             data-wow-delay="150ms">
                             <div class="copyright">
-                                <p>&copy; Bản quyền thuộc về <a href="#" target="_blank">Công ty TNHH
-                                        Moonmilk.</a></p>
+                                <p>&copy; Bản quyền thuộc về <a href="#" target="_blank">AN AN MART</a></p>
                             </div>
 
                         </div>
@@ -370,7 +281,8 @@
                             <div class="col-lg-6">
                                 <div class="comeback">
                                     <a href="/collections/all">
-                                        <img src="/assets/hstatic.net/0/0/global/design/theme-default/icon-tieptuc.png" />Tiếp
+                                        <img
+                                            src="/assets/hstatic.net/0/0/global/design/theme-default/icon-tieptuc.png" />Tiếp
                                         tục mua hàng
                                     </a>
                                 </div>
@@ -806,10 +718,6 @@
             }
         });
     </script>
-
-
-
-
     <div class="back-to-top">
         <a href="javascript:void(0);">
             <svg class="ico-back-top div-user-control control-4">

@@ -8,7 +8,7 @@
             <meta charset="utf-8" />
             <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
             <title>
-                Tạo tài khoản AN AN MARKET
+                Tạo tài khoản AN AN MART
             </title>
 
             <meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0' name='viewport' />

@@ -8,7 +8,7 @@
             <meta charset="utf-8" />
             <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
             <title>
-                Nạc vai heo tươi CP - CP Fresh Pork Shoulder - MOONMILK AN AN MARKET
+                Nạc vai heo tươi CP - CP Fresh Pork Shoulder - MOONMILK AN AN MART
             </title>
 
             <meta name="description"
