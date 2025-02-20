@@ -2,19 +2,20 @@
     <div class="top-header hidden-xs clearfix">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 sl-header-text">
 
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs">
+                <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs" style="
+                justify-content: center;
+                display: flex;
+            ">
                     <ul class="log-cart hidden-xs">
                         <li class="choose-store">
                             <a class="header-action__link header-action_clicked" href="javascript:void(0);"
                                 id="site-locale-handle" aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
                                 <span class="box-text ">
                                     <span class="txtnw">Giao hoặc đến lấy tại :</span>
-                                    <span class="txtbl shiptoHere">
-                                        <span class="txt-overflow">
-
+                                    <span class=" ">
+                                        <span class="">
+                                            191 Lý Thường Kiệt, Hoi An, Vietnam
                                         </span>
                                     </span>
                                 </span>
@@ -28,8 +29,12 @@
                             </span>
 
                         </li>
-                        <li class="resig"><a href="/account"><i class="fa fa-user" aria-hidden="true"></i><span
-                                    class="css">Đăng nhập / Đăng ký</span></a>
+                        <li class="resig">
+                            @if ($isAuthenticated)
+                                <a href="/account"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Tài khoản của tôi</span></a>
+                            @else
+                                <a href="/login"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Đăng nhập / Đăng ký</span></a>
+                            @endif
                         </li>
                         <li class="cart-info hidden-xs">
                             <a class="cart-link" href="/cart">
@@ -38,48 +43,35 @@
                                     <i class="fa fa-shopping-cart icon-bag-cart" aria-hidden="true"></i>
                                 </span>
                                 <div class="cart-number">
-                                    1
+                                    {{ count($cartItems) }} <!-- Số lượng sản phẩm trong giỏ hàng -->
                                 </div>
                             </a>
                             <div class="cart-view clearfix" style="display: none;">
-                                <table id="clone-item-cart" class="table-clone-cart">
-                                    <tr class="item_2 hidden">
-                                        <td class="img">
-                                            <a href="" title=""><img src="" alt="" /></a>
-                                        </td>
-                                        <td>
-                                            <a class="pro-title-view" href="" title=""></a>
-                                            <span class="pro-quantity-view"></span>
-                                            <span class="pro-price-view"></span>
-                                        </td>
-                                    </tr>
-                                </table>
                                 <table id="cart-view">
-
-
+                                    @foreach($cartItems as $item)
                                     <tr>
                                         <td class="img">
-                                            <a href="/products/rosemary-steak-fuji-200g">
-                                                <img src="  /assets/product.hstatic.net/200000077081/product/da3d65ca1b6d4953af8f2a5212f5f1b7_c348e0e3886146738240d8e29b5ecc4d_medium.jpg"
-                                                    alt="ME.B- Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7" />
+                                            <a href="/product/{{ $item['product_slug'] }}"
+                                            style="width: 80px;justify-content: center;display: flex;"
+                                            >
+                                                <img src="{{ Storage::url($item['image']) }}" alt="{{ $item['name'] }}"  style="height: 50px; width: initial;"/>
                                             </a>
                                         </td>
                                         <td>
-                                            <a class="pro-title-view" href="/products/rosemary-steak-fuji-200g"
-                                                title="ME.B- Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7">ME.B-
-                                                Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7</a>
-                                            <span class="pro-quantity-view">Số lượng: 1</span>
-                                            <span class="pro-price-view">Giá: 167,000₫</span>
+                                            <a class="pro-title-view" href="/product/{{ $item['product_slug'] }}" title="{{ $item['name'] }}">
+                                                {{ $item['name'] }}
+                                            </a>
+                                            <span class="pro-quantity-view">Số lượng: {{ $item['quantity'] }}</span>
+                                            <span class="pro-price-view">Giá: {{ number_format($item['price'], 0, ',', '.') }}₫</span>
                                         </td>
                                     </tr>
-
-
+                                    @endforeach
                                 </table>
                                 <span class="line"></span>
                                 <table class="table-total">
                                     <tr>
                                         <td align="left">TỔNG TIỀN:</td>
-                                        <td align="right" id="total-view-cart">167,000₫</td>
+                                        <td align="right" id="total-view-cart">{{ number_format($totalPrice, 0, ',', '.') }}₫</td>
                                     </tr>
                                     <tr>
                                         <td><a href="/cart" class="linktocart">Xem giỏ hàng</a></td>
@@ -297,5 +289,11 @@
             }
         })
     </script>
-
+<style>
+    li.choose-store {
+    margin-right: 15px;
+    position: relative;
+    max-width: 100%;
+}
+</style>
 </div>

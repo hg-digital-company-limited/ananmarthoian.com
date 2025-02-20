@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'full_name',  // Thêm cột full_name
+        'address',    // Thêm cột address
+        'phone',      // Thêm cột phone
     ];
 
     /**
