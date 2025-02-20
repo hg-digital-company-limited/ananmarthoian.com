@@ -402,22 +402,28 @@
                                                 <div class="row">
 
                                                     <div class="col-xs-12 hidden-sm hidden-xs">
-                                                        <div class=" banner-collection-header">
-                                                            @if($categoryInfo)
-                                                                <img src="{{ Storage::url($categoryInfo->image_link) }}"
-                                                                    alt="{{ $categoryInfo->name }}" />
-                                                            @else
+                                                        <div class="banner-collection-header">
+                                                            @if($categoryInfo && $categoryInfo->image_link)
+                                                                <img src="{{ Storage::url($categoryInfo->image_link) }}" alt="{{ $categoryInfo->name }}" />
                                                             @endif
                                                         </div>
                                                     </div>
 
                                                     <div class="col-xs-12">
                                                         <div class="box-title-collection clearfix">
+
+
+                                                            @if(request()->has('keyword'))
+                                                            <h1>
+                                                                Kết quả tìm kiếm :  {{ request()->get('keyword') }}
+                                                            </h1>
+                                                            @else
                                                             <h1>
                                                                 {{ $categoryInfo ? $categoryInfo->name : 'Tất cả danh mục' }}
                                                             </h1>
+                                                            @endif
                                                             <span class="collection-size">
-                                                                {{ $categoryInfo ? '(' . $totalProducts . ' sản phẩm)' : '' }}
+                                                                {{ '(' . $totalProducts . ' sản phẩm)'  }}
                                                             </span>
                                                         </div>
                                                     </div>
@@ -439,6 +445,10 @@
                                                                                 <a href="{{  $product->slug }}" title="{{ $product->name }}">
                                                                                     <img class="lazyload" src="1x1.png"
                                                                                         data-src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" />
+                                                                                        @if($product->is_stock == 0)
+                                                                                        <img class="lblSold" src="/assets/theme.hstatic.net/200000077081/1001259549/14/lblsold_vi.png?v=168" alt="Hết hàng">
+                                                                                    @endif
+
                                                                                 </a>
                                                                                 <div class="field-new countdown_{{ $product->id }}" style="display: none">
                                                                                     <span>new</span>

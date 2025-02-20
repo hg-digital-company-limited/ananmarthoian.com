@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 19, 2025 at 02:25 PM
+-- Generation Time: Feb 20, 2025 at 11:23 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -34,15 +34,6 @@ CREATE TABLE `access_history` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `access_history`
---
-
-INSERT INTO `access_history` (`id`, `date`, `visit_count`, `created_at`, `updated_at`) VALUES
-(3, '2025-02-01', 38, '2025-02-01 10:13:12', '2025-02-01 12:14:21'),
-(4, '2025-02-02', 38, '2025-02-02 00:30:54', '2025-02-02 00:52:31'),
-(5, '2025-02-19', 30, '2025-02-19 04:11:35', '2025-02-19 11:40:16');
 
 -- --------------------------------------------------------
 
@@ -959,8 +950,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('kZsBrPMiaHuCAe59eSZy6IEIfh7Xuw6ujr7oqhRK', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiamxJdFg0RHJFQkZUZEJlUWhzNlY1SXdxbUx6TmFxcjA1dnl1S05LZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1739972556),
-('WOWGpkkAbloQCMG42yc1WqwPABNepCeShLGy6B20', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMDhnZzgyR2ZQRmoxc000VnR6cktnZDNCejhrSnowenFmMTByTmZlMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG9wP2NhdD0yMDgiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjM6InVybCI7YTowOnt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MjtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJGVEQ0VsM0ROQVEvTVo3OE83V3BTVi5ETTUxT015ZzByV04uNm15a28vLnJ1eHdmTENRbVYuIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1739975110);
+('tsHc9bUxj90Qj25JyPEA4PGUpY4mXdLfvBMtEkul', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQXJyUkxWbHFoVUt6MkxZcFJ0ekt3TkNzZWN0RXh0NWJJRVBEZG5TNyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1740050514);
 
 -- --------------------------------------------------------
 
