@@ -16,7 +16,7 @@
                         <h4 class="small-title">Kết nối chúng tôi qua </h4>
                         <div>
 
-                            <a href="https://www.facebook.com/moonmilknhatrang" target="_blank" class="icon_fa">
+                            <a href="https://www.facebook.com/Hoianalcohoshop/" target="_blank" class="icon_fa">
                                 <i class="fa fa-facebook"></i>
                             </a>
 
@@ -36,7 +36,7 @@
                             </a>
 
 
-                            <a href="https://zalo.me/0905053322" target="_blank" class="icon_fa">
+                            <a href="https://zalo.me/0976979546" target="_blank" class="icon_fa">
                                 <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/zalo.png?v=168">
                             </a>
 
