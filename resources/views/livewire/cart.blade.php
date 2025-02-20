@@ -344,8 +344,7 @@
                                                 <li><a href="/" target="_self">Trang chủ</a></li>
 
                                                 <li><i class="fa fa-angle-right"></i></li>
-                                                <li class="active"><span>Giỏ hàng của bạn - MOONMILK - PREMIUM IMPORTED
-                                                        FOOD MARKET</span></li>
+                                                <li class="active"><span>Giỏ hàng của bạn - AN AN MARKET</span></li>
 
                                             </ol>
                                         </div>
@@ -356,7 +355,6 @@
                                 <div class="container">
                                     <div class="row" id="cart">
                                         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-
                                             <h2 class="coll-title cart-title">Giỏ hàng</h2>
                                             <form action="/cart" method="post" id="cartform">
                                                 <div class="clearfix overflow-cart">
@@ -370,71 +368,55 @@
                                                             <th></th>
                                                         </tr>
 
+                                                        @foreach($cartItems as $item)
                                                         <tr>
                                                             <td>
-                                                                <a href="/products/rosemary-steak-fuji-200g">
-                                                                    <img src="  //product.hstatic.net/200000077081/product/da3d65ca1b6d4953af8f2a5212f5f1b7_c348e0e3886146738240d8e29b5ecc4d_medium.jpg"
-                                                                        alt="ME.B- Rosemary Short Loin Steak Fuji 200g (ORANGE PACKAGE) T7" />
+                                                                <a href="/product/{{ $item['product_slug'] }}">
+                                                                    <img src="{{ Storage::url( $item['image']) }}" alt="{{ $item['name'] }}" style="max-height: 100px"/>
                                                                 </a>
                                                             </td>
                                                             <td style="text-align:left;max-width:300px;">
-                                                                <a href="/products/rosemary-steak-fuji-200g">
-                                                                    <strong>ME.B- Rosemary Short Loin Steak Fuji 200g
-                                                                        (ORANGE PACKAGE) T7</strong>
-
+                                                                <a href="/product/{{ $item['product_slug'] }}">
+                                                                    <strong>{{ $item['name'] }}</strong>
                                                                 </a>
                                                             </td>
-                                                            <td>167,000₫</td>
+                                                            <td>{{ number_format($item['price'], 0, ',', '.') }}₫</td>
                                                             <td class="qty">
-                                                                <input type="number" size="4" name="updates[]" min="1"
-                                                                    id="updates_1125857376" value="1"
-                                                                    onfocus="this.select();" class="tc item-quantity" />
+                                                                <input type="number" size="4" name="updates[{{ $item['product_id'] }}]" min="1"
+                                                                       value="{{ $item['quantity'] }}" wire:change="incrementQuantity({{ $item['product_id'] }})"
+                                                                       class="tc item-quantity" />
                                                             </td>
-                                                            <td class="price hidden-xs">167,000₫</td>
+                                                            <td class="price hidden-xs">{{ number_format($item['total_amount'], 0, ',', '.') }}₫</td>
                                                             <td class="remove">
-                                                                <a href="/cart/change?line=1&quantity=0"
-                                                                    class="cart"><img
-                                                                        src="/assets/theme.hstatic.net/200000077081/1001259549/14/remove-cart.png?v=168" /></a>
+                                                                <a href="javascript:void(0);" wire:click="removeItem({{ $item['product_id'] }})">
+                                                                    <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/remove-cart.png?v=168" />
+                                                                </a>
                                                             </td>
                                                         </tr>
-
+                                                        @endforeach
                                                     </table>
                                                 </div>
 
                                                 <div class="clearfix">
-                                                    <a class="continue-shopping" title="Mua tiếp" href="/">Mua tiếp</a>
-                                                    <button class="update-cart" name="submit">Cập nhật giỏ hàng</button>
+                                                    <a class="continue-shopping" title="Mua tiếp" href="/shop">Mua tiếp</a>
+                                                    <a class="continue-shopping" title="Cập nhật giỏ hàng" href="/cart">Cập nhật giỏ hàng</a>
                                                 </div>
                                             </form>
-
-
-
-
                                         </div>
-
-
 
                                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <h2 class="coll-title cart-title">Đơn hàng</h2>
                                             <div class="right-cart">
-
-
                                                 <h2>
                                                     <label>Tổng tiền</label>
-                                                    <label>167,000₫</label>
+                                                    <label>{{ number_format($totalPrice, 0, ',', '.') }}₫</label>
                                                 </h2>
-                                                <a class="checkout" href="/checkout">
-                                                    Thanh toán
-                                                </a>
-
+                                                <a class="checkout" href="/checkout">Thanh toán</a>
                                             </div>
-
-
 
                                             <div class="cart-notify">
                                                 Nếu có vấn đề phát sinh, vui lòng liên hệ 0905.053.322
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>

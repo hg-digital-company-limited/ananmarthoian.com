@@ -24,7 +24,7 @@ Route::get('/product/{slug}', Product::class);
 Route::get('/forgot-password', ForgotPassword::class);
 Route::get('/account', Account::class);
 Route::get('/account/addresses', Addresses::class);
-Route::get('/cart', Cart::class);
+Route::get('/cart', Cart::class)->name('cart');
 Route::get('/checkout', Checkout::class);
 Route::get('/thankyou', Thankyou::class);
 Route::get('/blog', Blog::class);

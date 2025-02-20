@@ -32,7 +32,7 @@ class Shop extends Component
     {
         $product = Product::find($productId);
         if ($product) {
-            CartManagement::addItemToCart($product, $quantity);
+            CartManagement::addItemToCart($productId, $quantity);
             $this->alert('success', 'Sản phẩm đã được thêm vào giỏ hàng!');
         } else {
             $this->alert('error', 'Sản phẩm không tồn tại!');

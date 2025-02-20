@@ -30,7 +30,6 @@ class CartManagement
         } else {
             // Fetch the product details from the database
             $product = Product::find($productId);
-
             if ($product) {
                 $cart_items[] = [
                     'name' => $product->name,
@@ -57,11 +56,11 @@ class CartManagement
     }
 
     // Remove cart item from cookie
-    static public function removeCartItem($product)
+    static public function removeCartItem($product_id)
     {
         $cart_items = self::getCartItemsFromCookie();
         foreach ($cart_items as $key => $item) {
-            if ($item['product'] == $product) {
+            if ($item['product_id'] == $product_id) {
                 unset($cart_items[$key]);
                 break; // Exit loop after removing the item
             }
@@ -84,11 +83,11 @@ class CartManagement
     }
 
     // Increment item quantity
-    static public function incrementQuantityToCartItem($product)
+    static public function incrementQuantityToCartItem($product_id)
     {
         $cart_items = self::getCartItemsFromCookie();
         foreach ($cart_items as $key => $item) {
-            if ($item['product'] == $product) {
+            if ($item['product_id'] == $product_id) {
                 $cart_items[$key]['quantity']++;
                 $cart_items[$key]['total_amount'] = $cart_items[$key]['quantity'] * $cart_items[$key]['unit_amount'];
                 break; // Exit loop after updating the item
@@ -99,11 +98,11 @@ class CartManagement
     }
 
     // Decrement quantity
-    static public function decrementQuantityToCartItem($product)
+    static public function decrementQuantityToCartItem($product_id)
     {
         $cart_items = self::getCartItemsFromCookie();
         foreach ($cart_items as $key => $item) {
-            if ($item['product'] == $product) {
+            if ($item['product_id'] == $product_id) {
                 if ($cart_items[$key]['quantity'] > 1) {
                     $cart_items[$key]['quantity']--;
                     $cart_items[$key]['total_amount'] = $cart_items[$key]['quantity'] * $cart_items[$key]['unit_amount'];
