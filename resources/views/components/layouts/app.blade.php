@@ -39,5 +39,9 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <x-livewire-alert::scripts />
-
+<style>
+    .swal2-container.swal2-top-end.swal2-backdrop-show {
+    margin-top: 44px;
+}
+</style>
 </html>

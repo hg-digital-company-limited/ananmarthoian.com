@@ -3,9 +3,8 @@
 
         <head>
             <title>
-                Tạo tài khoản AN AN MART
+                Đặt lại mật khẩu - AN AN MART
             </title>
-
 
             <link rel="stylesheet" href="/assets/style.css">
             <script src='/assets/theme.hstatic.net/200000077081/1001259549/14/jquery-1.12.4.min.js?v=168'
@@ -46,6 +45,7 @@
 
             <link href='/assets/theme.hstatic.net/200000077081/1001259549/14/style.css?v=168' rel='stylesheet'
                 type='text/css' media='all' />
+
 
             <style>
                 body {
@@ -202,7 +202,7 @@
             <div class="">
                 <script>
                     window.shop = {
-                        template: "customers[register]",
+                        template: "customers[login]",
                         moneyFormat: "₫"
                     }
                 </script>
@@ -337,12 +337,15 @@
 
 
 
+
                 @livewire('inc.menu-mobile')
+
                 <!-- MENU MAIN -->
                 <div class="scroller">
                     <!-- this is for emulating position fixed of the nav -->
                     <div class="scroller-inner">
                         @livewire('inc.header')
+
                         <main class="padding-top-mobile">
 
                             <script>
@@ -367,16 +370,18 @@
                                                 <li><i class="fa fa-angle-right"></i></li>
                                                 <li><a href="/account" target="_self">Tài khoản</a></li>
                                                 <li><i class="fa fa-angle-right"></i></li>
-                                                <li class="active"><span>Ðăng ký</span></li>
+                                                <li class="active"><span>Đặt lại mật khẩu</span></li>
 
                                             </ol>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            @livewire('content.register')
+                            @livewire('content.reset-password')
+
                         </main>
                         @livewire('inc.footer')
+
 
                     </div>
                     <!-- /scroller-inner -->
@@ -1368,7 +1373,5 @@
                 })
             </script>
         </body>
-
     </div>
-
 </div>
