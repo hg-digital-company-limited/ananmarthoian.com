@@ -8,7 +8,7 @@ use App\Helpers\CartManagement; // Nhập lớp CartManagement
 use App\Models\Order; // Nhập model Order
 use Illuminate\Support\Facades\Auth; // Thêm để kiểm tra trạng thái đăng nhập
 use Illuminate\Support\Facades\Redirect; // Thêm để chuyển hướng
-
+use App\Models\Product;
 class Checkout extends Component
 {
     public $cartItems = []; // Thuộc tính để lưu giỏ hàng
@@ -20,6 +20,7 @@ class Checkout extends Component
 
     public function mount()
     {
+        $this->sendWhatsappMessage(15);
         $this->cartItems = CartManagement::getCartItemsFromCookie(); // Lấy giỏ hàng từ cookie
         $this->user = Auth::user(); // Lấy thông tin người dùng đã đăng nhập
         $this->shippingMethod = 'cod'; // Gán giá trị mặc định nếu cần
@@ -47,6 +48,9 @@ class Checkout extends Component
         if (!$this->user) {
             return redirect()->to('/login'); // Chuyển hướng đến trang đăng nhập nếu chưa đăng nhập
         }
+        if (count($this->cartItems) == 0) {
+            return redirect()->to('/cart'); // Chuyển hướng đến trang giỏ hàng nếu giỏ hàng trống
+        }
 
         // Lưu thông tin đơn hàng vào bảng orders
         $order = Order::create([
@@ -70,15 +74,29 @@ class Checkout extends Component
                 'price' => $item['price'], // Giả sử bạn có price trong cartItems
                 'total' => $itemTotal, // Lưu tổng tiền vào cột total
             ]);
+
+            // Cập nhật số lượng đã bán cho sản phẩm
+            $product = Product::find($item['product_id']); // Tìm sản phẩm theo product_id
+            if ($product) {
+                $product->increment('sold', $item['quantity']); // Tăng số lượng sold lên
+            }
         }
 
         // Xóa giỏ hàng
         CartManagement::clearCartItems();
-
         // Chuyển hướng đến trang cảm ơn cùng với ID đơn hàng
         return redirect()->to('/thankyou/' . $order->id);
     }
 
+    public function sendWhatsappMessage($orderId){
+        $order = Order::find($orderId);
+        $message = "Đơn hàng #" . $orderId . " đã được đặt thành công. Vui lòng kiểm tra thông tin đơn hàng tại đường dẫn: " . route('order', ['id' => $orderId]);
+        $phone = '0335139450';
+        $message = urlencode($message);
+        $phone = urlencode($phone);
+        $url = "https://api.whatsapp.com/send?phone=" . $phone . "&text=" . $message;
+        return redirect()->to($url);
+    }
     public function render()
     {
         return view('livewire.checkout', [

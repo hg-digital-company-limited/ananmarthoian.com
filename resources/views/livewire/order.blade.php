@@ -5,7 +5,7 @@
 
             <head>
                 <title>
-                    #104033 AN AN MART
+                    #{{ $order->id }} - AN AN MART
                 </title>
 
                 <link rel="stylesheet" href="/assets/style.css">
@@ -274,10 +274,10 @@
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <h1>
-                                                    Lịch sử đơn hàng #104033 <a href="/account" id='return_to_store'><i
+                                                    Lịch sử đơn hàng #{{ $order->id }} <a href="/account" id='return_to_store'><i
                                                             class="fa fa-reply"></i> Quay lại</a>
                                                 </h1>
-                                                <p class="order_created_at">Ngày đặt: 19/02/2025 lúc 11:15 AM</p>
+                                                <p class="order_created_at">Ngày đặt: {{ $order->created_at->format('d/m/Y') }} lúc {{ $order->created_at->format('H:i') }} AM</p>
 
                                             </div>
                                             <div class="col-md-8 col-xs-12">
@@ -293,38 +293,36 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-
+                                                            @foreach ($order->orderItems as $item)
                                                             <tr id="1902064661" class="odd">
                                                                 <td style="max-width:300px">
 
-                                                                    <a href="rosemary-steak-fuji-200g">ME.B- Rosemary
-                                                                        Short Loin Steak Fuji 200g (ORANGE PACKAGE)
-                                                                        T7</a><br />
+                                                                    <a href="/product/{{ $item->product->slug }}">{{ $item->product->name }}</a><br />
 
 
                                                                 </td>
-                                                                <td class="sku">8938516177713</td>
-                                                                <td class="money">167,000₫</td>
-                                                                <td class="quantity text-center">1</td>
-                                                                <td class="total money text-right">167,000₫</td>
+                                                                <td class="sku">{{ $item->product->sku }}</td>
+                                                                <td class="money">{{ number_format($item->price, 0, ',', '.') }}₫</td>
+                                                                <td class="quantity text-center">{{ $item->quantity }}</td>
+                                                                <td class="total money text-right">{{ number_format($item->price * $item->quantity, 0, ',', '.') }}₫</td>
                                                             </tr>
+                                                            @endforeach
 
                                                             <tr class="order_summary">
                                                                 <td class="text-right" colspan="4"><b>Giá sản phẩm</b>
                                                                 </td>
-                                                                <td class="total money text-right"><b>167,000₫</b></td>
+                                                                <td class="total money text-right"><b>{{ number_format($order->total, 0, ',', '.') }}₫</b></td>
                                                             </tr>
 
                                                             <tr class="order_summary ">
-                                                                <td class="text-right" colspan="4"><b>Nhận tại cửa
-                                                                        hàng</b></td>
+                                                                <td class="text-right" colspan="4"><b>{{ $order->shipping_method == 'cod' ? 'Giao tận nơi (Ship COD)' : 'Nhận tại cửa hàng (Receive at shop)' }}</b></td>
                                                                 <td class="total money text-right"><b>0₫</b></td>
                                                             </tr>
 
 
                                                             <tr class="order_summary order_total">
                                                                 <td class="text-right" colspan="4"><b>Tổng tiền</b></td>
-                                                                <td class="total money text-right"><b>167,000₫ </b></td>
+                                                                <td class="total money text-right"><b>{{ number_format($order->total, 0, ',', '.') }}₫ </b></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -335,15 +333,11 @@
                                                     <div class="userbox">
                                                         <h3 class="order_section_title">Địa chỉ thanh toán</h3>
                                                         <p><span>Tình trạng thanh toán:</span> <span
-                                                                class="status_pending">Chưa hoàn tất</span></p>
+                                                                class="status_pending">{{ $order->status }}</span></p>
                                                         <div class="address">
-                                                            <p>2509roblox 2509roblox</p>
-                                                            <p></p>
-                                                            <p></p>
-                                                            <p></p>
-                                                            <p> </p>
-                                                            <p>Vietnam</p>
-                                                            <p>0999999999</p>
+                                                            <p>{{ $order->address }}</p>
+                                                            <p>{{ $order->phone }}</p>
+                                                            <p>{{ $order->full_name }}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -353,17 +347,12 @@
                                                         <h3 class="order_section_title">Địa chỉ giao hàng</h3>
 
                                                         <p><span>Vận chuyển:</span> <span
-                                                                class="status_not fulfilled">Đóng gói xong - Sẵn sàng
-                                                                giao hàng</span></p>
+                                                                class="status_not fulfilled">{{ $order->shipping_method == 'cod' ? 'Giao tận nơi (Ship COD)' : 'Nhận tại cửa hàng (Receive at shop)' }}</span></p>
 
                                                         <div class="address">
-                                                            <p>2509roblox 2509roblox</p>
-                                                            <p></p>
-                                                            <p></p>
-                                                            <p></p>
-                                                            <p> </p>
-                                                            <p>Vietnam </p>
-                                                            <p>0999999999</p>
+                                                            <p>{{ $order->address }}</p>
+                                                            <p>{{ $order->phone }}</p>
+                                                            <p>{{ $order->full_name }}</p>
                                                         </div>
                                                     </div>
                                                 </div>

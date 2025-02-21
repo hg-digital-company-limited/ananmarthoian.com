@@ -398,28 +398,26 @@
                                                         <tr>
                                                             <th class="order_number">Mã đơn hàng</th>
                                                             <th class="date">Ngày đặt</th>
-                                                            <th class="payment_status">Trạng thái thanh toán</th>
-                                                            <th class="fulfillment_status">Trạng thái vận chuyển</th>
+                                                            <th class="payment_status">Trạng thái đơn hàng</th>
+                                                            <th class="fulfillment_status">Phương thức vận chuyển</th>
                                                             <th class="total">Tổng tiền</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-
+                                                        @foreach ($orders as $order)
                                                         <tr class="odd ">
                                                             <td class=""><a
-                                                                    href="/account/orders/de41529c3d944c88bdb7e65d6b349418"
-                                                                    title="">#104033</a></td>
-                                                            <td class=""><span>Thg 2 19, 2025</span></td>
-                                                            <td class=""><span class="status_pending">Chưa hoàn
-                                                                    tất</span></td>
+                                                                    href="/account/order/{{ $order->id }}"
+                                                                    title="">#{{ $order->id }}</a></td>
+                                                            <td class=""><span>{{ $order->created_at->format('d/m/Y') }}</span></td>
+                                                            <td class=""><span class="status_pending">{{ $order->status }}</span></td>
 
-                                                            <td class=""><span class="status_not fulfilled">Đóng gói
-                                                                    xong - Sẵn sàng giao hàng</span></td>
+                                                            <td class=""><span class="status_not fulfilled">{{ $order->shipping_method == 'cod' ? 'Giao tận nơi (Ship COD)' : 'Nhận tại cửa hàng (Receive at shop)' }}</span></td>
 
 
-                                                            <td class=""><span class="total money">167,000₫</span></td>
+                                                            <td class=""><span class="total money">{{ number_format($order->total, 0, ',', '.') }}₫</span></td>
                                                         </tr>
-
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
 
