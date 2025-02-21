@@ -48,7 +48,19 @@ class CartManagement
         self::addCartItemsToCookie($cart_items);
         return count($cart_items);
     }
-
+    static public function updateQuantityInCart($productId, $quantity)
+    {
+        $cart_items = self::getCartItemsFromCookie();
+        foreach ($cart_items as $key => $item) {
+            if ($item['product_id'] == $productId) {
+                $cart_items[$key]['quantity'] = $quantity;
+                $cart_items[$key]['total_amount'] = $quantity * $item['unit_amount'];
+                break;
+            }
+        }
+        self::addCartItemsToCookie($cart_items);
+        return $cart_items;
+    }
     // Add cart item to cookie
     static public function addCartItemsToCookie($cart_items)
     {

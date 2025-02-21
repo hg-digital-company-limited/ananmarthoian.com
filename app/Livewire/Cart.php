@@ -28,24 +28,7 @@ class Cart extends Component
         }, 0);
     }
 
-    public function incrementQuantity($productId)
-    {
-        $this->cartItems = CartManagement::incrementQuantityToCartItem($productId);
-        $this->calculateTotals();
-    }
 
-    public function decrementQuantity($productId)
-    {
-        $this->cartItems = CartManagement::decrementQuantityToCartItem($productId);
-        $this->calculateTotals();
-    }
-
-    public function removeItem($productId)
-    {
-        $this->cartItems = CartManagement::removeCartItem($productId);
-        $this->calculateTotals();
-        return redirect()->route('cart'); // Đảm bảo bạn đã định nghĩa route này
-    }
 
     public function render()
     {
