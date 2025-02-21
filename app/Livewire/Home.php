@@ -22,7 +22,7 @@ class Home extends Component
         $this->bestSellingProducts = Product::orderBy('sold', 'desc')->take(10)->get();
 
         // Lấy 6 bài viết mới nhất
-        $this->latestBlogs = Blog::orderBy('created_at', 'desc')->take(6)->get();
+        $this->latestBlogs = Blog::orderBy('created_at', 'desc')->get();
     }
 
     public function render()

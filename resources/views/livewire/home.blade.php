@@ -4,7 +4,7 @@
         <head>
 
             <title>
-                MOONMILK - PREMIUM IMPORTED FOOD MARKET
+                TRANG CHỦ - AN AN MART
             </title>
 
 
@@ -349,8 +349,8 @@
                                         <div class="col-lg-12">
                                             <div class="msg-intro">
                                                 <a
-                                                    href="https://moonmilk.vn/blogs/news/thong-bao-lich-hoat-dong-tet-nguyen-dan-2025">SIÊU
-                                                    THỊ THỰC PHẨM MOONMILK</a>
+                                                    href="/shop">SIÊU
+                                                    THỊ THỰC PHẨM AN AN MART</a>
                                             </div>
                                         </div>
                                     </div>
@@ -371,7 +371,7 @@
                                                 <div class="item slide-1">
 
                                                     <a
-                                                        href="https://moonmilk.vn/blogs/news/thong-bao-lich-hoat-dong-tet-nguyen-dan-2025">
+                                                        href="/shop">
                                                         <img src="/assets/a.avif" alt=''>
 
                                                         <div class="text-desc">
@@ -410,7 +410,7 @@
 
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
-                                    <a href="https://moonmilk.vn/account/register">
+                                    <a>
                                         <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_1.jpg?v=168"
                                             class="img-responsive" />
                                     </a>
@@ -422,7 +422,7 @@
 
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
-                                    <a href="https://moonmilk.vn/collections/moonmilk-s-steak/">
+                                    <a >
                                         <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_2.jpg?v=168"
                                             class="img-responsive" />
                                     </a>
@@ -434,7 +434,7 @@
 
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
-                                    <a href="https://moonmilk.vn/collections/breadfast/">
+                                    <a >
                                         <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_3.jpg?v=168"
                                             class="img-responsive" />
                                     </a>
@@ -443,12 +443,6 @@
 
                             </div>
                         </div>
-
-                        <aside>
-
-                        </aside>
-                                                                                                                                                                                                                                                                       
-
                         <main>
 
                             <script>
@@ -775,7 +769,7 @@
                                                                             </div>
                                                                             <div class="desc-blog">
                                                                                 <h4 class="postTitle">
-                                                                                    <a href="/blogs/{{ $blog->slug }}" title="{{ $blog->title }}">
+                                                                                    <a href="/blog/{{ $blog->slug }}" title="{{ $blog->title }}">
                                                                                         {{ $blog->title }}
                                                                                     </a>
                                                                                 </h4>
@@ -1615,55 +1609,55 @@
                     var store = [
 
                         {
-                            "name": "Moonmilk- DN- Nguyễn Văn Thoại",
+                            "name": "AN AN MART- DN- Nguyễn Văn Thoại",
                             "province": "Đà Nẵng",
                             "district": "Quận Ngũ Hành Sơn"
                         },
 
                         {
-                            "name": "Moonmilk- DN- Hồ Nghinh",
+                            "name": "AN AN MART- DN- Hồ Nghinh",
                             "province": "Đà Nẵng",
                             "district": "Quận Sơn Trà"
                         },
 
                         {
-                            "name": "MOONMILK Hội An",
+                            "name": "AN AN MART Hội An",
                             "province": "Quảng Nam",
                             "district": "Thành phố Hội An"
                         },
 
                         {
-                            "name": "Moonmilk- NT- Phạm Văn Đồng",
+                            "name": "AN AN MART- NT- Phạm Văn Đồng",
                             "province": "Khánh Hòa",
                             "district": "Thành phố Nha Trang"
                         },
 
                         {
-                            "name": "Moonmilk- NT- An Viên",
+                            "name": "AN AN MART- NT- An Viên",
                             "province": "Khánh Hòa",
                             "district": "Thành phố Nha Trang"
                         },
 
                         {
-                            "name": "Moonmilk- NT- Mường Thanh",
+                            "name": "AN AN MART- NT- Mường Thanh",
                             "province": "Khánh Hòa",
                             "district": "Thành phố Nha Trang"
                         },
 
                         {
-                            "name": "MOONMILK Đà Nẵng",
+                            "name": "AN AN MART Đà Nẵng",
                             "province": "Đà Nẵng",
                             "district": "Quận Ngũ Hành Sơn"
                         },
 
                         {
-                            "name": "Moonmilk- NT- Trần Viễn Đông",
+                            "name": "AN AN MART- NT- Trần Viễn Đông",
                             "province": "Khánh Hòa",
                             "district": "Thành phố Nha Trang"
                         },
 
                         {
-                            "name": "Moonmilk- HA- Cửa Đại",
+                            "name": "AN AN MART- HA- Cửa Đại",
                             "province": "Quảng Nam",
                             "district": "Thành phố Hội An"
                         },
@@ -1675,7 +1669,7 @@
                         },
 
                         {
-                            "name": "MOONMILK Nha Trang",
+                            "name": "AN AN MART Nha Trang",
                             "province": "Khánh Hòa",
                             "district": "Thành phố Nha Trang"
                         }
@@ -1683,11 +1677,11 @@
                     ];
 
                     const listHide = [
-                        "MOONMILK Hội An",
+                        "AN AN MART Hội An",
 
-                        "MOONMILK Đà Nẵng",
+                        "AN AN MART Đà Nẵng",
 
-                        "MOONMILK Nha Trang"
+                        "AN AN MART Nha Trang"
                     ];
                     store.map(function (itemS) {
                         const checkAStore = listHide.filter((itemH) => (itemS.name === itemH));
