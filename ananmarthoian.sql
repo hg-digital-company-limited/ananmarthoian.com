@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 21, 2025 at 02:55 PM
+-- Generation Time: Feb 21, 2025 at 03:11 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -277,7 +277,8 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`id`, `user_id`, `address`, `phone`, `full_name`, `status`, `total`, `shipping_method`, `created_at`, `updated_at`) VALUES
 (15, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '2250000.00', 'cod', '2025-02-21 14:42:22', '2025-02-21 14:42:22'),
 (16, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1125000.00', 'cod', '2025-02-21 14:50:27', '2025-02-21 14:50:27'),
-(17, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1125000.00', 'cod', '2025-02-21 14:50:30', '2025-02-21 14:50:30');
+(17, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1125000.00', 'cod', '2025-02-21 14:50:30', '2025-02-21 14:50:30'),
+(18, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1500000.00', 'cod', '2025-02-21 15:11:28', '2025-02-21 15:11:28');
 
 -- --------------------------------------------------------
 
@@ -303,7 +304,8 @@ CREATE TABLE `order_items` (
 INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `price`, `total`, `created_at`, `updated_at`) VALUES
 (6, 15, 628, 6, '375000.00', '2250000.00', '2025-02-21 14:42:22', '2025-02-21 14:42:22'),
 (7, 16, 628, 3, '375000.00', '1125000.00', '2025-02-21 14:50:27', '2025-02-21 14:50:27'),
-(8, 17, 628, 3, '375000.00', '1125000.00', '2025-02-21 14:50:30', '2025-02-21 14:50:30');
+(8, 17, 628, 3, '375000.00', '1125000.00', '2025-02-21 14:50:30', '2025-02-21 14:50:30'),
+(9, 18, 628, 4, '375000.00', '1500000.00', '2025-02-21 15:11:28', '2025-02-21 15:11:28');
 
 -- --------------------------------------------------------
 
@@ -343,7 +345,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `name`, `slug`, `price`, `image`, `category_id`, `created_at`, `updated_at`, `sold`, `is_stock`, `description`) VALUES
 (627, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-21 11:42:31', 10, 0, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>'),
-(628, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot1', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-21 14:50:30', 30, 1, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>');
+(628, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot1', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-21 15:11:28', 34, 1, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>');
 
 -- --------------------------------------------------------
 
@@ -369,7 +371,7 @@ INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, 
 ('cJNdb4bvI9pjz97pRewPkSKBDFkf7j3T62VkTDNb', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiR2x1UEZmMmtlY3NUVVUxZUZ6OFhNQlpyS05BU3ljOVBmSzVMbGl0aCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1740144871),
 ('lz4hrMpfOhqJClPhXf11qwNvMPVl5W5dH8voSITB', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoieFRsRzRaUURKTnB4NWhvdVRKcUlGM3p1TGdhakdhWmxMZ0JrT3FBMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1740144871),
 ('nUowsA7BAZWhK7lMaORh04PfEEtIRIkd8HvwI83r', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiYUpPTzFDYUpLN2JDVVlubHVqQWQwbmZaSjBqVXMydFg5cDJZUmpzaSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1740144862),
-('u0YLvnskDq1a3U0SwsXnPHv1DkDvmcP03NlxJWRA', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiYUJIc25GUEYzdWt5QkJJeFZOWGw0R2JpekRlZ0RZYUpCNGFjMDBzNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jaGVja291dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRoQnR4MlFUTEw4cUlXR1Z0bXNHcHFlYk51ZWtFeWFHVEZEelhEUkRIMmV5YUM3RHMuQzViYSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1740149539);
+('u0YLvnskDq1a3U0SwsXnPHv1DkDvmcP03NlxJWRA', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiYUJIc25GUEYzdWt5QkJJeFZOWGw0R2JpekRlZ0RZYUpCNGFjMDBzNCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC90aGFua3lvdS8xOCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRoQnR4MlFUTEw4cUlXR1Z0bXNHcHFlYk51ZWtFeWFHVEZEelhEUkRIMmV5YUM3RHMuQzViYSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1740150691);
 
 -- --------------------------------------------------------
 
@@ -593,13 +595,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `products`

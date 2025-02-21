@@ -9,8 +9,11 @@ use App\Models\Order; // Nhập model Order
 use Illuminate\Support\Facades\Auth; // Thêm để kiểm tra trạng thái đăng nhập
 use Illuminate\Support\Facades\Redirect; // Thêm để chuyển hướng
 use App\Models\Product;
+use Twilio\Rest\Client;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 class Checkout extends Component
 {
+    use LivewireAlert;
     public $cartItems = []; // Thuộc tính để lưu giỏ hàng
     public $user; // Thuộc tính để lưu thông tin người dùng
     public $fullName; // Thuộc tính để lưu tên đầy đủ
@@ -20,7 +23,6 @@ class Checkout extends Component
 
     public function mount()
     {
-        $this->sendWhatsappMessage(15);
         $this->cartItems = CartManagement::getCartItemsFromCookie(); // Lấy giỏ hàng từ cookie
         $this->user = Auth::user(); // Lấy thông tin người dùng đã đăng nhập
         $this->shippingMethod = 'cod'; // Gán giá trị mặc định nếu cần
@@ -84,18 +86,39 @@ class Checkout extends Component
 
         // Xóa giỏ hàng
         CartManagement::clearCartItems();
+        $this->sendWhatsappMessage($order->id);
+
         // Chuyển hướng đến trang cảm ơn cùng với ID đơn hàng
         return redirect()->to('/thankyou/' . $order->id);
     }
 
-    public function sendWhatsappMessage($orderId){
+    public function sendWhatsappMessage($orderId)
+    {
         $order = Order::find($orderId);
+
+        if (!$order) {
+            return redirect()->back()->with('error', 'Đơn hàng không tồn tại.');
+        }
+
         $message = "Đơn hàng #" . $orderId . " đã được đặt thành công. Vui lòng kiểm tra thông tin đơn hàng tại đường dẫn: " . route('order', ['id' => $orderId]);
-        $phone = '0335139450';
-        $message = urlencode($message);
-        $phone = urlencode($phone);
-        $url = "https://api.whatsapp.com/send?phone=" . $phone . "&text=" . $message;
-        return redirect()->to($url);
+        $phone = 'whatsapp:+84335139450'; // Số điện thoại nhận tin nhắn (bắt đầu bằng 'whatsapp:')
+
+        // Thông tin tài khoản Twilio
+        $sid = 'AC69c66665128050f8fc9cf62d3dd3e1b4'; // Thay thế bằng Account SID của bạn
+        $token = 'b8f57af1b099c3b8ab939484d495e681'; // Thay thế bằng Auth Token của bạn
+        $twilioNumber = 'whatsapp:+14155238886'; // Số điện thoại WhatsApp của Twilio
+
+        $client = new Client($sid, $token);
+
+        try {
+            $client->messages->create($phone, [
+                'from' => $twilioNumber,
+                'body' => $message,
+            ]);
+            $this->alert('success', 'Gửi tin nhắn thành công');
+        } catch (\Exception $e) {
+            $this->alert('error', 'Gửi tin nhắn thất bại: ' . $e->getMessage());
+        }
     }
     public function render()
     {
