@@ -536,7 +536,7 @@
                                                         <div class="product-information">
                                                             <div class="product-detail">
                                                                 <div class="product-image">
-                                                                    <a href="/products/{{ $product->slug }}"
+                                                                    <a href="/product/{{ $product->slug }}"
                                                                         title="{{ $product->name }}">
                                                                         <img class="lazyload"
                                                                             src="{{Storage::url($product->image) }}"
@@ -557,7 +557,7 @@
                                                                     </div>
                                                                     <div class="btn-quickview-product">
                                                                         <a href="javascript:void(0);" class="quickview"
-                                                                            data-handle="/products/{{ $product->slug }}">
+                                                                            data-handle="/product/{{ $product->slug }}">
                                                                             <i class="fa fa-search"></i>
                                                                         </a>
                                                                     </div>
@@ -566,7 +566,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="product-info">
-                                                                    <a href="/products/{{ $product->slug }}"
+                                                                    <a href="/product/{{ $product->slug }}"
                                                                         title="{{ $product->name }}">
                                                                         <h2>{{ $product->name }}</h2>
                                                                     </a>
@@ -633,7 +633,7 @@
                                                         <div class="product-information">
                                                             <div class="product-detail">
                                                                 <div class="product-image">
-                                                                    <a href="/products/{{ $product->slug }}"
+                                                                    <a href="/product/{{ $product->slug }}"
                                                                         title="{{ $product->name }}">
                                                                         <img class="lazyload" src="1x1.png"
                                                                             data-src="{{ Storage::url($product->image)  }}"
@@ -654,7 +654,7 @@
                                                                     </div>
                                                                     <div class="btn-quickview-product">
                                                                         <a href="javascript:void(0);" class="quickview"
-                                                                            data-handle="/products/{{ $product->slug }}">
+                                                                            data-handle="/product/{{ $product->slug }}">
                                                                             <i class="fa fa-search"></i>
                                                                         </a>
                                                                     </div>
@@ -663,7 +663,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="product-info">
-                                                                    <a href="/products/{{ $product->slug }}"
+                                                                    <a href="/product/{{ $product->slug }}"
                                                                         title="{{ $product->name }}">
                                                                         <h2>{{ $product->name }}</h2>
                                                                     </a>

@@ -32,30 +32,41 @@ class ProductResource extends Resource
                         fn(string $operation, $state, Forms\Set $set) =>
                         $operation === 'create' ? $set('slug', Str::slug($state)) : null
                     )
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Tên sản phẩm'), // Việt hóa nhãn
                 Forms\Components\TextInput::make('slug')
-                ->dehydrated()
-                ->unique(Product::class, ignoreRecord: true)
+                    ->dehydrated()
+                    ->unique(Product::class, ignoreRecord: true)
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Slug'), // Việt hóa nhãn
                 Forms\Components\Select::make('is_stock')
                     ->options([
                         '1' => 'Còn hàng',
                         '0' => 'Hết hàng',
                     ])
-                    ->required(),
+                    ->default('1')
+                    ->required()
+                    ->label('Tình trạng hàng'), // Việt hóa nhãn
                 Forms\Components\TextInput::make('price')
                     ->required()
                     ->numeric()
-                    ->prefix('$'),
+                    ->prefix('₫')
+                    ->label('Giá'), // Việt hóa nhãn
                 Forms\Components\FileUpload::make('image')
-                    ->image(),
+                    ->image()
+                    ->label('Hình ảnh'), // Việt hóa nhãn
                 Forms\Components\TextInput::make('sold')
+                    ->default(0)
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Số lượng đã bán'), // Việt hóa nhãn
+                Forms\Components\RichEditor::make('description')
+                    ->label('Mô tả'), // Việt hóa nhãn
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
-                ->required()
+                    ->required()
+                    ->label('Danh mục') // Việt hóa nhãn
             ]);
     }
 
@@ -77,6 +88,8 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('sold')
                     ->numeric()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('is_stock')
                     ->badge()
                     ->sortable(),

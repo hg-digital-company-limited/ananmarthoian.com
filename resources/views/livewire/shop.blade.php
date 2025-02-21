@@ -442,7 +442,7 @@
                                                                     <div class="product-information">
                                                                         <div class="product-detail">
                                                                             <div class="product-image">
-                                                                                <a href="{{  $product->slug }}" title="{{ $product->name }}">
+                                                                                <a href="/product/{{ $product->slug }}" title="{{ $product->name }}">
                                                                                     <img class="lazyload" src="1x1.png"
                                                                                         data-src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" />
                                                                                         @if($product->is_stock == 0)
@@ -460,7 +460,7 @@
                                                                                     </a>
                                                                                 </div>
                                                                                 <div class="btn-quickview-product">
-                                                                                    <a href="javascript:void(0);" class="quickview" data-handle="{{ $product->slug }}">
+                                                                                    <a href="javascript:void(0);" class="quickview" data-handle="/product/{{ $product->slug }}">
                                                                                         <i class="fa fa-search"></i>
                                                                                     </a>
                                                                                 </div>
@@ -469,7 +469,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="product-info">
-                                                                                <a href="{{ $product->slug }}" title="{{ $product->name }}">
+                                                                                <a href="/product/{{ $product->slug }}" title="{{ $product->name }}">
                                                                                     <h2>{{ $product->name }}</h2>
                                                                                 </a>
 
