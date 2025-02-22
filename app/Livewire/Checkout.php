@@ -63,6 +63,8 @@ class Checkout extends Component
             'status' => 'pending',
             'total' => $this->calculateSubtotal(),
             'shipping_method' => $this->shippingMethod,
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         // Lưu thông tin các sản phẩm vào bảng order_items
@@ -75,6 +77,8 @@ class Checkout extends Component
                 'quantity' => $item['quantity'], // Giả sử bạn có quantity trong cartItems
                 'price' => $item['price'], // Giả sử bạn có price trong cartItems
                 'total' => $itemTotal, // Lưu tổng tiền vào cột total
+                'created_at' => now(),
+                'updated_at' => now(),
             ]);
 
             // Cập nhật số lượng đã bán cho sản phẩm
@@ -100,7 +104,14 @@ class Checkout extends Component
             return redirect()->back()->with('error', 'Đơn hàng không tồn tại.');
         }
 
-        $message = "Đơn hàng #" . $orderId . " đã được đặt thành công. Vui lòng kiểm tra thông tin đơn hàng tại đường dẫn: " . route('order', ['id' => $orderId]);
+        $message =
+        "Đơn hàng #{$orderId} đã được đặt.
+💰 Số tiền: " . number_format($order->total, 0, ',', '.') . " VNĐ
+🕒 Thời gian: " . $order->created_at->format('d/m/Y H:i:s') . "
+👤 Khách hàng: " . $order->full_name . "
+📞 Số điện thoại: " . $order->phone . "
+🏠 Địa chỉ: " . $order->address . "
+🚚 Phương thức vận chuyển: " . $order->shipping_method;
         $phone = 'whatsapp:+84335139450'; // Số điện thoại nhận tin nhắn (bắt đầu bằng 'whatsapp:')
 
         // Thông tin tài khoản Twilio
@@ -115,9 +126,8 @@ class Checkout extends Component
                 'from' => $twilioNumber,
                 'body' => $message,
             ]);
-            $this->alert('success', 'Gửi tin nhắn thành công');
         } catch (\Exception $e) {
-            $this->alert('error', 'Gửi tin nhắn thất bại: ' . $e->getMessage());
+            $this->alert('error', 'Lỗi khi gửi tin nhắn: ' . $e->getMessage());
         }
     }
     public function render()

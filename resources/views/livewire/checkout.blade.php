@@ -297,8 +297,7 @@
 
                                                 <div class="order-summary-section order-summary-section-discount"
                                                     data-order-summary-section="discount">
-                                                    <form id="form_discount_add" accept-charset="UTF-8" method="post">
-                                                        <input name="utf8" type="hidden" value="✓">
+                                                    <form id="form_discount_add" >
                                                         <div class="fieldset">
                                                             <div class="field">
                                                                 <div class="field-input-btn-wrapper">
@@ -314,7 +313,7 @@
                                                                             id="discount.code" name="discount.code"
                                                                             value="" />
                                                                     </div>
-                                                                    <button type="submit"
+                                                                    <button
                                                                         class="field-input-btn btn btn-default">
                                                                         <span class="btn-content">Sử dụng (Apply)</span>
                                                                         <i

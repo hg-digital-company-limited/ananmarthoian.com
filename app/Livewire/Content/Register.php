@@ -39,8 +39,6 @@ class Register extends Component
             $this->errors[] = 'Mật khẩu là bắt buộc.';
         } elseif (strlen($this->password) < 6) {
             $this->errors[] = 'Mật khẩu phải có ít nhất 6 ký tự.';
-        } elseif ($this->password !== $this->password_confirmation) {
-            $this->errors[] = 'Mật khẩu xác nhận không khớp.';
         }
         if (empty($this->full_name)) {
             $this->errors[] = 'Họ và tên là bắt buộc.';
@@ -66,9 +64,7 @@ class Register extends Component
 
         // Show success alert
         $this->alert('success', 'Đăng ký thành công!');
-
-        // Optionally reset fields after registration
-        $this->reset(['name', 'email', 'password', 'password_confirmation', 'full_name', 'address', 'phone']);
+        return redirect()->route('login');
     }
 
     public function render()

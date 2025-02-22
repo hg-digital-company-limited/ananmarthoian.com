@@ -31,9 +31,11 @@
                         </li>
                         <li class="resig">
                             @if ($isAuthenticated)
-                                <a href="/account"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Tài khoản của tôi</span></a>
+                                <a href="/account"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Tài khoản
+                                        của tôi</span></a>
                             @else
-                                <a href="/login"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Đăng nhập / Đăng ký</span></a>
+                                <a href="/login"><i class="fa fa-user" aria-hidden="true"></i><span class="css">Đăng nhập /
+                                        Đăng ký</span></a>
                             @endif
                         </li>
                         <li class="cart-info hidden-xs">
@@ -49,29 +51,32 @@
                             <div class="cart-view clearfix" style="display: none;">
                                 <table id="cart-view">
                                     @foreach($cartItems as $item)
-                                    <tr>
-                                        <td class="img">
-                                            <a href="/product/{{ $item['product_slug'] }}"
-                                            style="width: 80px;justify-content: center;display: flex;"
-                                            >
-                                                <img src="{{ Storage::url($item['image']) }}" alt="{{ $item['name'] }}"  style="height: 50px; width: initial;"/>
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a class="pro-title-view" href="/product/{{ $item['product_slug'] }}" title="{{ $item['name'] }}">
-                                                {{ $item['name'] }}
-                                            </a>
-                                            <span class="pro-quantity-view">Số lượng: {{ $item['quantity'] }}</span>
-                                            <span class="pro-price-view">Giá: {{ number_format($item['price'], 0, ',', '.') }}₫</span>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td class="img">
+                                                <a href="/product/{{ $item['product_slug'] }}"
+                                                    style="width: 80px;justify-content: center;display: flex;">
+                                                    <img src="{{ Storage::url($item['image']) }}" alt="{{ $item['name'] }}"
+                                                        style="height: 50px; width: initial;" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="pro-title-view" href="/product/{{ $item['product_slug'] }}"
+                                                    title="{{ $item['name'] }}">
+                                                    {{ $item['name'] }}
+                                                </a>
+                                                <span class="pro-quantity-view">Số lượng: {{ $item['quantity'] }}</span>
+                                                <span class="pro-price-view">Giá:
+                                                    {{ number_format($item['price'], 0, ',', '.') }}₫</span>
+                                            </td>
+                                        </tr>
                                     @endforeach
                                 </table>
                                 <span class="line"></span>
                                 <table class="table-total">
                                     <tr>
                                         <td align="left">TỔNG TIỀN:</td>
-                                        <td align="right" id="total-view-cart">{{ number_format($totalPrice, 0, ',', '.') }}₫</td>
+                                        <td align="right" id="total-view-cart">
+                                            {{ number_format($totalPrice, 0, ',', '.') }}₫</td>
                                     </tr>
                                     <tr>
                                         <td><a href="/cart" class="linktocart">Xem giỏ hàng</a></td>
@@ -97,12 +102,10 @@
                                 <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
                                     <img src="/logo.png" style="
                                     max-width: 150px;
-                                "
-                                        alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                " alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                                 </a>
                                 <h1 class="hidden">
-                                    <a href="/"
-                                        title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM
+                                    <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">MOONMILK - PREMIUM
                                         IMPORTED FOOD MARKET</a>
                                 </h1>
 
@@ -140,8 +143,7 @@
                     <div class="pull-right mobile-menu-icon-wrapper">
                         <div class="logo logo-mobile">
                             <a href="/" title="MOONMILK - PREMIUM IMPORTED FOOD MARKET">
-                                <img src="/logo.png"
-                                    alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
+                                <img src="/logo.png" alt="MOONMILK - PREMIUM IMPORTED FOOD MARKET" />
                             </a>
                         </div>
                         <ul class="mobile-menu-icon clearfix">
@@ -196,16 +198,35 @@
                 <div id="header">
                     <div class="menu-desktop hidden-xs">
                         <ul class="menu-top clearfix">
+                            <li class="hasChild fix-icon-coll">
+                                <a href="javascript:void(0)" title="Thông tin chung" class="maxi-menu-link ">
+                                    <span>Thông tin chung</span>
+                                </a>
+
+                                <ul>
+                                    <li class="lilala">
+                                        <a href="/" title="Trang chủ">Trang chủ</a>
+                                    </li>
+                                    <li class="lilala">
+                                        <a href="/shop" title="Cửa hàng">Cửa hàng</a>
+                                    </li>
+                                    <li class="lilala">
+                                        <a href="/blogs" title="Tin tức">Tin tức</a>
+                                    </li>
+                                </ul>
+                            </li>
                             @foreach($classifications as $classification)
                                 <li class="hasChild fix-icon-coll">
-                                    <a href="javascript:void(0)" title="{{ $classification->name }}" class="maxi-menu-link ">
+                                    <a href="javascript:void(0)" title="{{ $classification->name }}"
+                                        class="maxi-menu-link ">
                                         <span>{{ $classification->name }}</span>
                                     </a>
 
                                     <ul>
                                         @foreach($classification->categories as $category)
                                             <li class="lilala">
-                                                <a href="/shop?cat={{ $category->id }}" title="{{ $category->name }}">{{ $category->name }}</a>
+                                                <a href="/shop?cat={{ $category->id }}"
+                                                    title="{{ $category->name }}">{{ $category->name }}</a>
                                             </li>
                                         @endforeach
                                     </ul>
@@ -289,11 +310,11 @@
             }
         })
     </script>
-<style>
-    li.choose-store {
-    margin-right: 15px;
-    position: relative;
-    max-width: 100%;
-}
-</style>
+    <style>
+        li.choose-store {
+            margin-right: 15px;
+            position: relative;
+            max-width: 100%;
+        }
+    </style>
 </div>
