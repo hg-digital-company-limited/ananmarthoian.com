@@ -48,12 +48,40 @@ class Checkout extends Component
     {
         // Kiểm tra xem người dùng đã đăng nhập
         if (!$this->user) {
-            return redirect()->to('/login'); // Chuyển hướng đến trang đăng nhập nếu chưa đăng nhập
+            $this->alert('error', 'Vui lòng đăng nhập để đặt hàng', [
+                'timer' => 3000,
+                'timerProgressBar' => true,
+            ]);
+            return;
         }
         if (count($this->cartItems) == 0) {
-            return redirect()->to('/cart'); // Chuyển hướng đến trang giỏ hàng nếu giỏ hàng trống
+            $this->alert('error', 'Giỏ hàng trống', [
+                'timer' => 3000,
+                'timerProgressBar' => true,
+            ]);
+            return;
         }
-
+        if ($this->fullName == null) {
+            $this->alert('error', 'Vui lòng nhập tên đầy đủ', [
+                'timer' => 3000,
+                'timerProgressBar' => true,
+            ]);
+            return;
+        }
+        if ($this->phone == null) {
+            $this->alert('error', 'Vui lòng nhập số điện thoại', [
+                'timer' => 3000,
+                'timerProgressBar' => true,
+            ]);
+            return;
+        }
+        if ($this->address == null) {
+            $this->alert('error', 'Vui lòng nhập địa chỉ', [
+                'timer' => 3000,
+                'timerProgressBar' => true,
+            ]);
+            return;
+        }
         // Lưu thông tin đơn hàng vào bảng orders
         $order = Order::create([
             'user_id' => $this->user->id,

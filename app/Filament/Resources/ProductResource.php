@@ -65,6 +65,7 @@ class ProductResource extends Resource
                     ->label('Mô tả'), // Việt hóa nhãn
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
+                    ->searchable()
                     ->required()
                     ->label('Danh mục') // Việt hóa nhãn
             ]);
@@ -86,9 +87,12 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('price')
                     ->money('VND')
                     ->sortable()
+                    ->searchable()
                     ->label('Giá'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('category.name')
                     ->sortable()
+                    ->searchable()
+                    ->sea()
                     ->label('Danh mục'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('sold')
                     ->numeric()
