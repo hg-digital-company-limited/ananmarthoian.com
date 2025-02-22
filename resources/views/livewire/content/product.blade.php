@@ -134,8 +134,8 @@
                                                                     class="fa fa-shopping-cart"></i></a>
                                                         </div>
                                                         <div class="btn-quickview-product">
-                                                            <a href="javascript:void(0);" class="quickview"
-                                                                data-handle="/product/{{ $relatedProduct->slug }}"><i
+                                                            <a href="/product/{{ $relatedProduct->slug }}" class="quickview"
+                                                              ><i
                                                                     class="fa fa-search"></i></a>
                                                         </div>
                                                         <div class="btn-wishlist-product">

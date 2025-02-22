@@ -12,7 +12,11 @@ class Account extends Component
     public function mount()
     {
         $this->user = Auth::user(); // Lấy thông tin người dùng đã đăng nhập
-        $this->orders = Order::where('user_id', $this->user->id)->get();
+        if ($this->user) {
+            $this->orders = Order::where('user_id', $this->user->id)->get();
+        } else {
+            return redirect()->route('home');
+        }
     }
 
     public function logout()

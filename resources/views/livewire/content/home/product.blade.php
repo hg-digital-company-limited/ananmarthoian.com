@@ -33,8 +33,8 @@
                                                 </a>
                                             </div>
                                             <div class="btn-quickview-product">
-                                                <a href="javascript:void(0);" class="quickview"
-                                                    data-handle="/product/{{ $product->slug }}">
+                                                <a href="/product/{{ $product->slug }}"  class="quickview"
+                                                >
                                                     <i class="fa fa-search"></i>
                                                 </a>
                                             </div>
@@ -125,8 +125,8 @@
                                                 </a>
                                             </div>
                                             <div class="btn-quickview-product">
-                                                <a href="javascript:void(0);" class="quickview"
-                                                    data-handle="/product/{{ $product->slug }}">
+                                                <a href="/product/{{ $product->slug }}" class="quickview"
+                                                >
                                                     <i class="fa fa-search"></i>
                                                 </a>
                                             </div>
