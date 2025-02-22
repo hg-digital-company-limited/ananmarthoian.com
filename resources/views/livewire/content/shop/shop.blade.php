@@ -72,44 +72,7 @@
                             </a>
                         </div>
                     </div>
-                    <script>
-                        document.querySelectorAll('.orderBox').forEach(orderBox => {
-                            let quantityInput = orderBox.querySelector('input[type="text"]');
-                            let totalPriceSpan = orderBox.querySelector('.tonggiaonap');
-                            let pricePerUnit = parseFloat(orderBox.querySelector('.zinzin').value) / 100;
 
-                            // Function to update total price
-                            function updateTotalPrice() {
-                                let quantity = parseInt(quantityInput.value);
-                                let totalPrice = quantity * pricePerUnit;
-                                totalPriceSpan.textContent = totalPrice.toLocaleString('vi-VN') + '₫';
-                            }
-
-                            // Event listener for minus button
-                            orderBox.querySelector('.minus').addEventListener('click', () => {
-                                let quantity = Math.max(1, parseInt(quantityInput.value) - 1);
-                                quantityInput.value = quantity;
-                                updateTotalPrice();
-                            });
-
-                            // Event listener for plus button
-                            orderBox.querySelector('.plus').addEventListener('click', () => {
-                                let quantity = parseInt(quantityInput.value) + 1;
-                                quantityInput.value = quantity;
-                                updateTotalPrice();
-                            });
-
-                            // Event listener for Buy Now button
-                            orderBox.querySelector('.btnBuyNow').addEventListener('click', (e) => {
-                                e.preventDefault();
-                                let productId = orderBox.querySelector('.zinzin').id;
-                                let quantity = quantityInput.value;
-
-                                // Gọi hàm addToCart của Livewire
-                                Livewire.dispatch('addToCart', { productId, quantity });
-                            });
-                        });
-                    </script>
                 </div>
             </div>
         </div>
