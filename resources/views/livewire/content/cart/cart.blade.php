@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="cart-notify">
-                    Nếu có vấn đề phát sinh, vui lòng liên hệ 0905.053.322
+                    Nếu có vấn đề phát sinh, vui lòng liên hệ 0976.979.546
                 </div>
             </div>
         </div>

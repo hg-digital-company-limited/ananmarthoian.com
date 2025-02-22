@@ -54,6 +54,6 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-            ->brandName('KHOAHOCMIENPHI.SITE');
+            ->brandName('ANANMARTHOIAN.COM');
     }
 }

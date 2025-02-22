@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ClassificationResource extends Resource
 {
     protected static ?string $model = Classification::class;
-
+    protected static ?string $navigationGroup = 'Quản lý chung';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'Phân Loại';
 

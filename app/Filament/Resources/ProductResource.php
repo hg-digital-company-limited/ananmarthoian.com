@@ -18,7 +18,7 @@ class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
     protected static ?string $navigationLabel = 'Sản Phẩm';
-
+    protected static ?string $navigationGroup = 'Quản lý chung';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -74,47 +74,63 @@ class ProductResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Hình ảnh'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
+                    ->url(fn($record) => route('product.show', $record->slug))
+                    ->searchable()
+                    ->label('Tên sản phẩm'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('slug')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Slug'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
-                    ->sortable(),
+                    ->money('VND')
+                    ->sortable()
+                    ->label('Giá'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('category.name')
-                    ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Danh mục'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('sold')
                     ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('description')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('is_stock')
+                    ->sortable()
+                    ->label('Số lượng đã bán'), // Việt hóa nhãn
+                    Tables\Columns\TextColumn::make('is_stock')
                     ->badge()
-                    ->sortable(),
+                    ->color(fn(string $state): string => match ($state) {
+                        '1' => 'success',
+                        '0' => 'danger',
+                    })
+                    ->sortable()
+                    ->label('Tình trạng hàng') // Việt hóa nhãn
+                    ->formatStateUsing(fn(string $state): string => $state === '1' ? 'Còn hàng' : 'Hết hàng'), // Hiển thị tình trạng hàng
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->label('Ngày tạo'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->label('Ngày cập nhật'), // Việt hóa nhãn
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([
-                    Tables\Actions\ViewAction::make(),
-                    Tables\Actions\EditAction::make(),
-                    Tables\Actions\DeleteAction::make(),
+                    Tables\Actions\ViewAction::make()
+                        ->label('Xem'), // Việt hóa nhãn
+                    Tables\Actions\EditAction::make()
+                        ->label('Chỉnh sửa'), // Việt hóa nhãn
+                    Tables\Actions\DeleteAction::make()
+                        ->label('Xóa'), // Việt hóa nhãn
                 ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make()
+                        ->label('Xóa hàng loạt'), // Việt hóa nhãn
                 ]),
             ]);
     }

@@ -16,7 +16,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class OrderItemResource extends Resource
 {
     protected static ?string $model = OrderItem::class;
-
+    protected static ?string $navigationGroup = 'Quản lý đơn hàng';
+    protected static ?string $navigationLabel = 'Chi tiết đơn hàng';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -25,20 +26,25 @@ class OrderItemResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('order_id')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->label('ID Đơn hàng'), // Tùy chỉnh nhãn hiển thị
                 Forms\Components\TextInput::make('product_id')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->label('ID Sản phẩm'), // Tùy chỉnh nhãn hiển thị
                 Forms\Components\TextInput::make('quantity')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->label('Số lượng'), // Tùy chỉnh nhãn hiển thị
                 Forms\Components\TextInput::make('price')
                     ->required()
                     ->numeric()
-                    ->prefix('$'),
+                    ->prefix('$')
+                    ->label('Giá'), // Tùy chỉnh nhãn hiển thị
                 Forms\Components\TextInput::make('total')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->label('Tổng số tiền'), // Tùy chỉnh nhãn hiển thị
             ]);
     }
 
@@ -48,37 +54,57 @@ class OrderItemResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('order_id')
                     ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('product_id')
-                    ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->searchable()
+                    ->label('ID Đơn hàng'), // Tùy chỉnh nhãn hiển thị
+                Tables\Columns\ImageColumn::make('product.image')
+                    ->url(fn($record) => route('product.show', $record->product->slug))
+                    ->label('Ảnh sản phẩm'), // Tùy chỉnh nhãn hiển thị
+                Tables\Columns\TextColumn::make('product.name')
+                ->searchable()
+                    ->url(fn($record) => route('product.show', $record->product->slug))
+                    ->label('Tên sản phẩm'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Số lượng'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
-                    ->sortable(),
+                    ->money('VND')
+                    ->sortable()
+                    ->label('Giá'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('total')
+                    ->money('VND')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Tổng số tiền'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->label('Ngày tạo'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->label('Ngày cập nhật'), // Tùy chỉnh nhãn hiển thị
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\ViewAction::make()
+                        ->label('Xem'), // Tùy chỉnh nhãn hiển thị
+                    Tables\Actions\EditAction::make()
+                        ->label('Chỉnh sửa'), // Tùy chỉnh nhãn hiển thị
+                    Tables\Actions\DeleteAction::make()
+                        ->label('Xóa'), // Tùy chỉnh nhãn hiển thị
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make()
+                        ->label('Xóa hàng loạt'), // Tùy chỉnh nhãn hiển thị
                 ]),
             ]);
     }
@@ -88,6 +114,10 @@ class OrderItemResource extends Resource
         return [
             //
         ];
+    }
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
     }
 
     public static function getPages(): array

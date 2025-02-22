@@ -370,7 +370,7 @@
                                                 <div class="item slide-1">
 
                                                     <a href="/shop">
-                                                        <img src="/assets/a.avif" alt=''>
+                                                        <img src="/banner.jpg" alt=''>
 
                                                         <div class="text-desc">
                                                             <div class="w-content">

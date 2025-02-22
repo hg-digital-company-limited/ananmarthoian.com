@@ -725,4 +725,11 @@
             </svg>
         </a>
     </div>
+    {{-- <style>
+        @media (max-width: 767px) {
+    .toggle-mb-content {
+        display: initial;
+    }
+}
+    </style> --}}
 </div>

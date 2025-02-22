@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', Login::class)->name('login');
 Route::get('/register', Register::class);
 Route::get('/shop', Shop::class);
-Route::get('/product/{slug}', Product::class);
+Route::get('/product/{slug}', Product::class)->name('product.show');
 Route::get('/forgot-password', ForgotPassword::class);
 Route::get('/account', Account::class)->name('account');
 Route::get('/account/addresses', Addresses::class)->name('addresses');

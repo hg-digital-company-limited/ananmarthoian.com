@@ -62,11 +62,19 @@ class UserResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\ViewAction::make()
+                        ->label('Xem'), // Tùy chỉnh nhãn hiển thị
+                    Tables\Actions\EditAction::make()
+                        ->label('Chỉnh sửa'), // Tùy chỉnh nhãn hiển thị
+                    Tables\Actions\DeleteAction::make()
+                        ->label('Xóa'), // Tùy chỉnh nhãn hiển thị
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make()
+                        ->label('Xóa hàng loạt'), // Tùy chỉnh nhãn hiển thị
                 ]),
             ]);
     }
@@ -77,7 +85,10 @@ class UserResource extends Resource
             //
         ];
     }
-
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
     public static function getPages(): array
     {
         return [

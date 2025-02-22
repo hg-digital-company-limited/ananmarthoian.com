@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 22, 2025 at 12:23 AM
+-- Generation Time: Feb 22, 2025 at 12:56 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -83,8 +83,8 @@ INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1738030459;', 1738030459),
 ('da4b9237bacccdf19c0760cab7aec4a8359010b0', 'i:1;', 1740138041),
 ('da4b9237bacccdf19c0760cab7aec4a8359010b0:timer', 'i:1740138041;', 1740138041),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:2;', 1739965289),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1739965289;', 1739965289);
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1740185177),
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1740185177;', 1740185177);
 
 -- --------------------------------------------------------
 
@@ -270,27 +270,6 @@ CREATE TABLE `orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `user_id`, `address`, `phone`, `full_name`, `status`, `total`, `shipping_method`, `created_at`, `updated_at`) VALUES
-(15, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '2250000.00', 'cod', '2025-02-21 14:42:22', '2025-02-21 14:42:22'),
-(16, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1125000.00', 'cod', '2025-02-21 14:50:27', '2025-02-21 14:50:27'),
-(17, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1125000.00', 'cod', '2025-02-21 14:50:30', '2025-02-21 14:50:30'),
-(18, 2, '1', '123123123', '2509roblox@gmail.com', 'pending', '1500000.00', 'cod', '2025-02-21 15:11:28', '2025-02-21 15:11:28'),
-(19, 5, '2@gmail.coms2@g2@gmail.coms2@g', '2@gmail.coms2@g', '2@gmail.coms2@g2@gmail.coms2@g', 'pending', '2625000.00', 'cod', '2025-02-22 00:06:28', '2025-02-22 00:06:28'),
-(20, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '1500000.00', 'cod', '2025-02-22 00:12:55', '2025-02-22 00:12:55'),
-(21, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '2250000.00', 'cod', '2025-02-22 00:14:22', '2025-02-22 00:14:22'),
-(22, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '2250000.00', 'cod', '2025-02-22 00:15:06', '2025-02-22 00:15:06'),
-(23, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '3000000.00', 'cod', '2025-02-22 00:15:56', '2025-02-22 00:15:56'),
-(24, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '3375000.00', 'cod', '2025-02-22 00:17:03', '2025-02-22 00:17:03'),
-(25, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '3375000.00', 'cod', '2025-02-22 00:18:14', '2025-02-22 00:18:14'),
-(26, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '4125000.00', 'cod', '2025-02-22 00:18:46', '2025-02-22 00:18:46'),
-(27, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '4125000.00', 'cod', '2025-02-22 00:19:38', '2025-02-22 00:19:38'),
-(28, 5, '2@gmail.coms', '2@gmail.coms', '2@gmail.coms', 'pending', '4125000.00', 'cod', '2025-02-22 00:20:08', '2025-02-22 00:20:08'),
-(29, 5, '67 dht 22 ,67 dht 22 67 dht 22', '0339399399', '2509roblox@gmail.com', 'pending', '4125000.00', 'pickup', '2025-02-22 00:21:10', '2025-02-22 00:21:10');
-
 -- --------------------------------------------------------
 
 --
@@ -307,27 +286,6 @@ CREATE TABLE `order_items` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `order_items`
---
-
-INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `price`, `total`, `created_at`, `updated_at`) VALUES
-(6, 15, 628, 6, '375000.00', '2250000.00', '2025-02-21 14:42:22', '2025-02-21 14:42:22'),
-(7, 16, 628, 3, '375000.00', '1125000.00', '2025-02-21 14:50:27', '2025-02-21 14:50:27'),
-(8, 17, 628, 3, '375000.00', '1125000.00', '2025-02-21 14:50:30', '2025-02-21 14:50:30'),
-(9, 18, 628, 4, '375000.00', '1500000.00', '2025-02-21 15:11:28', '2025-02-21 15:11:28'),
-(10, 19, 628, 7, '375000.00', '2625000.00', '2025-02-22 00:06:28', '2025-02-22 00:06:28'),
-(11, 20, 628, 4, '375000.00', '1500000.00', '2025-02-22 00:12:55', '2025-02-22 00:12:55'),
-(12, 21, 628, 6, '375000.00', '2250000.00', '2025-02-22 00:14:22', '2025-02-22 00:14:22'),
-(13, 22, 628, 6, '375000.00', '2250000.00', '2025-02-22 00:15:06', '2025-02-22 00:15:06'),
-(14, 23, 628, 8, '375000.00', '3000000.00', '2025-02-22 00:15:56', '2025-02-22 00:15:56'),
-(15, 24, 628, 9, '375000.00', '3375000.00', '2025-02-22 00:17:03', '2025-02-22 00:17:03'),
-(16, 25, 628, 9, '375000.00', '3375000.00', '2025-02-22 00:18:14', '2025-02-22 00:18:14'),
-(17, 26, 628, 11, '375000.00', '4125000.00', '2025-02-22 00:18:46', '2025-02-22 00:18:46'),
-(18, 27, 628, 11, '375000.00', '4125000.00', '2025-02-22 00:19:38', '2025-02-22 00:19:38'),
-(19, 28, 628, 11, '375000.00', '4125000.00', '2025-02-22 00:20:08', '2025-02-22 00:20:08'),
-(20, 29, 628, 11, '375000.00', '4125000.00', '2025-02-22 00:21:10', '2025-02-22 00:21:10');
 
 -- --------------------------------------------------------
 
@@ -389,7 +347,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('RSmhA4APgqYfa4YIGuwzjTIryEhzd0VsrENmXdwC', 5, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiNXlTMmtOeWJRSmxiQ3IzRlIzUkVvSWV6Q1g5dGdDc2lGaE9DekFmeiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbi9vcmRlcnMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTo1O3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkMmZuUm5qOGJvdHN6WjZIUGN5SVcuLkZBV2YvNWh3YnpnWTVROWNUcVJnZ3p0VUVQVy95YmkiO30=', 1740183769);
+('oqrY2o4bf37648Ny1VAwpQbkQS9ufN96hTKEEzG3', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiVWNkT1d0TlcyOEZoN2piMlN5cDZHVnNEZGIwa0R5UnBMQ2NEckFteiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRoQnR4MlFUTEw4cUlXR1Z0bXNHcHFlYk51ZWtFeWFHVEZEelhEUkRIMmV5YUM3RHMuQzViYSI7fQ==', 1740185788);
 
 -- --------------------------------------------------------
 

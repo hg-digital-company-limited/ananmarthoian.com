@@ -4,28 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/icon.png">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="AN AN" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <meta name="description"
-        content="Hàng ngàn khóa học share miễn phí. Khóa học nào bạn cần,  Khóa Học Miễn Phi đều chia sẻ. Trải nghiệm học tập online thú vị. Nhận khóa học nhanh, uy tín, chất lượng." />
-    <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="twitter:description"
+    content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
+        <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:site_name" content="KhoaHocMienPhi.Site" />
-    <meta property="og:image" content="{{ asset('/banner.png') }}" />
-    <meta property="og:image:secure_url" content="{{ asset('/banner.png') }}" />
-    <meta property="og:image:width" content="512" />
+    <meta property="og:site_name" content="An An Mart Hội An" />
+    <meta property="og:image" content="{{ asset('/banner.jpg') }}" />
+    <meta property="og:image:secure_url" content="{{ asset('/banner.jpg') }}" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:image:type" content="image/png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description"
-        content="Hàng ngàn khóa học share miễn phí. Khóa học nào bạn cần, Khóa Học Miễn Phi đều chia sẻ. Trải nghiệm học tập online thú vị. Nhận khóa học nhanh, uy tín, chất lượng." />
-    <meta name="google-site-verification" content="hQbtvAv7RIf2mqMUt47LDbSFfMxiAALhXoZt4o9sxWA" />
-
+    content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
 </head>
 @livewireStyles
 
