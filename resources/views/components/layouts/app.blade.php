@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-title" content="AN AN" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-
+    <meta name="description" content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
     <meta name="twitter:description"
     content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
         <link rel="canonical" href="{{ url()->current() }}" />
@@ -28,6 +28,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description"
     content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
+    <meta name="google-site-verification" content="-vcm_RPnRBeEhqwvnW0R_3z20_UoGfA7bFZ3bfXf4bQ" />
 </head>
 @livewireStyles
 
