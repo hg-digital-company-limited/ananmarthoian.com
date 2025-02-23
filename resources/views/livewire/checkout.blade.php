@@ -798,13 +798,13 @@
                                             <div class="step-footer" id="step-footer-checkout">
 
 
-                                                <form>
+
                                                     <button wire:click="placeOrder"
                                                         class="step-footer-continue-btn btn">
                                                         <span class="btn-content">Đặt hàng</span>
                                                         <i class="btn-spinner icon icon-button-spinner"></i>
                                                     </button>
-                                                </form>
+
                                                 <a class="step-footer-previous-link" href="/cart">
                                                     Giỏ hàng (Cart)
                                                 </a>
