@@ -198,7 +198,7 @@
                 <div id="header">
                     <div class="menu-desktop hidden-xs">
                         <ul class="menu-top clearfix">
-                            <li class="hasChild fix-icon-coll">
+                            {{-- <li class="hasChild fix-icon-coll">
                                 <a href="javascript:void(0)" title="Thông tin chung" class="maxi-menu-link ">
                                     <span>Thông tin chung</span>
                                 </a>
@@ -214,7 +214,7 @@
                                         <a href="/blogs" title="Tin tức">Tin tức</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             @foreach($classifications as $classification)
                                 <li class="hasChild fix-icon-coll">
                                     <a href="javascript:void(0)" title="{{ $classification->name }}"
@@ -232,6 +232,14 @@
                                     </ul>
                                 </li>
                             @endforeach
+                               <li class=" fix-icon-coll">
+                                    <a href="/blogs" title="News"
+                                        class="maxi-menu-link ">
+                                        <span>News</span>
+                                    </a>
+
+
+                                </li>
                         </ul>
                     </div>
 

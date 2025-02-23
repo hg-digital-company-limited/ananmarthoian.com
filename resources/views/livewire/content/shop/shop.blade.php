@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 product-item">
+<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 product-item">
     <div class="product-wrapper">
         <div class="product-information">
             <div class="product-detail">
@@ -77,4 +77,11 @@
             </div>
         </div>
     </div>
+    <style>
+        @media (max-width: 768px) {
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6.product-item{
+                padding: 15px 0;
+            }
+        }
+    </style>
 </div>

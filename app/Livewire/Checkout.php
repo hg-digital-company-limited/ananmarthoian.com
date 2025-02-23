@@ -149,7 +149,7 @@ class Checkout extends Component
         "🚚 **Phương thức vận chuyển:** " . $order->shipping_method . "\n\n" .
         "🔍 **Chi tiết sản phẩm:**\n" . $itemsDetails;
 
-    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84335139450&body=" . urlencode($messageBody);
+    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84938421286&body=" . urlencode($messageBody);
 
     $response = Http::get($url);
 

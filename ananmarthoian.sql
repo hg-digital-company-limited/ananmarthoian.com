@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 23, 2025 at 04:50 AM
+-- Generation Time: Feb 23, 2025 at 07:46 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -85,8 +85,8 @@ INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('c1dfd96eea8cc2b62785275bca38ac261256e278:timer', 'i:1740189205;', 1740189205),
 ('da4b9237bacccdf19c0760cab7aec4a8359010b0', 'i:1;', 1740138041),
 ('da4b9237bacccdf19c0760cab7aec4a8359010b0:timer', 'i:1740138041;', 1740138041),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1740286252),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1740286252;', 1740286252);
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1740296082),
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1740296082;', 1740296082);
 
 -- --------------------------------------------------------
 
@@ -140,12 +140,16 @@ INSERT INTO `categories` (`id`, `name`, `slug`, `image_link`, `created_at`, `upd
 (221, 'Dark Beer', 'dark-beer', NULL, '2025-02-19 11:55:27', '2025-02-19 11:55:27', 4),
 (222, 'Craft Beer', 'craft-beer', NULL, '2025-02-19 11:55:38', '2025-02-19 11:55:38', 4),
 (223, 'Korean Soju', 'korean-soju', NULL, '2025-02-19 11:55:45', '2025-02-19 11:55:45', 4),
-(224, 'Cigarrtette (Box)', 'cigarrtette-box', NULL, '2025-02-19 11:55:51', '2025-02-19 11:55:51', 5),
-(225, 'Pesonal/Home use', 'pesonalhome-use', NULL, '2025-02-19 11:55:57', '2025-02-19 11:55:57', 5),
-(226, 'Fresh Fruits/Vegetables', 'fresh-fruitsvegetables', NULL, '2025-02-19 11:56:05', '2025-02-19 11:56:05', 5),
-(227, 'Dairy', 'dairy', NULL, '2025-02-19 11:56:13', '2025-02-19 11:56:13', 5),
-(228, 'Meat/Fish', 'meatfish', NULL, '2025-02-19 11:56:19', '2025-02-19 11:56:19', 5),
-(229, 'Ice Cream', 'ice-cream', NULL, '2025-02-19 11:56:28', '2025-02-19 11:56:28', 5);
+(224, 'Cigarrtette (Box)', 'cigarrtette-box', NULL, '2025-02-19 11:55:51', '2025-02-19 11:55:51', 14),
+(225, 'Pesonal/Home use', 'pesonalhome-use', NULL, '2025-02-19 11:55:57', '2025-02-19 11:55:57', 14),
+(226, 'Fresh Fruits/Vegetables', 'fresh-fruitsvegetables', NULL, '2025-02-19 11:56:05', '2025-02-19 11:56:05', 14),
+(227, 'Dairy', 'dairy', NULL, '2025-02-19 11:56:13', '2025-02-19 11:56:13', 14),
+(228, 'Meat/Fish', 'meatfish', NULL, '2025-02-19 11:56:19', '2025-02-19 11:56:19', 14),
+(229, 'Ice Cream', 'ice-cream', NULL, '2025-02-19 11:56:28', '2025-02-19 11:56:28', 14),
+(230, 'Vietnamese Alcohol', 'vietnamese-alcohol', NULL, '2025-02-23 07:36:29', '2025-02-23 07:36:29', 11),
+(231, 'Snack/Chocolate', 'snackchocolate', NULL, '2025-02-23 07:36:38', '2025-02-23 07:36:38', 12),
+(232, 'Gifts from Vietnam', 'gifts-from-vietnam', NULL, '2025-02-23 07:36:49', '2025-02-23 07:36:49', 13),
+(233, 'Soft Drink', 'soft-drink', NULL, '2025-02-23 07:42:30', '2025-02-23 07:42:30', 10);
 
 -- --------------------------------------------------------
 
@@ -169,7 +173,11 @@ INSERT INTO `classifications` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (2, 'Whiskey/Brandy', '2025-02-19 11:47:28', '2025-02-19 11:47:28'),
 (3, 'Spirit', '2025-02-19 11:47:34', '2025-02-19 11:47:34'),
 (4, 'Beers', '2025-02-19 11:47:39', '2025-02-19 11:47:39'),
-(5, 'Others', '2025-02-19 11:47:46', '2025-02-19 11:47:46');
+(10, 'Soft Drink', '2025-02-23 07:42:20', '2025-02-23 07:42:20'),
+(11, 'Vietnamese Alcohol', '2025-02-23 07:43:34', '2025-02-23 07:43:34'),
+(12, 'Snack/Chocolate', '2025-02-23 07:43:38', '2025-02-23 07:43:38'),
+(13, 'Gifts from Vietnam', '2025-02-23 07:43:43', '2025-02-23 07:43:43'),
+(14, 'Others', '2025-02-23 07:43:46', '2025-02-23 07:43:46');
 
 -- --------------------------------------------------------
 
@@ -272,6 +280,17 @@ CREATE TABLE `orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `address`, `phone`, `full_name`, `status`, `total`, `shipping_method`, `created_at`, `updated_at`) VALUES
+(62, 6, 'admin@gmail.com', 'admin@gmail.com', 'admin@gmail.com', 'pending', '170000.00', 'cod', '2025-02-23 05:40:14', '2025-02-23 05:40:14'),
+(63, 6, 'admin@gmail.com', 'admin@gmail.com', 'admin@gmail.com', 'pending', '375000.00', 'cod', '2025-02-23 05:40:39', '2025-02-23 05:40:39'),
+(64, 6, '2509roblox@gmail.com', '2509roblox@gmai', '2509roblox@gmail.com', 'pending', '170000.00', 'cod', '2025-02-23 05:41:57', '2025-02-23 05:41:57'),
+(65, 6, 'admin@gmail.com', 'admin@gmail.com', 'admin@gmail.com', 'pending', '170000.00', 'pickup', '2025-02-23 05:42:20', '2025-02-23 05:42:20'),
+(66, 6, '2509roblox@gmail.com', '2509roblox@gmai', '2509roblox@gmail.com', 'pending', '21500.00', 'cod', '2025-02-23 05:57:52', '2025-02-23 05:57:52');
+
 -- --------------------------------------------------------
 
 --
@@ -288,6 +307,17 @@ CREATE TABLE `order_items` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `order_items`
+--
+
+INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `price`, `total`, `created_at`, `updated_at`) VALUES
+(1, 62, 641, 1, '170000.00', '170000.00', '2025-02-23 05:40:14', '2025-02-23 05:40:14'),
+(2, 63, 628, 1, '375000.00', '375000.00', '2025-02-23 05:40:39', '2025-02-23 05:40:39'),
+(3, 63, 641, 1, '170000.00', '170000.00', '2025-02-23 05:41:57', '2025-02-23 05:41:57'),
+(4, 65, 641, 1, '170000.00', '170000.00', '2025-02-23 05:42:20', '2025-02-23 05:42:20'),
+(5, 66, 640, 1, '21500.00', '21500.00', '2025-02-23 05:57:52', '2025-02-23 05:57:52');
 
 -- --------------------------------------------------------
 
@@ -327,7 +357,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `name`, `slug`, `price`, `image`, `category_id`, `created_at`, `updated_at`, `sold`, `is_stock`, `description`) VALUES
 (627, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-21 11:42:31', 10, 0, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>'),
-(628, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot1', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-22 00:21:10', 127, 1, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>'),
+(628, 'WI- Vang đỏ Markview Cabernet Merlot', 'wi-vang-do-markview-cabernet-merlot1', '375000.00', '01JMM4XZ4QJDXNE4P9WEYMJ4BG.png', 205, '2025-02-21 11:40:20', '2025-02-23 05:40:39', 128, 1, '<blockquote>&nbsp;Nét đặc trưng của Vang đỏ Markview Cabernet Merlot&nbsp;</blockquote><p>Rượu McWilliams Markview Cabernet Merlot là sự pha trộn của hai giống nho đỏ Cabernet Sauvignon và Merlot. Rượu có màu đỏ tím, hương thơm quả anh đào, việt quất và chút vị cam. Hương thơm hòa quyện với nhau, tăng thêm sự tinh tế với nốt hương vani và gỗ sồi</p><p>Nồng độ: 13.5%</p><p>Dung tích: 750ml</p><blockquote>Characteristics of Markview Cabernet Merlot Red Wine</blockquote><p>The characteristic of McWilliams Markview Cabernet Merlot Wine is a blend of two red grape varieties Cabernet Sauvignon and Merlot. The wine has a purple-red color, aromas of cherries, blueberries and a bit of orange. The scent blends together, adding sophistication with notes of vanilla and oak</p><p>ABV: 13.5%</p><p>Capacity: 750ml&nbsp;</p><p>&nbsp;</p>'),
 (629, 'Rượu Whisky Single Malt Scotland Singleton 12Yo Dufftown Smsw 700Ml Hq F23 SP0001395-G-C', 'ruou-whisky-single-malt-scotland-singleton-12yo-dufftown-smsw-700ml-hq-f23-sp0001395-g-c', '1370000.00', '01JMNMQTGX4GQD2C0H8WQYGAX7.png', 210, '2025-02-22 01:35:50', '2025-02-23 04:45:41', 8, 1, '<p>Giới thiệu</p><p>Rượu Whisky Singleton 12Yo Dufftown là một sản phẩm nổi bật trong dòng whisky single malt của Scotland, đặc biệt đến từ vùng Dufftown, nơi được biết đến như là “thủ đô whisky” của Scotland. Với tuổi thọ 12 năm, Singleton 12Yo mang đến cho người thưởng thức trải nghiệm đậm đà, phong phú, thể hiện bản sắc văn hóa và truyền thống lâu đời của ngành công nghiệp sản xuất whisky Scotland. Chai rượu này không chỉ là sự kết hợp hoàn hảo của các thành phần tự nhiên mà còn là kết quả của quy trình sản xuất tỉ mỉ, đảm bảo mỗi ngụm rượu đều mang lại sự hài lòng tối đa cho người thưởng thức.</p><h3>Đặc điểm</h3><p>Rượu Whisky Singleton 12Yo sở hữu màu vàng rơm tự nhiên, phản ánh quá trình trưởng thành trong thùng gỗ sồi. Hương thơm đầu tiên mà người thưởng thức cảm nhận được là sự kết hợp giữa trái cây tươi mát như táo và lê, hòa quyện cùng với hương vani ngọt ngào. Khi tiếp tục thưởng thức, người dùng sẽ cảm nhận được những gợi ý của caramel, mật ong và một chút gia vị nhẹ, mang đến sự phong phú và chiều sâu cho mỗi ngụm rượu.</p><p>Khi nếm thử, rượu cho cảm giác mượt mà, êm dịu với cấu trúc cân bằng. Hương vị trái cây tiếp tục hiện lên, bổ sung thêm những nốt hương hạnh nhân và hạt dẻ, tạo ra một trải nghiệm độc đáo và hấp dẫn. Kết thúc của Singleton 12Yo là sự ấm áp kéo dài, với một chút vị ngọt nhẹ và gia vị, để lại ấn tượng sâu sắc trong lòng người thưởng thức.</p><h3>Phương thức sản xuất</h3><p>Quá trình sản xuất Singleton 12Yo bắt đầu từ việc chọn lựa nguyên liệu đầu vào chất lượng cao. Lúa mạch được chọn lọc kỹ càng, kết hợp với nước tinh khiết từ nguồn suối tự nhiên, đảm bảo rằng tất cả các thành phần đều đạt tiêu chuẩn cao nhất. Sau đó, lúa mạch được nghiền và trộn với nước nóng để tạo ra dịch chiết, quá trình này diễn ra trong các thùng lớn để tạo ra phần rượu ngâm.</p><p>Tiếp theo, dịch chiết này được lên men trong các thùng lên men bằng gỗ, nơi mà men sẽ chuyển hóa đường thành rượu. Sau khoảng thời gian từ 48 đến 72 giờ, quá trình lên men hoàn tất và sản phẩm thu được sẽ được chưng cất trong các nồi chưng cất đồng để tách ra rượu tinh khiết.</p><p>Rượu sau khi chưng cất sẽ được đưa vào các thùng gỗ sồi để trưởng thành. Thùng gỗ sồi thường được sử dụng là những thùng đã qua sử dụng, tạo ra các hương vị phức hợp từ những lần chưng cất trước đó. Singleton 12Yo được ủ trong khoảng 12 năm, cho phép rượu hấp thụ những đặc tính tốt nhất từ gỗ, mang lại hương vị và màu sắc đặc trưng.</p><p>Sau khi đủ thời gian ủ, rượu sẽ được kiểm tra và pha trộn để đảm bảo sự nhất quán về hương vị. Cuối cùng, rượu được đóng chai với nồng độ 40% ABV, sẵn sàng đến tay người tiêu dùng.</p><h3>Kết luận</h3><p>Rượu Whisky Singleton 12Yo Dufftown không chỉ là một lựa chọn tuyệt vời cho những ai yêu thích whisky mà còn là một món quà tinh tế cho những dịp đặc biệt. Với hương vị phong phú, quy trình sản xuất tỉ mỉ và lịch sử lâu đời, Singleton 12Yo chắc chắn sẽ làm hài lòng cả những người sành rượu lẫn những người mới bắt đầu khám phá thế giới whisky. Hãy thử một lần và để cho hương vị của nó đưa bạn vào một hành trình khám phá đầy thú vị.&nbsp;</p>'),
 (630, 'Rượu Vang Mỹ Carlo Rossi California White', 'ruou-vang-my-carlo-rossi-california-white', '288000.00', '01JMNMV9AVX4VT6C994QBPG11H.png', 206, '2025-02-22 01:37:43', '2025-02-23 04:44:58', 7, 1, '<p>&nbsp;</p><p>Vang trắng Mỹ đã từ lâu trở thành đề tài mà nhiều khách hàng hướng đến bình phẩm. Có biết bao những sản phẩm rượu vang trắng khác nhau ra đời từ nhà làm rượu Carlo Rossi nước Mỹ được khách hàng đánh giá khá cao trên thị trường hiện nay. Và sản phẩm Rượu Vang Carlo Rossi California White sẽ là một gợi ý tuyệt vời cho khách hàng lựa chọn thưởng thức dành cho những bữa tiệc.</p><h2><strong>Thông Tin Chi Tiết Rượu Vang Carlo Rossi California White</strong></h2><p>► <strong>Xuất xứ:</strong> <a href=\"https://winevn.com/ruou-vang-my\"><strong style=\"text-decoration: underline;\">Mỹ</strong></a></p><p>► <strong>Vùng làm vang:</strong> <a href=\"https://winevn.com/vung-lam-vang/california\"><strong style=\"text-decoration: underline;\">California</strong></a></p><p>► <strong>Hãng sản xuất:</strong> Carlo Rossi</p><p>► <strong>Loại vang: </strong><a href=\"https://winevn.com/ruou-vang-trang\"><strong style=\"text-decoration: underline;\">Rượu vang Trắng</strong></a></p><p>► <strong>Giống nho:</strong> <a href=\"https://winevn.com/giong-nho/chardonnay\"><strong style=\"text-decoration: underline;\">Chardonnay</strong></a></p><p>► <strong>Nồng độ: </strong>10.5 %</p><p>► <strong>Dung tích: </strong>750 ml</p><h2><strong>Hương Vị – Mùi Vị Của Rượu Vang Carlo Rossi California White</strong></h2><p>Rượu vang Trắng nước Mỹ có những đóng góp rất quan trọng làm nên sự phong phú của hệ thống rượu vang thế giới. Dường như những sản phẩm rượu vang ra đời từ quốc gia này có được những đánh giá nhất định trên thị trường. Khi đến với chai rượu vang này chúng ta có thể cảm nhận được điều đó. Được làm nên hoàn toàn từ những trái nho trắng đó là nho Chardonnay, sản phẩm rượu vang ra đời là sự ghi chú đầy đủ từ hương vị của những trái nho. Ngoài ra khi thưởng thức vang còn lần lượt là những rung động đến từ hương vị của táo xanh, chanh dây, dứa, bưởi, xoài, cam hay quýt. Mang bao yêu thương trọn vẹn đến với khách hàng, chai rượu vang này sẽ để lại kết thúc lâu dài sâu sắc trong lòng khách hàng dùng vang trên thế giới. 10.5% làm nên sự cân bằng trong cấu trúc của rượu vang cũng như sự mượt mà phong phú trong lượng tanin mượt mà trong dư vị của rượu vang. Để cho sản phẩm rượu vang được ngon hơn thì việc dùng vang như thế nào cho đúng cách cũng rất cần thiết. Một số món ăn cơ bản có thể lựa chọn dùng kèm với chai rượu vang này đó là thịt trắng, hải sản, các món ăn khai vị nhẹ nhàng hay những món ăn như cá, tôm, cua biển hấp hay các món khai vị nhẹ nhàng sẽ rất tuyệt vời cho khách hàng lựa chọn dùng kèm cùng với sản phẩm rượu vang.&nbsp;</p>'),
 (631, 'Vang hồng Chile VALDIVIESO ROSE', 'vang-hong-chile-valdivieso-rose', '310000.00', '01JMNMY7FCZPTWX5R7WJZJY90E.png', 207, '2025-02-22 01:39:20', '2025-02-23 04:46:11', 11, 1, '<p>&nbsp;</p><h1><strong>Vang hồng Chile VALDIVIESO ROSE</strong></h1><p><em>(Mã sản phẩm: HM-CL23)</em></p><p><em>V_VA_26</em></p><p>&nbsp;</p><h2><strong>Wine Tasting</strong></h2><p>NHÀ VANG: Valdivieso</p><p>VÙNG: Central Valley - Chile&nbsp;</p><p>NỒNG ĐỘ: &nbsp; 13%</p><p>GIỐNG NHO: Cabernet Sauvignon&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>LOẠI: Vang hồng</p><p>&nbsp;</p><p><strong>THỬ NẾM</strong></p><p>Màu sắc: màu hồng nhạt và tươi sáng.</p><p>Hương thơm: trái cây đỏ tươi như dâu tây, quả mâm xôi và quả lý chua lan tỏa trong không gian, tạo nên một bầu không khí tươi mới và đầy quyến rũ. Hương thơm của rượu vang này cũng có thể có sự gợi nhắc của các loại hoa như hoa hồng hoặc hoa tươi, tạo thêm sự phức tạp và sự nữ tính</p><p>Hương vị: kết hợp hoàn hảo giữa hương vị tươi mát và cấu trúc cân bằng. Với độ chua nhẹ và hương trái cây tươi ngon, rượu vang này mang lại cảm giác sảng khoái và thích thú trên đầu lưỡi.</p><p><strong>KẾT CẤU</strong></p><p>Kết cấu của rượu này rất vững chắc, với cấu trúc cân đối và mịn màng. Sự cân bằng giữa chua và ngọt, cùng với độ axit vừa phải, tạo nên một cảm giác cân đối và dễ uống.</p><p>Valdivieso Classic Rosé là một lựa chọn tuyệt vời để kết hợp với các món ăn nhẹ nhàng và thanh mát. Nó điểm thêm cho các món hải sản như tôm, cá sống và salad hải sản. Ngoài ra, rượu vang này cũng kết hợp tốt với các món salad trái cây, phô mai nhẹ, và món ăn Á-Âu như sushi và mì xào. Sự tươi mát và đa dạng hương vị của Valdivieso Classic Rosé làm cho nó trở thành một sự lựa chọn thú vị cho các dịp gặp gỡ bạn bè, cuộc họp mặt hoặc buổi tối thưởng thức nhẹ nhàng.</p><p>&nbsp;</p><p><strong><em>Quý Khách xin lưu ý</em></strong>:</p><p><strong>- Rượu bia không dành cho người dưới 18 tuổi và phụ nữ có thai.<br>- Không lái xe khi đã sử dụng rượu bia.</strong>&nbsp;</p>'),
@@ -339,8 +369,8 @@ INSERT INTO `products` (`id`, `name`, `slug`, `price`, `image`, `category_id`, `
 (637, 'Rượu Vodka Absolut Original', 'ruou-vodka-absolut-original', '350000.00', '01JMNNA8ADT0E59FEPNWZ3G8N6.png', 214, '2025-02-22 01:45:54', '2025-02-22 01:45:54', 0, 1, '<p>&nbsp;</p><p><strong>Rượu vodka Absolut Original</strong> là dòng rượu vodka Absolut của Thụy Điển và ngày nay thuộc sở hữu của Pernod Ricard Pháp (Tập đoàn này mua lại Absolut vào năm 2008) là dòng rượu mạnh đứng thứ 3 thế giới sau Bacardi và Smirnoff, được bán ra trên 126 quốc gia.</p><p><strong>Rượu vodka Absolut</strong> được thành lập năm 1879 bởi Lars Olsson Smith, tại Åhus, ở phía Nam Thụy Điển.</p><p>Điểm làm nên chất lượng của <strong>rượu vokda Absolut Original</strong> là rượu lên men hoàn toàn từ các thành phần tự nhiên không thêm thêm bất cứ các loại đường nào (thêm đường vào quá trình lên men để tăng độ rượu). Nước dùng để sản xuất được lấy từ các giếng sâu ở Åhus (đảm bảo ít lẫn các tạp chất) và lúa mì vụ đông (chất lượng tốt nhất để làm rượu). Trong canh tác, các loại phân bón được giảm thiểu đến mức tối đa.&nbsp;</p>'),
 (638, 'Saigon Special Beer 330ml', 'saigon-special-beer-330ml', '50000.00', '01JMNNC78Y54FWYZNF78VP3JGV.png', 219, '2025-02-22 01:46:58', '2025-02-23 04:46:11', 12, 1, '<p>&nbsp;</p><h3>SAIGON SPECIAL BEER 330ML</h3><p>Produced in Vietnam from water, barley malt, cereals and hops, genuine Saigon beer brand. 24 cans of Saigon Special 330ml beer has a rich, delicious taste, with a grainy aroma easy willing to help you sublimate, more refreshing in the fun with family and friends.</p><p><strong>Brand:</strong> Sai Gon (Viet Nam)</p><p><strong>Weight: </strong>330ml</p><p><strong>Packing: </strong>24 cans/carton</p><p><strong>Alcohol: </strong>4.9%</p><p><strong>Shelf Life: </strong>12 months</p><p><strong>Storage:</strong> Store in a cool, dry place, away from direct sunlight or high temperature. Do not keep frozen beer in the freezer compartment of the refrigerator.</p><p><strong>Note:</strong> Not for use by pregnant and lactating women, people under 18 years old .</p>'),
 (639, 'Thuốc Lá 555 State Express Signature - Thuốc Lá Chính Hãng', 'thuoc-la-555-state-express-signature-thuoc-la-chinh-hang', '45000.00', '01JMNNGRTJRDRRR99PK0S31WQ5.png', 224, '2025-02-22 01:49:27', '2025-02-23 04:36:00', 16, 1, '<p>&nbsp;</p><p><strong>Thông tin chi tiết Thuốc Lá 555 State Express Signature - Thuốc Lá Chính Hãng:&nbsp;</strong></p><ul><li><strong>Tên thuốc lá:</strong> 555 State Express Signature / 555 State Express / Ba số 5 dài / 555 Signature / Ba số xanh dài / 555 dài</li><li><strong>Thương hiệu:</strong> No 555</li><li><strong>Nguồn gốc:</strong> Anh</li><li><strong>Xuất xứ:</strong> Việt Nam</li><li><strong>Nhà máy:</strong> Công ty TNHH Liên Doanh VINA BAT</li><li><strong>Kích thước hộp: </strong>95 x 55 x 20 (mm)</li><li><strong>Kích thước điếu:</strong> Cigarette size slim (nhỏ, cao)</li><li><strong>Chiều dài:</strong> 3 3/4 inch (95 mm)</li><li><strong>Vòng ring:</strong> 18</li><li><strong>Hương vị:</strong> Mùi thơm từ lá thuốc mang đến hương vị tự nhiên của mộc mạnh mẽ nhưng đầm khi hút</li><li><strong>Viên bấm:</strong> N/A</li><li><strong>Độ nặng: </strong>Trung bình nhẹ - 2/5</li><li><strong>Nicotine:</strong> 1 mg</li><li><strong>Đóng gói:</strong> Hộp giấy 20 điếu</li><li><strong>Thời gian hút:</strong> 5 - 10 Phút</li><li><strong>Đánh giá:</strong> 95 Điểm bởi <a href=\"https://xiganghiepdu.com/\">XGND</a> Cigarette: Jan 01, 2024</li></ul><p>Thuốc lá <strong>555 State Express Signature</strong> là một thương hiệu thuốc lá nổi tiếng và được biết đến trên toàn thế giới. Được sản xuất bởi công ty British American Tobacco (BAT), một trong những tập đoàn hàng đầu trong ngành công nghiệp thuốc lá, <strong>555 State Express Signature</strong> nổi tiếng với chất lượng cao. Được ra đời từ nước Anh, <strong>555 State Express</strong> đã tồn tại và phát triển từ những năm 1895.&nbsp;</p>'),
-(640, 'VE- Bông lơ trắng - White Cauliflower', 've-bong-lo-trang-white-cauliflower', '21500.00', '01JMNNKYDB9J9MY34N45W2V2D3.png', 226, '2025-02-22 01:51:11', '2025-02-23 04:49:22', 13, 1, '<p>&nbsp;</p><p><strong>Bông lơ trắng</strong></p><p>Bông lơ trắng đã được biết đến từ lâu là mang lại giá trị dinh dưỡng và có lợi cho sức khỏe. Với hàm lượng calo và chất xơ ít (khoảng 25 calo và 2g chất xơ), đây là món ăn tuyệt vời cho người muốn giảm cân. Một số hoạt chất trong cải đã được chứng minh hoạt động rất hiệu quả trên hệ miễn dịch, tăng cường kháng viêm, chống vi trùng và vi khuẩn và điều trị chứng loạn sản cổ tử cung.</p><p>Bông lơ trắng cung cấp một lượng lớn vitamin C giúp chống oxy hóa đã được chứng minh giúp chống lại các gốc tự do có hại, tăng cường khả năng miễn dịch, ngăn ngừa các bệnh nhiễm trùng và ngừa ung thư.</p><p>Bông lơ trắng giúp làm bền các thành mạch máu. Một số vitamin khác giúp kích hoạt hoạt động chống viêm trong mao mạch và ngăn ngừa tổn thương mạch máu...</p><p><strong>White Cauliflower</strong></p><p>Cauliflower has long been known to provide nutritional value and health benefits. With a low calorie and fiber content (about 25 calories and 2g of fiber), this is a great dish for people who want to lose weight. Some active ingredients in cabbage have been shown to work very effectively on the immune system, increasing anti-inflammation, fighting germs and bacteria and treating cervical dysplasia.</p><p>Cauliflower provides large amounts of antioxidant vitamin C, which has been proven to help fight harmful free radicals, boost immunity, prevent infections and prevent cancer.</p><p>Cauliflower helps strengthen blood vessel walls. Some other vitamins help activate anti-inflammatory activity in capillaries and prevent blood vessel damage...&nbsp;</p>'),
-(641, 'ME.B- Beef Short Loin Steak Fuji 200g (GREEN PACKAGE) T7', 'meb-beef-short-loin-steak-fuji-200g-green-package-t7', '170000.00', '01JMNNPYBPH7FBCWQP8HTA07QS.png', 226, '2025-02-22 01:52:50', '2025-02-23 03:59:42', 71, 1, '<p>&nbsp;<strong>Thịt Bò FUJI Bít Tết</strong></p><p>Làm bít tết chuẩn vị châu Âu không khó với thịt bò FUJI. Chỉ với 30 phút chế biến, bạn hoàn toàn có thể dành tặng cho bản thân và gia đình một phần bít tết đủ chất dinh dưỡng, đúng vị mong muốn của riêng gia đình bạn trong không gian ấm cúng. Bạn có thể mua kèm gói sốt FUJI chuẩn vị đang được bán tại FujiFoods để dễ dàng chế biến.<br><strong><em>Gợi ý các món ăn</em></strong></p><p>Bít tết salad</p><p>Bít tết sốt vang</p><p>Bít tết bánh mì Pháp</p><p>Các loại Bít tết khác ...</p><p><strong>FUJI Beef Steak</strong><br>Making European-style steak is not difficult with FUJI beef. With only 30 minutes of cooking, you can completely gift yourself and your family a nutritious steak, just the right taste for your family in a cozy space. You can buy the standard FUJI sauce package sold at FujiFoods for easy preparation.<br><strong><em>Suggested dishes</em></strong></p><p>Steak salad</p><p>Steak with wine sauce</p><p>French bread steak</p><p>Other types of Steaks...&nbsp;</p>');
+(640, 'VE- Bông lơ trắng - White Cauliflower', 've-bong-lo-trang-white-cauliflower', '21500.00', '01JMNNKYDB9J9MY34N45W2V2D3.png', 226, '2025-02-22 01:51:11', '2025-02-23 05:57:52', 14, 1, '<p>&nbsp;</p><p><strong>Bông lơ trắng</strong></p><p>Bông lơ trắng đã được biết đến từ lâu là mang lại giá trị dinh dưỡng và có lợi cho sức khỏe. Với hàm lượng calo và chất xơ ít (khoảng 25 calo và 2g chất xơ), đây là món ăn tuyệt vời cho người muốn giảm cân. Một số hoạt chất trong cải đã được chứng minh hoạt động rất hiệu quả trên hệ miễn dịch, tăng cường kháng viêm, chống vi trùng và vi khuẩn và điều trị chứng loạn sản cổ tử cung.</p><p>Bông lơ trắng cung cấp một lượng lớn vitamin C giúp chống oxy hóa đã được chứng minh giúp chống lại các gốc tự do có hại, tăng cường khả năng miễn dịch, ngăn ngừa các bệnh nhiễm trùng và ngừa ung thư.</p><p>Bông lơ trắng giúp làm bền các thành mạch máu. Một số vitamin khác giúp kích hoạt hoạt động chống viêm trong mao mạch và ngăn ngừa tổn thương mạch máu...</p><p><strong>White Cauliflower</strong></p><p>Cauliflower has long been known to provide nutritional value and health benefits. With a low calorie and fiber content (about 25 calories and 2g of fiber), this is a great dish for people who want to lose weight. Some active ingredients in cabbage have been shown to work very effectively on the immune system, increasing anti-inflammation, fighting germs and bacteria and treating cervical dysplasia.</p><p>Cauliflower provides large amounts of antioxidant vitamin C, which has been proven to help fight harmful free radicals, boost immunity, prevent infections and prevent cancer.</p><p>Cauliflower helps strengthen blood vessel walls. Some other vitamins help activate anti-inflammatory activity in capillaries and prevent blood vessel damage...&nbsp;</p>'),
+(641, 'ME.B- Beef Short Loin Steak Fuji 200g (GREEN PACKAGE) T7', 'meb-beef-short-loin-steak-fuji-200g-green-package-t7', '170000.00', '01JMNNPYBPH7FBCWQP8HTA07QS.png', 226, '2025-02-22 01:52:50', '2025-02-23 05:42:20', 74, 1, '<p>&nbsp;<strong>Thịt Bò FUJI Bít Tết</strong></p><p>Làm bít tết chuẩn vị châu Âu không khó với thịt bò FUJI. Chỉ với 30 phút chế biến, bạn hoàn toàn có thể dành tặng cho bản thân và gia đình một phần bít tết đủ chất dinh dưỡng, đúng vị mong muốn của riêng gia đình bạn trong không gian ấm cúng. Bạn có thể mua kèm gói sốt FUJI chuẩn vị đang được bán tại FujiFoods để dễ dàng chế biến.<br><strong><em>Gợi ý các món ăn</em></strong></p><p>Bít tết salad</p><p>Bít tết sốt vang</p><p>Bít tết bánh mì Pháp</p><p>Các loại Bít tết khác ...</p><p><strong>FUJI Beef Steak</strong><br>Making European-style steak is not difficult with FUJI beef. With only 30 minutes of cooking, you can completely gift yourself and your family a nutritious steak, just the right taste for your family in a cozy space. You can buy the standard FUJI sauce package sold at FujiFoods for easy preparation.<br><strong><em>Suggested dishes</em></strong></p><p>Steak salad</p><p>Steak with wine sauce</p><p>French bread steak</p><p>Other types of Steaks...&nbsp;</p>');
 
 -- --------------------------------------------------------
 
@@ -362,7 +392,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Kx0kiuLsSc4FrdvP8Txknn6aKN73ys63Ap34y0Jz', 6, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1lsMWwyM2ZZWWRKUlYyUERDaHZOVjRtaXdlbmh4dHFYTEhRa0xacyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hZG1pbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJGV4enVKTXh4dGxlMk9RV3JNMmpuWS50b0FtQ0xMUlN1Tk1WeU5pUEVmRFhRRkcyeUQ1c3NtIjtzOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTo2O30=', 1740286239);
+('Q7zdSFLbJaciyVDx2y60Yaf2cv8gGN2p0rztGkU8', 6, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiTUJSMVJKMDlQUzNaTHNxSEFZeVFCbzFMaUo3NFhUblRsNTdBMlhvMCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9ibG9ncyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJGV4enVKTXh4dGxlMk9RV3JNMmpuWS50b0FtQ0xMUlN1Tk1WeU5pUEVmRFhRRkcyeUQ1c3NtIjtzOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTo2O3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1740296773);
 
 -- --------------------------------------------------------
 
@@ -555,13 +585,13 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=234;
 
 --
 -- AUTO_INCREMENT for table `classifications`
 --
 ALTER TABLE `classifications`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -585,13 +615,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `products`
