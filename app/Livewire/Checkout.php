@@ -121,7 +121,7 @@ class Checkout extends Component
         $this->sendWhatsappMessage($order->id);
 
         // Chuyển hướng đến trang cảm ơn cùng với ID đơn hàng
-        return redirect()->to('/thankyou/' . $order->id);
+        // return redirect()->to('/thankyou/' . $order->id);
     }
 
     public function sendWhatsappMessage($orderId)
@@ -132,20 +132,21 @@ class Checkout extends Component
             return redirect()->back()->with('error', 'Đơn hàng không tồn tại.');
         }
 
-        $message = "hello";
-//         "Đơn hàng #{$orderId} đã được đặt.
-// 💰 Số tiền: " . number_format($order->total, 0, ',', '.') . " VNĐ
-// 🕒 Thời gian: " . $order->created_at->format('d/m/Y H:i:s') . "
-// 👤 Khách hàng: " . $order->full_name . "
-// 📞 Số điện thoại: " . $order->phone . "
-// 🏠 Địa chỉ: " . $order->address . "
-// 🚚 Phương thức vận chuyển: " . $order->shipping_method;
-        $phone = 'whatsapp:+84335139450'; // Số điện thoại nhận tin nhắn (bắt đầu bằng 'whatsapp:')
+        $message =
+        "Đơn hàng #{$orderId} đã được đặt.
+    💰 Số tiền: " . number_format($order->total, 0, ',', '.') . " VNĐ
+    🕒 Thời gian: " . $order->created_at->format('d/m/Y H:i:s') . "
+    👤 Khách hàng: " . $order->full_name . "
+    📞 Số điện thoại: " . $order->phone . "
+    🏠 Địa chỉ: " . $order->address . "
+    🚚 Phương thức vận chuyển: " . $order->shipping_method;
+
+        $phone = 'whatsapp:+840335139450'; // Số điện thoại nhận tin nhắn (bắt đầu bằng 'whatsapp:')
 
         // Thông tin tài khoản Twilio
         $sid = 'AC69c66665128050f8fc9cf62d3dd3e1b4'; // Thay thế bằng Account SID của bạn
-        $token = 'e5254acdf00f83a9246b8e9f01e8a87d'; // Thay thế bằng Auth Token của bạn
-        $twilioNumber = 'whatsapp:+16822815310'; // Số điện thoại WhatsApp của Twilio
+        $token = 'dd9bcee4acf9c2c8bcbdc6c6d577110c'; // Thay thế bằng Auth Token của bạn
+        $twilioNumber = 'whatsapp:+18596952660'; // Số điện thoại WhatsApp của Twilio
 
         $client = new Client($sid, $token);
 
@@ -154,9 +155,8 @@ class Checkout extends Component
                 'from' => $twilioNumber,
                 'body' => $message,
             ]);
-            dd('success');
+            $this->alert('success', 'Tin nhắn đã được gửi thành công!');
         } catch (\Exception $e) {
-            dd($e->getMessage());
             $this->alert('error', 'Lỗi khi gửi tin nhắn: ' . $e->getMessage());
         }
     }
