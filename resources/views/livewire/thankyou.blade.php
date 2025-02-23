@@ -57,7 +57,7 @@
                                         </svg>
                                     </div>
                                     <div class="order-summary-toggle-text order-summary-toggle-text-show">
-                                        <span>Hiển thị thông tin đơn hàng</span>
+                                        <span>Thông tin đơn hàng</span>
                                         <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg"
                                             class="order-summary-toggle-dropdown" fill="#000">
                                             <path
@@ -74,10 +74,6 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <div class="order-summary-toggle-total-recap"
-                                        data-checkout-payment-due-target="16700000">
-                                        <span class="total-recap-final-price">167,000₫</span>
-                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -87,7 +83,69 @@
                                     <div class="sidebar-content">
                                         <div class="order-summary">
                                             <div class="order-summary-sections">
+                                                <div class="order-summary-section order-summary-section-product-list" data-order-summary-section="line-items">
+                                                    <table class="product-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><span class="visually-hidden">Hình ảnh</span></th>
+                                                                <th scope="col"><span class="visually-hidden">Mô tả</span></th>
+                                                                <th scope="col"><span class="visually-hidden">Số lượng</span></th>
+                                                                <th scope="col"><span class="visually-hidden">Giá</span></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($order->orderItems as $item)
+                                                            <tr class="product" data-product-id="{{ $item->product->id }}" data-variant-id="{{ $item->variant_id }}">
+                                                                <td class="product-image">
+                                                                    <div class="product-thumbnail">
+                                                                        <div class="product-thumbnail-wrapper">
+                                                                            <img class="product-thumbnail-image" alt="{{ $item->product->name }}" src="{{ url(Storage::url($item->product->image)) }}" />
+                                                                        </div>
+                                                                        <span class="product-thumbnail-quantity" aria-hidden="true">{{ $item->quantity }}</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="product-description">
+                                                                    <span class="product-description-name order-summary-emphasis">{{ $item->product->name }}</span>
+                                                                </td>
+                                                                <td class="product-quantity visually-hidden">{{ $item->quantity }}</td>
+                                                                <td class="product-price">
+                                                                    <span class="order-summary-emphasis">{{ number_format($item->price, 0, ',', '.') }}₫</span>
+                                                                </td>
+                                                            </tr>
+                                                            @endforeach
+                                                        </tbody>
+                                                    </table>
+                                                </div>
 
+                                                <div class="order-summary-section order-summary-section-total-lines payment-lines" data-order-summary-section="payment-lines">
+                                                    <table class="total-line-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"><span class="visually-hidden">Mô tả</span></th>
+                                                                <th scope="col"><span class="visually-hidden">Giá</span></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="total-line total-line-subtotal">
+                                                                <td class="total-line-name">Tạm tính (Draft Bill)</td>
+                                                                <td class="total-line-price">
+                                                                    <span class="order-summary-emphasis">{{ number_format($order->total, 0, ',', '.') }}₫</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot class="total-line-table-footer">
+                                                            <tr class="total-line">
+                                                                <td class="total-line-name payment-due-label">
+                                                                    <span class="payment-due-label-total">Tổng cộng (Total)</span>
+                                                                </td>
+                                                                <td class="total-line-name payment-due">
+                                                                    <span class="payment-due-currency">VND</span>
+                                                                    <span class="payment-due-price">{{ number_format($order->total, 0, ',', '.') }}₫</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
