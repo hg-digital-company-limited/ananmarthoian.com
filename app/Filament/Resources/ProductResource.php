@@ -76,14 +76,12 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\ImageColumn::make('image')
+                ->url(fn($record) => route('product.show', $record->slug))
+
                     ->label('Hình ảnh'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('name')
-                    ->url(fn($record) => route('product.show', $record->slug))
                     ->searchable()
                     ->label('Tên sản phẩm'), // Việt hóa nhãn
-                Tables\Columns\TextColumn::make('slug')
-                    ->searchable()
-                    ->label('Slug'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('price')
                     ->money('VND')
                     ->sortable()
@@ -92,7 +90,6 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('category.name')
                     ->sortable()
                     ->searchable()
-                    ->sea()
                     ->label('Danh mục'), // Việt hóa nhãn
                 Tables\Columns\TextColumn::make('sold')
                     ->numeric()

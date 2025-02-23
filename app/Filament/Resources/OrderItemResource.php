@@ -62,7 +62,6 @@ class OrderItemResource extends Resource
                     ->label('Ảnh sản phẩm'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('product.name')
                 ->searchable()
-                    ->url(fn($record) => route('product.show', $record->product->slug))
                     ->label('Tên sản phẩm'), // Tùy chỉnh nhãn hiển thị
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
