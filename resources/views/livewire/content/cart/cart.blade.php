@@ -4,7 +4,10 @@
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <h2 class="coll-title cart-title">Giỏ hàng</h2>
                 <form >
-                    <div class="clearfix overflow-cart">
+                    <div class="clearfix overflow-cart" style="
+                    width: 100%;
+                    overflow-x: scroll;
+                ">
                         <table id="table-cart">
                             <tr>
                                 <th>Sản phẩm</th>
