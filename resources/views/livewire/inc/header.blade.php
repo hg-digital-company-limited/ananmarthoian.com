@@ -170,7 +170,7 @@
                                         <i class="fa fa-shopping-cart icon-bag-cart" aria-hidden="true"></i>
 
                                     </span>
-                                    <span id="cart-count">1</span>
+                                    <span id="cart-count">{{ count($cartItems) }}</span>
                                 </a>
                             </li>
                             <li class="choose-store">
