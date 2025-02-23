@@ -1,21 +1,9 @@
 <nav id="menu-mobile" class="hidden">
     <ul>
-        <li  class="has-children">
-            <a href="javascript:void(0)" title="Thông tin chung" class="maxi-menu-link ">
-                <span>Thông tin chung</span>
+        <li onclick="window.location.href='/'">
+            <a href="/" class="site-nav-link">
+                <span>Home</span>
             </a>
-
-            <ul>
-                <li class="lilala">
-                    <a href="/" title="Trang chủ">Trang chủ</a>
-                </li>
-                <li class="lilala">
-                    <a href="/shop" title="Cửa hàng">Cửa hàng</a>
-                </li>
-                <li class="lilala">
-                    <a href="/blogs" title="Tin tức">Tin tức</a>
-                </li>
-            </ul>
         </li>
         @foreach($classifications as $classification)
             <li class="has-children">
@@ -33,5 +21,10 @@
                 </ul>
             </li>
         @endforeach
+        <li onclick="window.location.href='/blogs'">
+            <a href="/blogs" class="site-nav-link">
+                <span>News</span>
+            </a>
+        </li>
     </ul>
 </nav>
