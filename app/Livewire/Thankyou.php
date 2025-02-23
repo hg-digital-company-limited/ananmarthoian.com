@@ -10,7 +10,8 @@ class Thankyou extends Component
     public $order;
     public function mount($id)
     {
-        $this->order = Order::where('user_id', auth()->user()->id)->where('id', $id)->first();
+
+        $this->order = Order::where('id', $id)->first();
         if (!$this->order) {
             return redirect()->route('home');
         }
