@@ -115,7 +115,7 @@ class Checkout extends Component
         $this->sendWhatsappMessage($order->id);
 
         // Chuyển hướng đến trang cảm ơn cùng với ID đơn hàng
-        // return redirect()->to('/thankyou/' . $order->id);
+        return redirect()->to('/thankyou/' . $order->id);
     }
 
 
@@ -149,7 +149,7 @@ class Checkout extends Component
         "🚚 **Phương thức vận chuyển:** " . $order->shipping_method . "\n\n" .
         "🔍 **Chi tiết sản phẩm:**\n" . $itemsDetails;
 
-    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84335139450&body=" . urlencode($messageBody);
+    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84938421286&body=" . urlencode($messageBody);
 
     $response = Http::get($url);
 
