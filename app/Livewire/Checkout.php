@@ -47,13 +47,7 @@ class Checkout extends Component
     public function placeOrder()
     {
         // Kiểm tra xem người dùng đã đăng nhập
-        if (!$this->user) {
-            $this->alert('error', 'Vui lòng đăng nhập để đặt hàng', [
-                'timer' => 3000,
-                'timerProgressBar' => true,
-            ]);
-            return;
-        }
+
         if (count($this->cartItems) == 0) {
             $this->alert('error', 'Giỏ hàng trống', [
                 'timer' => 3000,
@@ -84,7 +78,7 @@ class Checkout extends Component
         }
         // Lưu thông tin đơn hàng vào bảng orders
         $order = Order::create([
-            'user_id' => $this->user->id,
+            'user_id' => $this->user->id ?? 6,
             'address' => $this->address,
             'phone' => $this->phone,
             'full_name' => $this->fullName,
@@ -155,7 +149,7 @@ class Checkout extends Component
         "🚚 **Phương thức vận chuyển:** " . $order->shipping_method . "\n\n" .
         "🔍 **Chi tiết sản phẩm:**\n" . $itemsDetails;
 
-    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84966579217&body=" . urlencode($messageBody);
+    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84335139450&body=" . urlencode($messageBody);
 
     $response = Http::get($url);
 
