@@ -1,0 +1,8 @@
+curl 'https://api.twilio.com/2010-04-01/Accounts/AC69c66665128050f8fc9cf62d3dd3e1b4/Messages.json' -X POST \
+--data-urlencode 'To=whatsapp:+84335139450' \
+--data-urlencode 'From=whatsapp:+14155238886' \
+--data-urlencode 'ContentSid=HX350d429d32e64a552466cafecbe95f3c' \
+--data-urlencode 'ContentVariables={"1":"đơn hàng mới","2":"3pm"}' \
+-u AC69c66665128050f8fc9cf62d3dd3e1b4:"dd9bcee4acf9c2c8bcbdc6c6d577110c"
+
+

@@ -3,13 +3,13 @@
 namespace App\Livewire;
 
 use App\Models\OrderItem;
+use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 use App\Helpers\CartManagement; // Nhập lớp CartManagement
 use App\Models\Order; // Nhập model Order
 use Illuminate\Support\Facades\Auth; // Thêm để kiểm tra trạng thái đăng nhập
 use Illuminate\Support\Facades\Redirect; // Thêm để chuyển hướng
 use App\Models\Product;
-use Twilio\Rest\Client;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 class Checkout extends Component
 {
@@ -124,42 +124,53 @@ class Checkout extends Component
         // return redirect()->to('/thankyou/' . $order->id);
     }
 
+
     public function sendWhatsappMessage($orderId)
-    {
-        $order = Order::find($orderId);
+{
+    $order = Order::find($orderId);
 
-        if (!$order) {
-            return redirect()->back()->with('error', 'Đơn hàng không tồn tại.');
-        }
-
-        $message =
-        "Đơn hàng #{$orderId} đã được đặt.
-    💰 Số tiền: " . number_format($order->total, 0, ',', '.') . " VNĐ
-    🕒 Thời gian: " . $order->created_at->format('d/m/Y H:i:s') . "
-    👤 Khách hàng: " . $order->full_name . "
-    📞 Số điện thoại: " . $order->phone . "
-    🏠 Địa chỉ: " . $order->address . "
-    🚚 Phương thức vận chuyển: " . $order->shipping_method;
-
-        $phone = 'whatsapp:+840335139450'; // Số điện thoại nhận tin nhắn (bắt đầu bằng 'whatsapp:')
-
-        // Thông tin tài khoản Twilio
-        $sid = 'AC69c66665128050f8fc9cf62d3dd3e1b4'; // Thay thế bằng Account SID của bạn
-        $token = 'dd9bcee4acf9c2c8bcbdc6c6d577110c'; // Thay thế bằng Auth Token của bạn
-        $twilioNumber = 'whatsapp:+18596952660'; // Số điện thoại WhatsApp của Twilio
-
-        $client = new Client($sid, $token);
-
-        try {
-            $client->messages->create($phone, [
-                'from' => $twilioNumber,
-                'body' => $message,
-            ]);
-            $this->alert('success', 'Tin nhắn đã được gửi thành công!');
-        } catch (\Exception $e) {
-            $this->alert('error', 'Lỗi khi gửi tin nhắn: ' . $e->getMessage());
-        }
+    if (!$order) {
+        return redirect()->back()->with('error', 'Đơn hàng không tồn tại.');
     }
+
+    // Get the order items associated with the order
+    $orderItems = OrderItem::where('order_id', $orderId)->get();
+
+    // Prepare the order items details
+    $itemsDetails = '';
+    foreach ($orderItems as $item) {
+        $itemsDetails .= "📦 *Sản phẩm:* " . $item->product->name . "\n" . // Assuming you have a relationship set up
+                         "🔢 *Số lượng:* " . $item->quantity . "\n" .
+                         "💲 *Giá:* " . number_format($item->price, 0, ',', '.') . " VNĐ\n" .
+                         "-----------------------------------\n"; // Separator for items
+    }
+
+    $messageBody = "🌟 **Thông tin đơn hàng** 🌟\n" .
+        "Đơn hàng: *#{$orderId}*\n" .
+        "💰 **Số tiền:** " . number_format($order->total, 0, ',', '.') . " VNĐ\n" .
+        "🕒 **Thời gian:** " . $order->created_at->format('d/m/Y H:i:s') . "\n" .
+        "👤 **Khách hàng:** " . $order->full_name . "\n" .
+        "📞 **Số điện thoại:** " . $order->phone . "\n" .
+        "🏠 **Địa chỉ:** " . $order->address . "\n" .
+        "🚚 **Phương thức vận chuyển:** " . $order->shipping_method . "\n\n" .
+        "🔍 **Chi tiết sản phẩm:**\n" . $itemsDetails;
+
+    $url = "https://api.ultramsg.com/instance108300/messages/chat?token=nsbd3uj7o02uz87h&to=+84966579217&body=" . urlencode($messageBody);
+
+    $response = Http::get($url);
+
+    if ($response->successful()) {
+        $this->alert('success', 'Tin nhắn đã được gửi thành công!', [
+            'timer' => 3000,
+            'timerProgressBar' => true,
+        ]);
+    } else {
+        $this->alert('error', 'Gửi tin nhắn thất bại: ' . $response->body(), [
+            'timer' => 3000,
+            'timerProgressBar' => true,
+        ]);
+    }
+}
     public function render()
     {
         return view('livewire.checkout', [
