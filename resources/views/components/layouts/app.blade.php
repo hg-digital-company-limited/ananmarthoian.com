@@ -11,9 +11,9 @@
     <meta name="apple-mobile-web-app-title" content="AN AN" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <meta name="description" content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
+    <meta name="description" content="Our family-shop has proudly been serving customers for 9 years. We are deeply grateful to our local customers, expats, and visiting tourists who have supported us. Your trust and loyalty mean the world to us!At An An alcohol shop, we take pride in offering a carefully curated selection of the finest imported wines and spirits from around the world.Our mission is to bring you high-quality, authentic products at competitive prices, ensuring that every sip is a memorable experience." />
     <meta name="twitter:description"
-    content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
+    content="Our family-shop has proudly been serving customers for 9 years. We are deeply grateful to our local customers, expats, and visiting tourists who have supported us. Your trust and loyalty mean the world to us!At An An alcohol shop, we take pride in offering a carefully curated selection of the finest imported wines and spirits from around the world.Our mission is to bring you high-quality, authentic products at competitive prices, ensuring that every sip is a memorable experience." />
         <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:locale" content="vi_VN" />
@@ -27,7 +27,7 @@
     <meta property="og:image:type" content="image/png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description"
-    content="Web tạp hóa An An Mart Hội An. Cung cấp hàng hóa đa dạng, dịch vụ giao hàng nhanh chóng và uy tín." />
+    content="Our family-shop has proudly been serving customers for 9 years. We are deeply grateful to our local customers, expats, and visiting tourists who have supported us. Your trust and loyalty mean the world to us!At An An alcohol shop, we take pride in offering a carefully curated selection of the finest imported wines and spirits from around the world.Our mission is to bring you high-quality, authentic products at competitive prices, ensuring that every sip is a memorable experience." />
     <meta name="google-site-verification" content="-vcm_RPnRBeEhqwvnW0R_3z20_UoGfA7bFZ3bfXf4bQ" />
 </head>
 @livewireStyles

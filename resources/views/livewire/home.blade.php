@@ -4,7 +4,7 @@
         <head>
 
             <title>
-                TRANG CHỦ - AN AN MART
+                Wine, Spirits, Craft beer Delivery in Hoi An/ Hoian Alcohol shop
             </title>
 
 
@@ -370,7 +370,7 @@
                                                 <div class="item slide-1">
 
                                                     <a href="/shop">
-                                                        <img src="/banner.jpg" alt=''>
+                                                        <img src="/banner_.jpg" alt=''>
 
                                                         <div class="text-desc">
                                                             <div class="w-content">
