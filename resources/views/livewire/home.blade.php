@@ -439,7 +439,7 @@
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
                                     <a>
-                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_3.jpg?v=168"
+                                        <img src="/template/image 63 (1).png"
                                             class="img-responsive" style="
                                             height: 208px;
                                             width: 100%;
