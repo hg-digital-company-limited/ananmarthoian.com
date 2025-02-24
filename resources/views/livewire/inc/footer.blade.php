@@ -61,7 +61,8 @@
                                     <i class="fa fa-angle-down hidden-lg hidden-md hidden-sm "></i>
                                 </h4>
                                 <div class="block_content toggle-mb-content">
-                                    SIÊU THI AN AN MART HỘI AN<br /> Địa chỉ: 191 Lý Thường Kiệt, Phường Minh An, Hội
+                                    HOI AN ALCOHOL SHOP
+<br /> Địa chỉ: 191 Lý Thường Kiệt, Phường Minh An, Hội
                                     An, Quảng Nam, Việt Nam.
 
                                 </div>

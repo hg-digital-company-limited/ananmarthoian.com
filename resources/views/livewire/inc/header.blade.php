@@ -11,7 +11,7 @@
                         <li class="choose-store">
                             <a class="header-action__link header-action_clicked" href="javascript:void(0);"
                                 id="site-locale-handle" aria-label="Khu vực mua hàng" title="Khu vực mua hàng">
-                                <span class="box-text ">
+                                <span class="box-text" onclick="window.open('https://www.google.com/maps/place/HOI+AN+ALCOHOL+SHOP+-+Wine+Store+-+BIA+RƯỢU-+VANG+HỘI+AN+-+AN+AN+MART/@15.8836347,108.3261806,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x31420e79ae0d3eb5:0x2cda610b2c958955!2sHOI+AN+ALCOHOL+SHOP+-+Wine+Store+-+BIA+RƯỢU-+VANG+HỘI+AN+-+AN+AN+MART!8m2!3d15.8836347!4d108.3268243!10e5!16s%2Fg%2F11csrpj0qz!3m5!1s0x31420e79ae0d3eb5:0x2cda610b2c958955!8m2!3d15.8836347!4d108.3268243!16s%2Fg%2F11csrpj0qz?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D', '_blank')">
                                     <span class="txtnw">Giao hoặc đến lấy tại :</span>
                                     <span class=" ">
                                         <span class="">

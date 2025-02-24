@@ -348,8 +348,8 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="msg-intro">
-                                                <a href="/shop">SIÊU
-                                                    THỊ THỰC PHẨM AN AN MART</a>
+                                                <a href="/shop">HOI AN ALCOHOL SHOP
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -409,8 +409,11 @@
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
                                     <a>
-                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_1.jpg?v=168"
-                                            class="img-responsive" />
+                                        <img src="/template/1-6.jpg"
+                                            class="img-responsive" style="
+                                            height: 208px;
+                                            width: 100%;
+                                        "/>
                                     </a>
                                 </div>
 
@@ -421,8 +424,11 @@
 
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
                                     <a>
-                                        <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_2.jpg?v=168"
-                                            class="img-responsive" />
+                                        <img src="/template/476793471_1251104203029282_7198462640177804955_n.jpg"
+                                            class="img-responsive" style="
+                                            height: 208px;
+                                            width: 100%;
+                                        " />
                                     </a>
                                 </div>
 
@@ -434,7 +440,10 @@
                                 <div class="col-md-4 col-sm-4 hidden-xs banner">
                                     <a>
                                         <img src="/assets/theme.hstatic.net/200000077081/1001259549/14/img_banner_3.jpg?v=168"
-                                            class="img-responsive" />
+                                            class="img-responsive" style="
+                                            height: 208px;
+                                            width: 100%;
+                                        " />
                                     </a>
                                 </div>
 
@@ -520,19 +529,32 @@
                                     <div class="col-xs-12">
                                         <div class="row">
                                             <div class="col-xs-12">
-                                                <div class="home-contact-us">
-                                                    <div class="ct-image col-lg-6 col-md-6 col-xs-6 ">
+                                                <div class="home-contact-us"
+
+                                                style="
+    justify-content: center;
+    display: flex;
+">
+                                                    {{-- <div class="ct-image col-lg-6 col-md-6 col-xs-6 ">
                                                         <img src="/banner.jpg" style=" width: 400px;" alt="" tittle="">
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="ct-content col-lg-6 col-md-6 col-xs-12 col-last">
-                                                        <span class="heading">An An Mart </span>
+                                                        <span class="heading">An An Alcohol Shop</span>
                                                         <h2 class="subheading">
-                                                            We are a local mart with the most convenience items: certain
-                                                            household items (dustbin bags, tape).
+                                                            Our family-shop has proudly been serving customers for 9 years. We are deeply grateful to our local customers, expats, and visiting tourists who have supported us. Your trust and loyalty mean the world to us!
                                                         </h2>
-                                                        <h2 class="subheading">191 Lý Thường Kiệt, Hoi An, Vietnam</h2>
-                                                        <h2 class="subheading">097 697 95 46</h2>
-                                                        <h2 class="subheading">kimnganb@gmail.com</h2>
+                                                        <h2 class="subheading">
+                                                            At An An alcohol shop, we take pride in offering a carefully curated selection of the finest imported wines and spirits from around the world.
+                                                        </h2>
+                                                        <h2 class="subheading">
+                                                            Our mission is to bring you high-quality, authentic products at competitive prices, ensuring that every sip is a memorable experience.
+                                                        </h2>
+                                                        <h2 class="subheading">Address: 191 Lý Thường Kiệt, Phường Minh An, Hội An, Quảng Nam</h2>
+                                                        <h2 class="subheading">Opening hours: 8.00 am - 12.30 am</h2>
+                                                        <h2 class="subheading">Phone number/WhatsApp: +84976979546 (from 8.15-22.00)</h2>
+                                                        <h2 class="subheading">+84938421286 (After 10 pm)</h2>
+                                                        <h2 class="subheading">Our fanpage: <a href="https://www.facebook.com/Hoianalcohoshop/">Facebook</a></h2>
+                                                        <h2 class="subheading">Our Google: <a href="https://maps.app.goo.gl/ftHDBgoPKhcwj11p6">Google Maps</a></h2>
                                                     </div>
                                                 </div>
                                             </div>
@@ -550,11 +572,8 @@
                                                 <div class="blogh-slider">
                                                     <div class="ui-beauty-slider w-grid">
                                                         <div class="blogh-htitle">
-                                                            <h2>Tin Tức</h2>
-                                                            <p data-ux="cut-short" data-lines-to-show="2">Khám phá những
-                                                                xu hướng và thông tin món ngon mới nhất. Nắm bắt các kỹ
-                                                                thuật nấu nướng chuyên nghiệp thông qua video hướng dẫn
-                                                                độc quyền từ đầu bếp 5* của các nhà hàng, khách sạn.</p>
+                                                            <h2>News</h2>
+                                                            <p data-ux="cut-short" data-lines-to-show="2">Explore fascinating information about Hoi An as well as Vietnam’s specialty wines.</p>
                                                         </div>
                                                         <div class="blog-new-home blogh-holder list-articles-resize">
                                                             <div id="blog-new-home" class="blogh-article-list">
@@ -1646,5 +1665,24 @@
                 })
             </script>
         </body>
+        <style>
+            .home-contact-us {
+        border: 1px solid #417505;
+        clear: both;
+        overflow: hidden;
+        margin: 3rem 0 3rem;
+        color: black;
+        max-height: inherit;
+    }
+    .ct-content h2 {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    padding: 0 5px;
+    margin: 0;
+    font-weight: normal;
+    color: #161616;
+}
+        </style>
     </div>
+
 </div>
